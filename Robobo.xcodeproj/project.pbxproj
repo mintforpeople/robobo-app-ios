@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		A06EE684229EF89900D2F9AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06EE682229EF89900D2F9AA /* Main.storyboard */; };
 		A06EE686229EF89A00D2F9AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06EE685229EF89A00D2F9AA /* Assets.xcassets */; };
 		A06EE689229EF89A00D2F9AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06EE687229EF89A00D2F9AA /* LaunchScreen.storyboard */; };
+		A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */; };
+		A06EE693229EFC7E00D2F9AA /* modules.plist in Resources */ = {isa = PBXBuildFile; fileRef = A06EE692229EFC7E00D2F9AA /* modules.plist */; };
 		CF07730533E50BD63290EDC2 /* Pods_Robobo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B89872AFA0991830AA319D /* Pods_Robobo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		A06EE685229EF89A00D2F9AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A06EE688229EF89A00D2F9AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A06EE68A229EF89A00D2F9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyTest.swift; sourceTree = "<group>"; };
+		A06EE692229EFC7E00D2F9AA /* modules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = modules.plist; sourceTree = "<group>"; };
 		FEE00B67F40277460CC2B484 /* Pods-Robobo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robobo.debug.xcconfig"; path = "Target Support Files/Pods-Robobo/Pods-Robobo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +50,6 @@
 				FEE00B67F40277460CC2B484 /* Pods-Robobo.debug.xcconfig */,
 				761EB9AC4336BE025B1413C4 /* Pods-Robobo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				A06EE67E229EF89900D2F9AA /* AppDelegate.swift */,
+				A06EE692229EFC7E00D2F9AA /* modules.plist */,
 				A06EE680229EF89900D2F9AA /* ViewController.swift */,
+				A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */,
 				A06EE682229EF89900D2F9AA /* Main.storyboard */,
 				A06EE685229EF89A00D2F9AA /* Assets.xcassets */,
 				A06EE687229EF89A00D2F9AA /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06EE693229EFC7E00D2F9AA /* modules.plist in Resources */,
 				A06EE689229EF89A00D2F9AA /* LaunchScreen.storyboard in Resources */,
 				A06EE686229EF89A00D2F9AA /* Assets.xcassets in Resources */,
 				A06EE684229EF89900D2F9AA /* Main.storyboard in Resources */,
@@ -204,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */,
 				A06EE681229EF89900D2F9AA /* ViewController.swift in Sources */,
 				A06EE67F229EF89900D2F9AA /* AppDelegate.swift in Sources */,
 			);
