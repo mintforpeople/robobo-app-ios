@@ -12,18 +12,51 @@ import robobo_speech_ios
 import robobo_framework_ios_pod
 import robobo_sensing_ios
 import robobo_remote_control_ws_ios
+import ScrollableGraphView
 
-class ViewController: UIViewController, RoboboManagerDelegate {
+class ViewController: UIViewController, RoboboManagerDelegate,IAccelerationDelegate, ScrollableGraphViewDataSource{
+    func onAccelerationChange() {
+        
+    }
+    
+    func onAcceleration(_ xAccel: Double, _ yAccel: Double, _ zAccel: Double) {
+        dataCount += 1;
+        if (linexPlotData.count > (dataPoints-1)){
+            linexPlotData.removeFirst(1)
+            lineyPlotData.removeFirst(1)
+            linezPlotData.removeFirst(1)
+
+            //xAxisLabels.removeFirst(1)
+        }
+        linexPlotData.append(xAccel)
+        lineyPlotData.append(yAccel)
+        linezPlotData.append(zAccel)
+        //xAxisLabels.append(String(dataCount))
+        graph.reload()
+    }
+    
     
     var manager : RoboboManager!
+    var dataCount: Int = 0
     var speechModule :ISpeechProductionModule!
     var remote :IRemoteControlModule!
     var proxy: RemoteControlModuleWS!
     var touchModule :ITouchModule!
+    var accelModule :IAccelerationModule!
+    var dataPoints: Int = 10
     @IBOutlet var mainView: UIView!
     @IBOutlet var ipTextField: UILabel!
+    @IBOutlet var gView: UIView!
     
-    var text :String = "Los robots del futuro serán inteligentes,o sea, podrán realizar diferentes tareas en plan de forma autónoma. Actualmente, los estudiantes y todos los que quieran estar preparados para este futuro próximo, deberían entender cómo funciona este nuevo tipo de robótica. Por lo tanto, el futuro de la robótica está en la educación."
+    var linexPlotData: [Double] = [1,2,3,4,5,6,7,8,9,10]// data for line plot
+    var lineyPlotData: [Double] =  [1,2,3,4,5,6,7,8,9,10]// data for bar plot
+    var linezPlotData: [Double] =  [1,2,3,4,5,6,7,8,9,10]// data for bar plot
+    var xAxisLabels: [String] = ["","","","","","","","","",""] // the labels along the x axis
+    
+    var text :String = ""
+    var graph:ScrollableGraphView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         manager = RoboboManager()
@@ -43,10 +76,14 @@ class ViewController: UIViewController, RoboboManagerDelegate {
             
             module = try manager.getModuleInstance("ITouchModule")
             touchModule = module as? ITouchModule
+            
+            module = try manager.getModuleInstance("IAccelerationModule")
+            accelModule = module as? IAccelerationModule
         }catch{
             print(error)
         }
         
+        accelModule.delegateManager.suscribe(self)
         remote.registerRemoteControlProxy(proxy)
         var args: [String:String] = [:]
         args["text"]=text
@@ -61,8 +98,93 @@ class ViewController: UIViewController, RoboboManagerDelegate {
         } else {
             print("No WiFi address")
         }
+        
+        graph = ScrollableGraphView(frame: self.view.frame, dataSource: self)
+        
+        // Graph Configuration
+        // ###################
+        
+        graph.backgroundColor = UIColor.white
+        graph.shouldAnimateOnStartup = true
+        
+        
+        // Reference Lines
+        // ###############
+        
+        let referenceLines = ReferenceLines()
+        referenceLines.positionType = .relative
+        referenceLines.relativePositions = [0, 0.25, 0.5, 0.75, 1]
+        referenceLines.referenceLineNumberStyle = .decimal
+        
+        graph.addReferenceLines(referenceLines: referenceLines)
+        
+        // Adding Plots
+        // ############
+        
+        let linePlotX = LinePlot(identifier: "linePlotX")
+        linePlotX.lineWidth = 2
+        linePlotX.fillColor = UIColor.red
+        linePlotX.lineColor = UIColor.red
+        linePlotX.lineStyle = .smooth
+        
+        let linePlotY = LinePlot(identifier: "linePlotY")
+        linePlotY.lineWidth = 2
+        linePlotY.fillColor = UIColor.blue
+        linePlotY.lineColor = UIColor.blue
+        linePlotY.lineStyle = .smooth
+        
+        let linePlotZ = LinePlot(identifier: "linePlotZ")
+        linePlotZ.lineWidth = 2
+        linePlotZ.fillColor = UIColor.green
+        linePlotZ.lineColor = UIColor.green
+        linePlotZ.lineStyle = .smooth
+        
+        /*let barPlot = BarPlot(identifier: "barPlot")
+        barPlot.barWidth = 20
+        barPlot.barColor = UIColor.black
+        barPlot.barLineColor = UIColor.gray*/
+        
+        graph.addPlot(plot: linePlotX)
+        graph.addPlot(plot: linePlotY)
+        graph.addPlot(plot: linePlotZ)
+
+        graph.rangeMin = -20
+        graph.rangeMax = 20
+        graph.dataPointSpacing = 30
+        graph.frame = CGRect(x: 0 , y: 0, width: gView.frame.width, height: gView.frame.height )
+        graph.shouldAnimateOnAdapt = false
+        
+        
+        gView.addSubview(graph)
+        
 
         
+    }
+    
+    func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
+        switch(plot.identifier) {
+        case "linePlotX":
+            return linexPlotData[pointIndex]
+            break
+        case "linePlotY":
+            return lineyPlotData[pointIndex]
+            break
+            
+        case "linePlotZ":
+            return linezPlotData[pointIndex]
+            break
+        default:
+            return linexPlotData[pointIndex]
+            break
+        }
+    }
+    
+    func label(atIndex pointIndex: Int) -> String {
+        return xAxisLabels[pointIndex]
+    }
+    
+    func numberOfPoints() -> Int {
+        return dataPoints
     }
     
     override func didReceiveMemoryWarning() {
