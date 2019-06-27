@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A062637B22C2654000D39558 /* AccelerationLineGraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062637A22C2654000D39558 /* AccelerationLineGraphController.swift */; };
+		A062637D22C2701200D39558 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062637C22C2701200D39558 /* CounterView.swift */; };
+		A062637F22C37F2700D39558 /* RoboboWidgetContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062637E22C37F2700D39558 /* RoboboWidgetContainer.swift */; };
+		A062638122C38EAE00D39558 /* RoboboLogWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062638022C38EAE00D39558 /* RoboboLogWidget.swift */; };
 		A06EE67F229EF89900D2F9AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EE67E229EF89900D2F9AA /* AppDelegate.swift */; };
 		A06EE681229EF89900D2F9AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EE680229EF89900D2F9AA /* ViewController.swift */; };
 		A06EE684229EF89900D2F9AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06EE682229EF89900D2F9AA /* Main.storyboard */; };
@@ -20,6 +24,10 @@
 /* Begin PBXFileReference section */
 		50B89872AFA0991830AA319D /* Pods_Robobo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robobo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761EB9AC4336BE025B1413C4 /* Pods-Robobo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robobo.release.xcconfig"; path = "Target Support Files/Pods-Robobo/Pods-Robobo.release.xcconfig"; sourceTree = "<group>"; };
+		A062637A22C2654000D39558 /* AccelerationLineGraphController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationLineGraphController.swift; sourceTree = "<group>"; };
+		A062637C22C2701200D39558 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		A062637E22C37F2700D39558 /* RoboboWidgetContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboboWidgetContainer.swift; sourceTree = "<group>"; };
+		A062638022C38EAE00D39558 /* RoboboLogWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboboLogWidget.swift; sourceTree = "<group>"; };
 		A06EE67B229EF89900D2F9AA /* Robobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06EE67E229EF89900D2F9AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A06EE680229EF89900D2F9AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +98,10 @@
 				A06EE685229EF89A00D2F9AA /* Assets.xcassets */,
 				A06EE687229EF89A00D2F9AA /* LaunchScreen.storyboard */,
 				A06EE68A229EF89A00D2F9AA /* Info.plist */,
+				A062637A22C2654000D39558 /* AccelerationLineGraphController.swift */,
+				A062637C22C2701200D39558 /* CounterView.swift */,
+				A062637E22C37F2700D39558 /* RoboboWidgetContainer.swift */,
+				A062638022C38EAE00D39558 /* RoboboLogWidget.swift */,
 			);
 			path = Robobo;
 			sourceTree = "<group>";
@@ -210,9 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A062638122C38EAE00D39558 /* RoboboLogWidget.swift in Sources */,
+				A062637B22C2654000D39558 /* AccelerationLineGraphController.swift in Sources */,
 				A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */,
 				A06EE681229EF89900D2F9AA /* ViewController.swift in Sources */,
 				A06EE67F229EF89900D2F9AA /* AppDelegate.swift in Sources */,
+				A062637F22C37F2700D39558 /* RoboboWidgetContainer.swift in Sources */,
+				A062637D22C2701200D39558 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

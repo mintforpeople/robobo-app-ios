@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,54 +15,157 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Robobo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="360" translatesAutoresizingMaskIntoConstraints="NO" id="jiN-Bi-9W8">
-                                <rect key="frame" x="5" y="44" width="365" height="714"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TJ-cg-oJY" userLabel="IPView" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
+                                <rect key="frame" x="15" y="40" width="345" height="50"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TJ-cg-oJY" userLabel="IPView">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="94"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-mz-Oze" userLabel="ip">
-                                                <rect key="frame" x="29" y="49" width="181" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.070503063499927521" green="0.47666728496551514" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWA-ET-1sJ" userLabel="ipText">
-                                                <rect key="frame" x="110" y="53" width="20" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrd-Do-SPa" userLabel="GView">
-                                        <rect key="frame" x="0.0" y="454" width="365" height="260"/>
-                                        <color key="backgroundColor" red="0.070503063500000004" green="0.476667285" blue="1" alpha="0.18213578345070422" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWA-ET-1sJ" userLabel="ipText">
+                                        <rect key="frame" x="20" y="13.5" width="24" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <color key="textColor" red="0.76812213659286499" green="0.90463453531265259" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-mz-Oze" userLabel="ip">
+                                        <rect key="frame" x="64" y="15" width="43.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="0.76800709962844849" green="0.90865236520767212" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2797962725" green="0.72457742690000004" blue="0.99909049270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="oWA-ET-1sJ" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="0if-RC-zAX"/>
+                                    <constraint firstItem="2Us-mz-Oze" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="IGR-qN-jmV"/>
+                                    <constraint firstAttribute="height" constant="50" id="UJc-jR-8V9"/>
+                                    <constraint firstItem="oWA-ET-1sJ" firstAttribute="leading" secondItem="9TJ-cg-oJY" secondAttribute="leading" constant="20" id="UTc-DS-m3I"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Us-mz-Oze" secondAttribute="trailing" id="mlB-D4-Cwv"/>
+                                    <constraint firstItem="2Us-mz-Oze" firstAttribute="leading" secondItem="oWA-ET-1sJ" secondAttribute="trailing" constant="20" id="yPe-M6-EF1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrd-Do-SPa" userLabel="GViewContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
+                                <rect key="frame" x="15" y="100" width="345" height="180"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsV-V3-zlp" userLabel="GView">
+                                        <rect key="frame" x="10" y="10" width="325" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.27936485409736633" green="0.72705841064453125" blue="0.99997919797897339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Vrd-Do-SPa" firstAttribute="top" secondItem="jiN-Bi-9W8" secondAttribute="top" constant="454" id="VH1-Tj-852"/>
+                                    <constraint firstItem="KsV-V3-zlp" firstAttribute="width" secondItem="Vrd-Do-SPa" secondAttribute="width" constant="-20" id="CRj-rd-AiP"/>
+                                    <constraint firstAttribute="height" constant="180" id="FbG-vW-hBU"/>
+                                    <constraint firstItem="KsV-V3-zlp" firstAttribute="centerX" secondItem="Vrd-Do-SPa" secondAttribute="centerX" id="WaK-VE-XXF"/>
+                                    <constraint firstItem="KsV-V3-zlp" firstAttribute="centerY" secondItem="Vrd-Do-SPa" secondAttribute="centerY" id="ZTw-7S-Dgp"/>
+                                    <constraint firstItem="KsV-V3-zlp" firstAttribute="height" secondItem="Vrd-Do-SPa" secondAttribute="height" constant="-20" id="x3Y-Ed-J1N"/>
                                 </constraints>
-                            </stackView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0L6-Wl-JhI" userLabel="CView" customClass="CounterView" customModule="Robobo" customModuleProvider="target">
+                                <rect key="frame" x="15" y="290" width="345" height="180"/>
+                                <color key="backgroundColor" red="0.27979627251625061" green="0.72457742691040039" blue="0.99909049272537231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.75571566820144653" green="0.91270720958709717" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.070503063500000004" green="0.476667285" blue="1" alpha="0.18213578350000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.77608627080917358" green="0.91304796934127808" blue="0.98012238740921021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.62785805830865937" green="0.85741251056105094" blue="0.99909049272537231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-Km-0iz" userLabel="LView" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
+                                <rect key="frame" x="15" y="480" width="345" height="167"/>
+                                <subviews>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roz-dB-85Z" customClass="RoboboLogWidget" customModule="Robobo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="325" height="147"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2797962725" green="0.72457742690000004" blue="0.99909049270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Roz-dB-85Z" firstAttribute="centerX" secondItem="8nn-Km-0iz" secondAttribute="centerX" id="20k-MX-gaT"/>
+                                    <constraint firstItem="Roz-dB-85Z" firstAttribute="centerY" secondItem="8nn-Km-0iz" secondAttribute="centerY" id="5y8-Um-4P7"/>
+                                    <constraint firstItem="Roz-dB-85Z" firstAttribute="height" secondItem="8nn-Km-0iz" secondAttribute="height" constant="-20" id="pK8-lb-ygt"/>
+                                    <constraint firstItem="Roz-dB-85Z" firstAttribute="width" secondItem="8nn-Km-0iz" secondAttribute="width" constant="-20" id="sQp-oj-IgS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.077775262299999995" green="0.6477974057" blue="0.99672597650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jiN-Bi-9W8" secondAttribute="trailing" constant="5" id="2vW-Wr-JDy"/>
-                            <constraint firstItem="jiN-Bi-9W8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="7OA-4J-TP7"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="jiN-Bi-9W8" secondAttribute="bottom" constant="20" id="jKY-em-IpY"/>
-                            <constraint firstItem="jiN-Bi-9W8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u7f-mv-Oi8"/>
+                            <constraint firstItem="Vrd-Do-SPa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2rJ-Oi-Yj8"/>
+                            <constraint firstItem="8nn-Km-0iz" firstAttribute="width" secondItem="0L6-Wl-JhI" secondAttribute="width" id="5Ml-WS-XSb"/>
+                            <constraint firstItem="9TJ-cg-oJY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7g1-CJ-iZh"/>
+                            <constraint firstItem="0L6-Wl-JhI" firstAttribute="width" secondItem="Vrd-Do-SPa" secondAttribute="width" id="Btx-WB-xLt"/>
+                            <constraint firstItem="9TJ-cg-oJY" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" constant="-30" id="Dvm-Um-xwJ"/>
+                            <constraint firstItem="Vrd-Do-SPa" firstAttribute="width" secondItem="9TJ-cg-oJY" secondAttribute="width" id="PWU-Vj-lfj"/>
+                            <constraint firstItem="8nn-Km-0iz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PzW-UO-Mtr"/>
+                            <constraint firstItem="Vrd-Do-SPa" firstAttribute="top" secondItem="9TJ-cg-oJY" secondAttribute="bottom" constant="10" id="SuI-6k-CDB"/>
+                            <constraint firstItem="0L6-Wl-JhI" firstAttribute="height" secondItem="Vrd-Do-SPa" secondAttribute="height" id="eaS-1u-H7f"/>
+                            <constraint firstItem="9TJ-cg-oJY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f3l-Hr-hUD"/>
+                            <constraint firstItem="0L6-Wl-JhI" firstAttribute="top" secondItem="Vrd-Do-SPa" secondAttribute="bottom" constant="10" id="idg-ic-WCw"/>
+                            <constraint firstItem="0L6-Wl-JhI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rBr-Bl-kwh"/>
+                            <constraint firstItem="8nn-Km-0iz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="rdb-lG-r3S"/>
+                            <constraint firstItem="8nn-Km-0iz" firstAttribute="top" secondItem="0L6-Wl-JhI" secondAttribute="bottom" constant="10" id="ydK-OG-BdM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="gView" destination="Vrd-Do-SPa" id="NYp-f3-2Rk"/>
+                        <outlet property="counterView" destination="0L6-Wl-JhI" id="2fC-Rj-Z49"/>
+                        <outlet property="gView" destination="KsV-V3-zlp" id="MZE-7g-Je3"/>
+                        <outlet property="gViewContainer" destination="Vrd-Do-SPa" id="NYp-f3-2Rk"/>
                         <outlet property="ipTextField" destination="2Us-mz-Oze" id="YhR-P0-49h"/>
+                        <outlet property="logWidget" destination="Roz-dB-85Z" id="yKS-g8-eSh"/>
                         <outlet property="mainView" destination="8bC-Xf-vdC" id="Gux-EI-Hlt"/>
                     </connections>
                 </viewController>
