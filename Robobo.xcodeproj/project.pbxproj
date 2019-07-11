@@ -18,6 +18,7 @@
 		A06EE689229EF89A00D2F9AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06EE687229EF89A00D2F9AA /* LaunchScreen.storyboard */; };
 		A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */; };
 		A06EE693229EFC7E00D2F9AA /* modules.plist in Resources */ = {isa = PBXBuildFile; fileRef = A06EE692229EFC7E00D2F9AA /* modules.plist */; };
+		A0A07E8822C5203600454940 /* CPULineGraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A07E8722C5203600454940 /* CPULineGraphController.swift */; };
 		CF07730533E50BD63290EDC2 /* Pods_Robobo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B89872AFA0991830AA319D /* Pods_Robobo.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		A06EE68A229EF89A00D2F9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyTest.swift; sourceTree = "<group>"; };
 		A06EE692229EFC7E00D2F9AA /* modules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = modules.plist; sourceTree = "<group>"; };
+		A0A07E8722C5203600454940 /* CPULineGraphController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPULineGraphController.swift; sourceTree = "<group>"; };
 		FEE00B67F40277460CC2B484 /* Pods-Robobo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robobo.debug.xcconfig"; path = "Target Support Files/Pods-Robobo/Pods-Robobo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				A062637C22C2701200D39558 /* CounterView.swift */,
 				A062637E22C37F2700D39558 /* RoboboWidgetContainer.swift */,
 				A062638022C38EAE00D39558 /* RoboboLogWidget.swift */,
+				A0A07E8722C5203600454940 /* CPULineGraphController.swift */,
 			);
 			path = Robobo;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */,
 				A06EE681229EF89900D2F9AA /* ViewController.swift in Sources */,
 				A06EE67F229EF89900D2F9AA /* AppDelegate.swift in Sources */,
+				A0A07E8822C5203600454940 /* CPULineGraphController.swift in Sources */,
 				A062637F22C37F2700D39558 /* RoboboWidgetContainer.swift in Sources */,
 				A062637D22C2701200D39558 /* CounterView.swift in Sources */,
 			);

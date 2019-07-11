@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>8.IRemoteRobModule</key>
+	<string>robobo_rob_interface_module_pod.RemoteRobModuleImplementation</string>
+	<key>7.IRobInterfaceModule</key>
+	<string>robobo_rob_interface_module_pod.BluetoothRobInterfaceModule</string>
 	<key>6.ISpeechProductionModule</key>
 	<string>robobo_speech_ios.SpeechProductionModuleImplementation</string>
 	<key>3.ITouchModule</key>

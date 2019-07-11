@@ -33,13 +33,24 @@
                                         <color key="textColor" red="0.76800709962844849" green="0.90865236520767212" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odz-ck-Cg8">
+                                        <rect key="frame" x="241" y="10" width="72" height="30"/>
+                                        <state key="normal" title="CONNECT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="connectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YyY-77-dyx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2797962725" green="0.72457742690000004" blue="0.99909049270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="oWA-ET-1sJ" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="0if-RC-zAX"/>
+                                    <constraint firstAttribute="trailing" secondItem="odz-ck-Cg8" secondAttribute="trailing" constant="32" id="1yF-lA-Uv8"/>
                                     <constraint firstItem="2Us-mz-Oze" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="IGR-qN-jmV"/>
                                     <constraint firstAttribute="height" constant="50" id="UJc-jR-8V9"/>
                                     <constraint firstItem="oWA-ET-1sJ" firstAttribute="leading" secondItem="9TJ-cg-oJY" secondAttribute="leading" constant="20" id="UTc-DS-m3I"/>
+                                    <constraint firstItem="odz-ck-Cg8" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="WMr-ws-oBx"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Us-mz-Oze" secondAttribute="trailing" id="mlB-D4-Cwv"/>
                                     <constraint firstItem="2Us-mz-Oze" firstAttribute="leading" secondItem="oWA-ET-1sJ" secondAttribute="trailing" constant="20" id="yPe-M6-EF1"/>
                                 </constraints>
@@ -116,7 +127,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-Km-0iz" userLabel="LView" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
                                 <rect key="frame" x="15" y="480" width="345" height="167"/>
                                 <subviews>
-                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roz-dB-85Z" customClass="RoboboLogWidget" customModule="Robobo" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roz-dB-85Z" customClass="RoboboLogWidget" customModule="Robobo" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="325" height="147"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>

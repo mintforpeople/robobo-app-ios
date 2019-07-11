@@ -13,6 +13,7 @@ import robobo_framework_ios_pod
 import robobo_sensing_ios
 import robobo_remote_control_ws_ios
 import ScrollableGraphView
+import robobo_rob_interface_module_pod
 
 class ViewController: UIViewController, RoboboManagerDelegate{
     
@@ -27,6 +28,9 @@ class ViewController: UIViewController, RoboboManagerDelegate{
     var accelModule :IAccelerationModule!
     var oriModule: IOrientationModule!
     var accelGraph: AccelerationLineGraphController!
+    var irob: IRob!
+    var bluetoothRob: BluetoothRobInterfaceModule!
+    
     
     @IBOutlet var mainView: UIView!
     @IBOutlet var ipTextField: UILabel!
@@ -40,10 +44,16 @@ class ViewController: UIViewController, RoboboManagerDelegate{
     var text :String = ""
     
     
+    @IBAction func connectAction(_ sender: UIButton) {
+        print(bluetoothRob.getBtDevices())
+        bluetoothRob.connectToDevice("ROB-WLP")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         manager = RoboboManager()
+        manager.suscribeLogger(logWidget)
+
         //proxy = ProxyTest()
         manager.addFrameworkDelegate(self)
         accelGraph = AccelerationLineGraphController()
@@ -67,15 +77,17 @@ class ViewController: UIViewController, RoboboManagerDelegate{
             
             module = try manager.getModuleInstance("IOrientationModule")
             oriModule = module as? IOrientationModule
+            
+            module = try manager.getModuleInstance("IRobInterfaceModule")
+            bluetoothRob = module as? BluetoothRobInterfaceModule
         }catch{
             print(error)
         }
-        manager.suscribeLogger(logWidget)
         accelModule.delegateManager.suscribe(accelGraph)
         remote.registerRemoteControlProxy(proxy)
         var args: [String:String] = [:]
         args["text"]=text
-        var c: Command = Command("TALK",0,args)
+        var c: RemoteCommand = RemoteCommand("TALK",0,args)
         remote.queueCommand(c)
         //speechModule.sayText()
         touchModule.setView(mainView)
