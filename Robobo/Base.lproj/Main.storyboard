@@ -36,10 +36,20 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odz-ck-Cg8">
                                         <rect key="frame" x="241" y="10" width="72" height="30"/>
                                         <state key="normal" title="CONNECT">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="0.75571566820000002" green="0.91270720959999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="connectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YyY-77-dyx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDS-Vg-iSp">
+                                        <rect key="frame" x="206" y="4" width="30" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" red="0.75571566820000002" green="0.91270720959999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="setValuesAction:" destination="BYZ-38-t0r" eventType="touchDown" id="1R4-jO-b9J"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -47,10 +57,12 @@
                                 <constraints>
                                     <constraint firstItem="oWA-ET-1sJ" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="0if-RC-zAX"/>
                                     <constraint firstAttribute="trailing" secondItem="odz-ck-Cg8" secondAttribute="trailing" constant="32" id="1yF-lA-Uv8"/>
+                                    <constraint firstItem="TDS-Vg-iSp" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="EpV-S6-LQG"/>
                                     <constraint firstItem="2Us-mz-Oze" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="IGR-qN-jmV"/>
                                     <constraint firstAttribute="height" constant="50" id="UJc-jR-8V9"/>
                                     <constraint firstItem="oWA-ET-1sJ" firstAttribute="leading" secondItem="9TJ-cg-oJY" secondAttribute="leading" constant="20" id="UTc-DS-m3I"/>
                                     <constraint firstItem="odz-ck-Cg8" firstAttribute="centerY" secondItem="9TJ-cg-oJY" secondAttribute="centerY" id="WMr-ws-oBx"/>
+                                    <constraint firstItem="odz-ck-Cg8" firstAttribute="leading" secondItem="TDS-Vg-iSp" secondAttribute="trailing" constant="5" id="b9p-Ux-log"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Us-mz-Oze" secondAttribute="trailing" id="mlB-D4-Cwv"/>
                                     <constraint firstItem="2Us-mz-Oze" firstAttribute="leading" secondItem="oWA-ET-1sJ" secondAttribute="trailing" constant="20" id="yPe-M6-EF1"/>
                                 </constraints>

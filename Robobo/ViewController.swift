@@ -43,16 +43,30 @@ class ViewController: UIViewController, RoboboManagerDelegate{
     
     var text :String = ""
     
+    @IBAction func setValuesAction(_ sender: Any) {
+        DispatchQueue.main.async {
+            do{
+                try self.irob.setOperationMode(operationMode: 1)
+                try self.irob.setRobStatusPeriod(period: 100)
+            } catch{
+                print(error)
+            }
+        }
+    }
     
     @IBAction func connectAction(_ sender: UIButton) {
-        print(bluetoothRob.getBtDevices())
-        bluetoothRob.connectToDevice("ROB-WLP")
+        DispatchQueue.main.async {
+            print(self.bluetoothRob.getBtDevices())
+            self.bluetoothRob.connectToDevice("ROB-WGR")
+            
+        }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         manager = RoboboManager()
-        manager.suscribeLogger(logWidget)
+        //manager.suscribeLogger(logWidget)
 
         //proxy = ProxyTest()
         manager.addFrameworkDelegate(self)
@@ -100,7 +114,7 @@ class ViewController: UIViewController, RoboboManagerDelegate{
         }
         
         accelGraph.setView(self.view, gView)
-        
+        irob = bluetoothRob.getRobInterface()
 
         
     }
