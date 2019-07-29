@@ -1,5 +1,8 @@
 # robobo-app-ios
 
+This repository contains the code and resources for the Robobo Developer app for iOS.
+
+This app currently uses the websocket module for communications, but in the future will provide ROS support for the Robobo robot.
 ## License
 
 robobo-app-ios is available under the Apache 2.0 license. See the LICENSE file for more info.
