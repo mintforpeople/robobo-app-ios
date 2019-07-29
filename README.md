@@ -5,7 +5,7 @@ This repository contains the code and resources for the Robobo Developer app for
 This app currently uses the websocket module for communications, but in the future will provide ROS 2 support for the Robobo robot.
 
 
-***
+## Acknowledgement
 <!-- 
     ROSIN acknowledgement from the ROSIN press kit
     @ https://github.com/rosin-project/press_kit
