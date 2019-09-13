@@ -1,3 +1,10 @@
+/*******************************************************************************
+ *
+ *   Copyright 2019, Manufactura de Ingenios Tecnológicos S.L. 
+ *   <http://www.mintforpeople.com>
+ *
+ ******************************************************************************/
+
 //
 //  RoboboWidgetContainer.swift
 //  Robobo
