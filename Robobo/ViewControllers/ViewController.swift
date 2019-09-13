@@ -15,7 +15,20 @@ import robobo_remote_control_ws_ios
 import ScrollableGraphView
 import robobo_rob_interface_module_pod
 
-class ViewController: UIViewController, RoboboManagerDelegate{
+class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
+    
+    func onConnection() {
+        
+    }
+    
+    func onDisconnection() {
+        
+    }
+    
+    func onDiscover(_ deviceName: String) {
+        
+    }
+    
     
     
     
@@ -30,6 +43,7 @@ class ViewController: UIViewController, RoboboManagerDelegate{
     var accelGraph: AccelerationLineGraphController!
     var irob: IRob!
     var bluetoothRob: BluetoothRobInterfaceModule!
+    var selectedRob: String = ""
     
     
     @IBOutlet var mainView: UIView!
@@ -39,7 +53,9 @@ class ViewController: UIViewController, RoboboManagerDelegate{
     @IBOutlet var gView: UIView!
     @IBOutlet var logWidget: RoboboLogWidget!
     
-   
+
+
+    
     
     var text :String = ""
     
@@ -54,6 +70,21 @@ class ViewController: UIViewController, RoboboManagerDelegate{
         }
     }
     
+    @IBAction func backSwipe(_ sender: UIScreenEdgePanGestureRecognizer) {
+        bluetoothRob.disconnect()
+        manager.shutdown()
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "startupView") as! StartupViewController
+        self.present(newViewController, animated: false, completion: nil)
+        
+    }
     @IBAction func connectAction(_ sender: UIButton) {
         DispatchQueue.main.async {
             print(self.bluetoothRob.getBtDevices())
@@ -65,8 +96,9 @@ class ViewController: UIViewController, RoboboManagerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        selectedRob = self.text
         manager = RoboboManager()
-        //manager.suscribeLogger(logWidget)
+        manager.suscribeLogger(logWidget)
 
         //proxy = ProxyTest()
         manager.addFrameworkDelegate(self)
@@ -97,6 +129,7 @@ class ViewController: UIViewController, RoboboManagerDelegate{
         }catch{
             print(error)
         }
+        print(self.bluetoothRob.getBtDevices())
         accelModule.delegateManager.suscribe(accelGraph)
         remote.registerRemoteControlProxy(proxy)
         var args: [String:String] = [:]
@@ -115,6 +148,19 @@ class ViewController: UIViewController, RoboboManagerDelegate{
         
         accelGraph.setView(self.view, gView)
         irob = bluetoothRob.getRobInterface()
+        sleep(1)
+        self.bluetoothRob.connectToDevice(selectedRob)
+        
+        DispatchQueue.main.async {
+            do{
+                try self.irob.setOperationMode(operationMode: 1)
+                try self.irob.setRobStatusPeriod(period: 100)
+            } catch{
+                print(error)
+            }
+        }
+        
+
 
         
     }
