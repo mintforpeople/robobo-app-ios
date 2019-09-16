@@ -17,6 +17,8 @@
 		A062637D22C2701200D39558 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062637C22C2701200D39558 /* CounterView.swift */; };
 		A062637F22C37F2700D39558 /* RoboboWidgetContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062637E22C37F2700D39558 /* RoboboWidgetContainer.swift */; };
 		A062638122C38EAE00D39558 /* RoboboLogWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062638022C38EAE00D39558 /* RoboboLogWidget.swift */; };
+		A0691BD2232FCDBA00E80AB2 /* green-pressed_espacio.png in Resources */ = {isa = PBXBuildFile; fileRef = A0691BD0232FCDBA00E80AB2 /* green-pressed_espacio.png */; };
+		A0691BD3232FCDBA00E80AB2 /* orangre_pressed_espacio.png in Resources */ = {isa = PBXBuildFile; fileRef = A0691BD1232FCDBA00E80AB2 /* orangre_pressed_espacio.png */; };
 		A06EE67F229EF89900D2F9AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EE67E229EF89900D2F9AA /* AppDelegate.swift */; };
 		A06EE681229EF89900D2F9AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EE680229EF89900D2F9AA /* ViewController.swift */; };
 		A06EE684229EF89900D2F9AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06EE682229EF89900D2F9AA /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		A062637C22C2701200D39558 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		A062637E22C37F2700D39558 /* RoboboWidgetContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboboWidgetContainer.swift; sourceTree = "<group>"; };
 		A062638022C38EAE00D39558 /* RoboboLogWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboboLogWidget.swift; sourceTree = "<group>"; };
+		A0691BD0232FCDBA00E80AB2 /* green-pressed_espacio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-pressed_espacio.png"; sourceTree = "<group>"; };
+		A0691BD1232FCDBA00E80AB2 /* orangre_pressed_espacio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangre_pressed_espacio.png; sourceTree = "<group>"; };
 		A06EE67B229EF89900D2F9AA /* Robobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06EE67E229EF89900D2F9AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A06EE680229EF89900D2F9AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		A0591039232796300027CF84 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A0691BD0232FCDBA00E80AB2 /* green-pressed_espacio.png */,
+				A0691BD1232FCDBA00E80AB2 /* orangre_pressed_espacio.png */,
 				A059103D2327BA3F0027CF84 /* green_pressed_458.png */,
 				A059103F2327BA400027CF84 /* green_unpressed_458.png */,
 				A059103E2327BA400027CF84 /* orange_Unpressed_458.png */,
@@ -222,7 +228,9 @@
 				A059104B2328E3780027CF84 /* orange_pressed.png in Resources */,
 				A06EE693229EFC7E00D2F9AA /* modules.plist in Resources */,
 				A06EE689229EF89A00D2F9AA /* LaunchScreen.storyboard in Resources */,
+				A0691BD3232FCDBA00E80AB2 /* orangre_pressed_espacio.png in Resources */,
 				A06EE686229EF89A00D2F9AA /* Assets.xcassets in Resources */,
+				A0691BD2232FCDBA00E80AB2 /* green-pressed_espacio.png in Resources */,
 				A06EE684229EF89900D2F9AA /* Main.storyboard in Resources */,
 				A059103B232798060027CF84 /* logo_ios_458.png in Resources */,
 				A05910422327BA400027CF84 /* orange_Unpressed_458.png in Resources */,

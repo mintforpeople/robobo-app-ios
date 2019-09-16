@@ -28,6 +28,9 @@ class ImageButton: UIButton {
         super.init(coder: aDecoder)
         self.addTarget(self, action:#selector(ImageButton.imageButtonTapped(_:)), for: .touchDown)
         self.addTarget(self, action:#selector(ImageButton.imageButtonLifted(_:)), for: .touchUpInside)
+        self.addTarget(self, action:#selector(ImageButton.imageButtonLifted(_:)), for: .touchUpOutside)
+        self.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 5.0, right: 0.0)
+        self.adjustsImageWhenHighlighted = false
        // fatalError("init(coder:) has not been implemented")
     }
     
@@ -58,12 +61,16 @@ class ImageButton: UIButton {
     @objc func imageButtonTapped(_ sender:UIButton!)
     {
         self.setBackgroundImage(pressedImage, for: .normal)
+        self.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+
     }
     
     
     @objc func imageButtonLifted(_ sender:UIButton!)
     {
         self.setBackgroundImage(unpressedImage, for: .normal)
+        self.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 5.0, right: 0.0)
+
     }
     
 

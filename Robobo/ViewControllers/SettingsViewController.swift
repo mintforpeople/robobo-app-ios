@@ -19,7 +19,7 @@ class SettingsViewController: UIViewController {
     @IBAction func backSwipeAct(_ sender: Any) {
         print("AGAGAGAGAGAG")
         
-        let transition = CATransition()
+        /*let transition = CATransition()
          transition.duration = 0.3
          transition.type = CATransitionType.push
          transition.subtype = CATransitionSubtype.fromLeft
@@ -28,11 +28,13 @@ class SettingsViewController: UIViewController {
          
          let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
          let newViewController = storyBoard.instantiateViewController(withIdentifier: "startupView") as! StartupViewController
-         self.present(newViewController, animated: false, completion: nil)
+         self.present(newViewController, animated: false, completion: nil)*/
+        performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
     }
     @IBAction func backSwipeAction(_ sender: UIScreenEdgePanGestureRecognizer) {
             print("AGAGAGAGAGAG")
-            
+        dismiss(animated: true, completion: nil)
+
             /*let transition = CATransition()
             transition.duration = 0.3
             transition.type = CATransitionType.push
