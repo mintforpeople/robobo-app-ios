@@ -125,10 +125,10 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         let pickerLabel = UILabel()
 
         let titleData = pickerData[row]
-        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.thin)])
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.init(name: "roboto", size: 30)])
         
         pickerLabel.attributedText = myTitle
-        pickerLabel.textAlignment = .left
+        
         
         return myTitle
     }

@@ -10,10 +10,15 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet var langSwitch: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let font: [AnyHashable : Any] = [NSAttributedString.Key.font : UIFont.init(name: "roboto", size: 17)]
+        
+        langSwitch.setTitleTextAttributes(font as! [NSAttributedString.Key : Any], for: .normal)
         // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func backSwipeAct(_ sender: Any) {
