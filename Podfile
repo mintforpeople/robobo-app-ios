@@ -10,10 +10,10 @@ target 'Robobo' do
   # Pods for Robobo
   pod 'robobo-framework-ios-pod','~>0.1.2'
   pod 'robobo-remote-control-ios','~>0.1.4'
-  pod 'robobo-remote-control-ws-ios','~>0.1.2'
-  pod 'robobo-sensing-ios','~>0.1.4'
+  pod 'robobo-remote-control-ws-ios','~>0.1.3'
+  pod 'robobo-sensing-ios','~>0.1.6'
   pod 'robobo-speech-ios','~>0.1.4'
-  pod 'robobo-rob-interface-module-pod','~>0.3.5'
+  pod 'robobo-rob-interface-module-pod','~>0.3.12.2'
   #pod 'Charts','~>3.3.0'
   pod 'ScrollableGraphView'
 end

@@ -23,17 +23,44 @@ import ScrollableGraphView
 import robobo_rob_interface_module_pod
 
 class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
+    func onConnectionReady() {
+        manager.log("CONNECTION READY", .WARNING)
+
+        do{
+            try self.irob.setOperationMode(operationMode: 1)
+            try self.irob.setRobStatusPeriod(period: 100)
+        } catch{
+            print(error)
+        }
+    }
+    
     
     func onConnection() {
+        manager.log("CONNECTED", .WARNING)
         
     }
     
     func onDisconnection() {
+        manager.log("DISCONNECTED", .WARNING)
         
+        if !userExit{
+            DispatchQueue.main.async {
+                let alertController = UIAlertController(title: "Disconenction", message: "Lost connection to the Robobo Base", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+                    UIAlertAction in
+                    self.performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
+                }
+                
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+
+            }
+        }
     }
     
     func onDiscover(_ deviceName: String) {
-        
+        manager.log("DISCOVERED "+deviceName, .WARNING)
+
     }
     
     
@@ -51,6 +78,7 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
     var irob: IRob!
     var bluetoothRob: BluetoothRobInterfaceModule!
     var selectedRob: String = ""
+    var userExit: Bool = false
     
     
     @IBOutlet var mainView: UIView!
@@ -78,9 +106,10 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
     }
     
     @IBAction func backSwipe(_ sender: UIScreenEdgePanGestureRecognizer) {
+        userExit = true
         bluetoothRob.disconnect()
         manager.shutdown()
-        let transition = CATransition()
+        /*let transition = CATransition()
         transition.duration = 0.3
         transition.type = CATransitionType.push
         transition.subtype = CATransitionSubtype.fromLeft
@@ -88,14 +117,15 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
         view.window!.layer.add(transition, forKey: kCATransition)
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "startupView") as! StartupViewController
-        self.present(newViewController, animated: false, completion: nil)
-        
+        //let newViewController = storyBoard.instantiateViewController(withIdentifier: "startupView") as! StartupViewController
+        //self.present(newViewController, animated: false, completion: nil)*/
+        performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
+
     }
     @IBAction func connectAction(_ sender: UIButton) {
         DispatchQueue.main.async {
             print(self.bluetoothRob.getBtDevices())
-            self.bluetoothRob.connectToDevice("ROB-WGR")
+            self.bluetoothRob.connectToDevice(self.selectedRob)
             
         }
         
@@ -110,6 +140,13 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
         //proxy = ProxyTest()
         manager.addFrameworkDelegate(self)
         accelGraph = AccelerationLineGraphController()
+        
+        let lang = UserDefaults.standard.string(forKey: "language") ?? ""
+        print("LANGUAGE: "+lang)
+        if lang == "" {
+            UserDefaults.standard.set("en_EN", forKey: "language")
+        }
+        
         do{
             try manager.startup()
             
@@ -137,15 +174,13 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
             print(error)
         }
         print(self.bluetoothRob.getBtDevices())
-        accelModule.delegateManager.suscribe(accelGraph)
         remote.registerRemoteControlProxy(proxy)
-        var args: [String:String] = [:]
-        args["text"]=text
-        var c: RemoteCommand = RemoteCommand("TALK",0,args)
-        remote.queueCommand(c)
-        //speechModule.sayText()
+        
+        speechModule.setLanguage(lang)
+        
         touchModule.setView(mainView)
         oriModule.delegateManager.suscribe(counterView)
+        
         if let addr = getWiFiAddress() {
             print(addr)
             ipTextField.text = addr
@@ -155,18 +190,16 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
         
         accelGraph.setView(self.view, gView)
         irob = bluetoothRob.getRobInterface()
-        sleep(1)
-        self.bluetoothRob.connectToDevice(selectedRob)
+        bluetoothRob.delegateManager.suscribe(self)
+        sleep(2)
+        print("Trying to connect to: " + selectedRob)
         
         DispatchQueue.main.async {
-            do{
-                try self.irob.setOperationMode(operationMode: 1)
-                try self.irob.setRobStatusPeriod(period: 100)
-            } catch{
-                print(error)
-            }
+            self.bluetoothRob.connectToDevice(self.selectedRob)
+
         }
-        
+        accelModule.delegateManager.suscribe(accelGraph)
+
 
 
         
