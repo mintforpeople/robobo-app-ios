@@ -14,8 +14,19 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet var ipLabel: UILabel!
     @IBAction func unwindToStartup(segue:UIStoryboardSegue) { }
     
+    public var peripheralCon: CBPeripheral! = nil
+    
+    @IBOutlet var loadingSpinner: UIActivityIndicatorView!
+    @IBOutlet var pickerArrow: UILabel!
+    private var centralManager: CBCentralManager?
+    private var peripherals = Array<CBPeripheral>()
+    let queue = DispatchQueue(label: "robobo.bluetoothdiscovery", qos: .default)
+    var availableDevices: [String:CBPeripheral]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         if let addr = getWiFiAddress() {
             print(addr)
@@ -31,17 +42,27 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         } else {
             // Fallback on earlier versions
         }
-        availableDevices = [:]
-        centralManager = CBCentralManager(delegate: self, queue: DispatchQueue.global())
         
-        pickerData = []
         
         self.devicePicker.delegate = self
         self.devicePicker.dataSource = self
-        
+        loadingSpinner.hidesWhenStopped = true
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        pickerData = []
+        
+        availableDevices = [:]
+        peripherals = Array<CBPeripheral>()
+        DispatchQueue.main.async {
+            self.pickerArrow.alpha = 0
+            self.devicePicker.reloadAllComponents()
+            
+        }
+        centralManager = CBCentralManager(delegate: self, queue: DispatchQueue.global())
     }
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
@@ -63,13 +84,7 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
     }
     
-    public var peripheralCon: CBPeripheral! = nil
-
-    private var centralManager: CBCentralManager?
-    private var peripherals = Array<CBPeripheral>()
-    let queue = DispatchQueue(label: "robobo.bluetoothdiscovery", qos: .default)
-    var availableDevices: [String:CBPeripheral]!
-
+    
     public func updateArray(peripheral: CBPeripheral){
         var exist: Bool = false
         for i in peripherals {
@@ -83,6 +98,8 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             if (name.hasPrefix("ROB-")){
                 pickerData.append(name)
                 DispatchQueue.main.async() {
+                    self.pickerArrow.alpha = 255
+
                     self.devicePicker.reloadAllComponents()
                 }
             }
@@ -98,6 +115,7 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         print("scanForPeripherals")
         print(peripheral.name)
+
         updateArray(peripheral: peripheral)
         
     }
@@ -146,44 +164,39 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         }
         return devices
     }
-    
-    
-    
-
-    /*
+        
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
+        loadingSpinner.startAnimating()
 
+        centralManager?.stopScan()
+        
+        if (segue.identifier == "mainView") {
+            (segue.destination as! ViewController).text = pickerData[devicePicker.selectedRow(inComponent: 0)];
+        }
+        pickerData = []
+    }
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool{
+        if (pickerData.count==0){
+            return false
+        } else {
+            return true
+        }
+        
+    }
+   
     @IBAction func connectButton(_ sender: ImageButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "mainView") as! ViewController
-        newViewController.text = pickerData[devicePicker.selectedRow(inComponent: 0)]
-        let transition = CATransition()
-        transition.duration = 0.3
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromRight
-        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
-        view.window!.layer.add(transition, forKey: kCATransition)
-        self.present(newViewController, animated: false, completion: nil)
+        loadingSpinner.startAnimating()
+        print("CONNECT BUTTON")
+        sleep(1)
     }
     
     @IBAction func settingsButton(_ sender: UIButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "settingsView") as! SettingsViewController
         
-        let transition = CATransition()
-        transition.duration = 0.3
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromRight
-        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
-        view.window!.layer.add(transition, forKey: kCATransition)
-        self.present(newViewController, animated: false, completion: nil)
     }
     // Return IP address of WiFi interface (en0) as a String, or `nil`
     func getWiFiAddress() -> String? {

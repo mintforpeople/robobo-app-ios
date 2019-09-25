@@ -19,38 +19,29 @@ class SettingsViewController: UIViewController {
         langSwitch.setTitleTextAttributes(font as! [NSAttributedString.Key : Any], for: .normal)
         // Do any additional setup after loading the view.
         
+        let lang = UserDefaults.standard.string(forKey: "language") ?? ""
+
+        if lang == "en_EN" {
+            langSwitch.selectedSegmentIndex = 0
+        }else{
+            langSwitch.selectedSegmentIndex = 1
+        }
+    }
+    
+    
+    @IBAction func languageSwitch(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            UserDefaults.standard.set("en_EN", forKey: "language")
+        }else{
+            UserDefaults.standard.set("es_ES", forKey: "language")
+        }
     }
     
     @IBAction func backSwipeAct(_ sender: Any) {
-        print("AGAGAGAGAGAG")
         
-        /*let transition = CATransition()
-         transition.duration = 0.3
-         transition.type = CATransitionType.push
-         transition.subtype = CATransitionSubtype.fromLeft
-         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
-         view.window!.layer.add(transition, forKey: kCATransition)
-         
-         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-         let newViewController = storyBoard.instantiateViewController(withIdentifier: "startupView") as! StartupViewController
-         self.present(newViewController, animated: false, completion: nil)*/
         performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
     }
-    @IBAction func backSwipeAction(_ sender: UIScreenEdgePanGestureRecognizer) {
-            print("AGAGAGAGAGAG")
-        dismiss(animated: true, completion: nil)
-
-            /*let transition = CATransition()
-            transition.duration = 0.3
-            transition.type = CATransitionType.push
-            transition.subtype = CATransitionSubtype.fromLeft
-            transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
-            view.window!.layer.add(transition, forKey: kCATransition)
-            
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "startupView") as! StartupViewController
-            self.present(newViewController, animated: false, completion: nil)*/
-    }
+    
     
     /*
     // MARK: - Navigation
