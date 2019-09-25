@@ -1,0 +1,6 @@
+framework module robobo_framework_ios_pod {
+  umbrella header "robobo-framework-ios-pod-umbrella.h"
+
+  export *
+  module * { export * }
+}

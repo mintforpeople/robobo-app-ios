@@ -1,0 +1,6 @@
+framework module robobo_rob_interface_module_pod {
+  umbrella header "robobo-rob-interface-module-pod-umbrella.h"
+
+  export *
+  module * { export * }
+}

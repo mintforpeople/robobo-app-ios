@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-Robobo/Pods-Robobo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/PocketSocket/PocketSocket.framework
+${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework
+${BUILT_PRODUCTS_DIR}/robobo-framework-ios-pod/robobo_framework_ios_pod.framework
+${BUILT_PRODUCTS_DIR}/robobo-remote-control-ios/robobo_remote_control_ios.framework
+${BUILT_PRODUCTS_DIR}/robobo-remote-control-ws-ios/robobo_remote_control_ws_ios.framework
+${BUILT_PRODUCTS_DIR}/robobo-rob-interface-module-pod/robobo_rob_interface_module_pod.framework
+${BUILT_PRODUCTS_DIR}/robobo-sensing-ios/robobo_sensing_ios.framework
+${BUILT_PRODUCTS_DIR}/robobo-speech-ios/robobo_speech_ios.framework

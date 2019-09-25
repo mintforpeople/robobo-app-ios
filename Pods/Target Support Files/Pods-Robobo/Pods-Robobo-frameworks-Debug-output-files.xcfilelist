@@ -1,0 +1,8 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSocket.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/robobo_framework_ios_pod.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/robobo_remote_control_ios.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/robobo_remote_control_ws_ios.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/robobo_rob_interface_module_pod.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/robobo_sensing_ios.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/robobo_speech_ios.framework

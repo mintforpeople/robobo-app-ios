@@ -1,0 +1,6 @@
+framework module robobo_speech_ios {
+  umbrella header "robobo-speech-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

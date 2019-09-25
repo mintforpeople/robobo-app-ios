@@ -1,0 +1,11 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PocketSocket" "${PODS_CONFIGURATION_BUILD_DIR}/ScrollableGraphView" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-framework-ios-pod" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-remote-control-ios" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-remote-control-ws-ios" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-rob-interface-module-pod" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-sensing-ios" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-speech-ios"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PocketSocket/PocketSocket.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ScrollableGraphView/ScrollableGraphView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-framework-ios-pod/robobo_framework_ios_pod.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-remote-control-ios/robobo_remote_control_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-remote-control-ws-ios/robobo_remote_control_ws_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-rob-interface-module-pod/robobo_rob_interface_module_pod.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-sensing-ios/robobo_sensing_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/robobo-speech-ios/robobo_speech_ios.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -l"system" -l"z" -framework "CFNetwork" -framework "Foundation" -framework "PocketSocket" -framework "ScrollableGraphView" -framework "Security" -framework "robobo_framework_ios_pod" -framework "robobo_remote_control_ios" -framework "robobo_remote_control_ws_ios" -framework "robobo_rob_interface_module_pod" -framework "robobo_sensing_ios" -framework "robobo_speech_ios"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
