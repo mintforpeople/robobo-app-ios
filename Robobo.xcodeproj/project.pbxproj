@@ -46,6 +46,8 @@
 		A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */; };
 		A06EE693229EFC7E00D2F9AA /* modules.plist in Resources */ = {isa = PBXBuildFile; fileRef = A06EE692229EFC7E00D2F9AA /* modules.plist */; };
 		A0A07E8822C5203600454940 /* CPULineGraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A07E8722C5203600454940 /* CPULineGraphController.swift */; };
+		A0B5F0B6233DF9AC006F0C96 /* NewInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5F0B5233DF9AC006F0C96 /* NewInterfaceViewController.swift */; };
+		A0B5F0B8233E2F65006F0C96 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5F0B7233E2F65006F0C96 /* CameraView.swift */; };
 		A0B755D82329039100FE8FB8 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B755D72329039100FE8FB8 /* StartupViewController.swift */; };
 		A0D2FCEE232BAC6C00037090 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2FCED232BAC6C00037090 /* SettingsViewController.swift */; };
 		CF07730533E50BD63290EDC2 /* Pods_Robobo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B89872AFA0991830AA319D /* Pods_Robobo.framework */; };
@@ -95,6 +97,8 @@
 		A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyTest.swift; sourceTree = "<group>"; };
 		A06EE692229EFC7E00D2F9AA /* modules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = modules.plist; sourceTree = "<group>"; };
 		A0A07E8722C5203600454940 /* CPULineGraphController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPULineGraphController.swift; sourceTree = "<group>"; };
+		A0B5F0B5233DF9AC006F0C96 /* NewInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInterfaceViewController.swift; sourceTree = "<group>"; };
+		A0B5F0B7233E2F65006F0C96 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		A0B755D72329039100FE8FB8 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
 		A0D2FCED232BAC6C00037090 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FEE00B67F40277460CC2B484 /* Pods-Robobo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robobo.debug.xcconfig"; path = "Target Support Files/Pods-Robobo/Pods-Robobo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 				A06EE680229EF89900D2F9AA /* ViewController.swift */,
 				A0B755D72329039100FE8FB8 /* StartupViewController.swift */,
 				A0D2FCED232BAC6C00037090 /* SettingsViewController.swift */,
+				A0B5F0B5233DF9AC006F0C96 /* NewInterfaceViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				A062637E22C37F2700D39558 /* RoboboWidgetContainer.swift */,
 				A062638022C38EAE00D39558 /* RoboboLogWidget.swift */,
 				A0A07E8722C5203600454940 /* CPULineGraphController.swift */,
+				A0B5F0B7233E2F65006F0C96 /* CameraView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,10 +386,12 @@
 			files = (
 				A062638122C38EAE00D39558 /* RoboboLogWidget.swift in Sources */,
 				A062637B22C2654000D39558 /* AccelerationLineGraphController.swift in Sources */,
+				A0B5F0B8233E2F65006F0C96 /* CameraView.swift in Sources */,
 				A0D2FCEE232BAC6C00037090 /* SettingsViewController.swift in Sources */,
 				A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */,
 				A06EE681229EF89900D2F9AA /* ViewController.swift in Sources */,
 				A0B755D82329039100FE8FB8 /* StartupViewController.swift in Sources */,
+				A0B5F0B6233DF9AC006F0C96 /* NewInterfaceViewController.swift in Sources */,
 				A05910452327BB350027CF84 /* ImageButton.swift in Sources */,
 				A06EE67F229EF89900D2F9AA /* AppDelegate.swift in Sources */,
 				A0A07E8822C5203600454940 /* CPULineGraphController.swift in Sources */,
