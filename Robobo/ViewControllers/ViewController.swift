@@ -75,6 +75,7 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
     var accelModule :IAccelerationModule!
     var oriModule: IOrientationModule!
     var accelGraph: AccelerationLineGraphController!
+    var ros2Module: IRos2RemoteControlModule!
     var irob: IRob!
     var bluetoothRob: BluetoothRobInterfaceModule!
     var selectedRob: String = ""
@@ -156,8 +157,11 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
             module = try manager.getModuleInstance("IRemoteControlModule")
             remote = module as? IRemoteControlModule
             
-            module = try manager.getModuleInstance("RemoteControlModuleWS")
-            proxy = module as? RemoteControlModuleWS
+            //module = try manager.getModuleInstance("RemoteControlModuleWS")
+            //proxy = module as? RemoteControlModuleWS
+            
+            module = try manager.getModuleInstance("IRos2RemoteControlModule")
+            ros2Module = module as? IRos2RemoteControlModule
             
             module = try manager.getModuleInstance("ITouchModule")
             touchModule = module as? ITouchModule
@@ -174,7 +178,7 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
             print(error)
         }
         print(self.bluetoothRob.getBtDevices())
-        remote.registerRemoteControlProxy(proxy)
+       // remote.registerRemoteControlProxy(proxy)
         
         speechModule.setLanguage(lang)
         

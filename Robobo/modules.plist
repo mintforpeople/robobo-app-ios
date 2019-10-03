@@ -14,8 +14,8 @@
 	<string>robobo_sensing_ios.AccelerationModuleImplementation</string>
 	<key>5.IOrientationModule</key>
 	<string>robobo_sensing_ios.OrientationModuleImplementation</string>
-	<key>2.RemoteControlModuleWS</key>
-	<string>robobo_remote_control_ws_ios.RemoteControlModuleWS</string>
+	<key>2.IRos2RemoteControlModule</key>
+	<string>Robobo.Ros2RemoteControlModule</string>
 	<key>1.IRemoteControlModule</key>
 	<string>robobo_remote_control_ios.RemoteControlModule</string>
 </dict>

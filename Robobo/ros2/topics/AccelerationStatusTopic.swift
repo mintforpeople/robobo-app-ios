@@ -1,0 +1,61 @@
+
+//
+//  AccelerationStatusTopic.swift
+//  Robobo
+//
+//  Created by Lorena Bajo Rebollo on 25/9/19.
+//  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
+//
+
+import Foundation
+import robobo_remote_control_ios
+
+public class AccelerationStatusTopic: AStatusTopic {
+    
+    private static var TOPIC: String = "accel"
+    public static var STATUS: String = "ACCELERATION"
+    private var publisher: ROSPublisher<ROS_geometry_msgs_msg_Accel>? = nil
+    private var accelNode: ROSNode? = nil
+    let queue = DispatchQueue(label: "AccelerationStatusTopic", qos: .userInteractive)
+    
+    public func getNode() -> ROSNode{
+        return self.accelNode!
+    }
+    
+    public init(node: StatusNode) {
+        super.init(node: node, topicName: AccelerationStatusTopic.TOPIC, statusName: AccelerationStatusTopic.STATUS, valueKey: "")
+        self.accelNode = ROSRCLObjC.createNode("AccelerationStatusTopic")
+    }
+    
+    public override func start() {
+        self.publisher = self.getNode().createPublisher(ROS_geometry_msgs_msg_Accel.self, self.getTopicName()) as! ROSPublisher<ROS_geometry_msgs_msg_Accel>
+    }
+    
+    public override func publishStatus(status: Status) {
+        
+        if ROSRCLObjC.ok() {
+            queue.async(flags: .barrier) {
+                if status.getName() == self.getSupportedStatus() {
+                    
+                    var msg = ROS_geometry_msgs_msg_Accel()
+                    var linear = ROS_geometry_msgs_msg_Vector3()
+                    
+                    let x: String = status.getValue()["xaccel"]!
+                    let y: String = status.getValue()["yaccel"]!
+                    let z: String = status.getValue()["zaccel"]!
+                    
+                    if x != "" && y != "" && z != "" {
+                        
+                        linear.x = Double(x)!
+                        linear.y = Double(y)!
+                        linear.z = Double(z)!
+                        
+                        msg.linear = linear
+                        
+                        self.publisher!.publish(msg)
+                    }
+                }
+            }
+        }
+    }
+}
