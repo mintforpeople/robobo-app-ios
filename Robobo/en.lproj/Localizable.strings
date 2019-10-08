@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Robobo
+
+  Created by Luis on 03/10/2019.
+  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
+*/
+"DEVICE IP:" = "DEVICE IP:";
+"Select your Robobo base:" = "Select your Robobo base:";
+"CONFIGURE" = "CONFIGURE";
+"BEGIN" = "BEGIN";
+"LANGUAGE:" = "LANGUAGE:";
+"English" = "English";
+"Spanish" = "Spanish";
+"ABOUT" = "ABOUT";
+"Acceleration:" = "Acceleration:";
+"Orientation:" = "Orientation:";

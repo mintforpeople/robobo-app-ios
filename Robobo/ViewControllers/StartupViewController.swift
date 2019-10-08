@@ -176,7 +176,7 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         centralManager?.stopScan()
         
         if (segue.identifier == "mainView") {
-            (segue.destination as! ViewController).text = pickerData[devicePicker.selectedRow(inComponent: 0)];
+            (segue.destination as! NewInterfaceViewController).text = pickerData[devicePicker.selectedRow(inComponent: 0)];
         }
         pickerData = []
     }
