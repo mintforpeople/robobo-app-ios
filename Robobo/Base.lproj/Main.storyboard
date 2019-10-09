@@ -527,6 +527,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="uIw-g4-r2l"/>
                     <connections>
+                        <outlet property="faceView" destination="3K6-tU-Qdh" id="c5i-0Q-p8T"/>
                         <outlet property="ipLabel" destination="PMz-c1-4fw" id="C9s-Wd-cJ7"/>
                         <outlet property="mainView" destination="pl6-DL-pjw" id="86O-xZ-ANt"/>
                         <outlet property="pitchLabel" destination="9Aa-g4-LoH" id="1BS-dv-yhw"/>

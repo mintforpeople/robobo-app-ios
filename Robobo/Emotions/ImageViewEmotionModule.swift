@@ -23,7 +23,9 @@ class ImageViewEmotionModule: NSObject, IEmotionModule, ICommandExecutor {
     
     
     func executeCommand(_ c: RemoteCommand, _ rcmodule: IRemoteControlModule) {
+        print(c)
         let emotion: String = c.getParameters()["emotion"]!
+        setCurrentEmotion(Emotion.fromString(emotion))
         delegateManager.notifyEmotion(Emotion.fromString(emotion))
     }
     

@@ -115,6 +115,7 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
     @IBOutlet var pitchLabel: UILabel!
     @IBOutlet var rollLabel: UILabel!
     @IBOutlet var mainView: UIView!
+    @IBOutlet var faceView: UIImageView!
     
     @IBAction func backSwipe(_ sender: Any) {
         userExit = true
@@ -182,6 +183,8 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
         remote.registerRemoteControlProxy(proxy)
         
         speechModule.setLanguage(lang)
+        
+        emotionModule.setImageView(faceView)
         
         touchModule.setView(mainView)
         

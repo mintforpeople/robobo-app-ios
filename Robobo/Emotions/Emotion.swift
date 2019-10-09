@@ -26,7 +26,7 @@ public enum Emotion : String{
         
         switch str {
         case "happy":
-            return .HAPPY
+            return .NORMAL
         case "laughing":
             return .LAUGHING
         case "sad":
