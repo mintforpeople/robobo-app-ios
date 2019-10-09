@@ -20,6 +20,7 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
     
     var manager : RoboboManager!
     
+    var emotionModule:ImageViewEmotionModule!
     var speechModule :ISpeechProductionModule!
     var remote :IRemoteControlModule!
     var proxy: RemoteControlModuleWS!
@@ -168,6 +169,9 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
             
             module = try manager.getModuleInstance("IOrientationModule")
             oriModule = module as? IOrientationModule
+            
+            module = try manager.getModuleInstance("IEmotionModule")
+            emotionModule = module as? ImageViewEmotionModule
             
             module = try manager.getModuleInstance("IRobInterfaceModule")
             bluetoothRob = module as? BluetoothRobInterfaceModule

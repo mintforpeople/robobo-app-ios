@@ -47,19 +47,19 @@
 		A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */; };
 		A06EE693229EFC7E00D2F9AA /* modules.plist in Resources */ = {isa = PBXBuildFile; fileRef = A06EE692229EFC7E00D2F9AA /* modules.plist */; };
 		A0A07E8822C5203600454940 /* CPULineGraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A07E8722C5203600454940 /* CPULineGraphController.swift */; };
-		A0B0CB9E234C85FD00EC24E7 /* laughting_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB94234C85FC00EC24E7 /* laughting_new.png */; };
-		A0B0CB9F234C85FD00EC24E7 /* tired_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB95234C85FC00EC24E7 /* tired_new.png */; };
-		A0B0CBA0234C85FD00EC24E7 /* surprised_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB96234C85FC00EC24E7 /* surprised_new.png */; };
-		A0B0CBA1234C85FD00EC24E7 /* sad_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB97234C85FC00EC24E7 /* sad_new.png */; };
-		A0B0CBA2234C85FD00EC24E7 /* very_surprised_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB98234C85FD00EC24E7 /* very_surprised_new.png */; };
-		A0B0CBA3234C85FD00EC24E7 /* angry_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB99234C85FD00EC24E7 /* angry_new.png */; };
-		A0B0CBA4234C85FD00EC24E7 /* sleeping_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB9A234C85FD00EC24E7 /* sleeping_new.png */; };
-		A0B0CBA5234C85FD00EC24E7 /* afraid_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB9B234C85FD00EC24E7 /* afraid_new.png */; };
-		A0B0CBA6234C85FD00EC24E7 /* normal_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB9C234C85FD00EC24E7 /* normal_new.png */; };
-		A0B0CBA7234C85FD00EC24E7 /* smile_new.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB9D234C85FD00EC24E7 /* smile_new.png */; };
+		A0B0CB9E234C85FD00EC24E7 /* laughting.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB94234C85FC00EC24E7 /* laughting.png */; };
+		A0B0CB9F234C85FD00EC24E7 /* tired.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB95234C85FC00EC24E7 /* tired.png */; };
+		A0B0CBA0234C85FD00EC24E7 /* surprised.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB96234C85FC00EC24E7 /* surprised.png */; };
+		A0B0CBA1234C85FD00EC24E7 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB97234C85FC00EC24E7 /* sad.png */; };
+		A0B0CBA3234C85FD00EC24E7 /* angry.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB99234C85FD00EC24E7 /* angry.png */; };
+		A0B0CBA4234C85FD00EC24E7 /* sleeping.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB9A234C85FD00EC24E7 /* sleeping.png */; };
+		A0B0CBA5234C85FD00EC24E7 /* afraid.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB9B234C85FD00EC24E7 /* afraid.png */; };
+		A0B0CBA6234C85FD00EC24E7 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B0CB9C234C85FD00EC24E7 /* normal.png */; };
 		A0B0CBAA234C8A9200EC24E7 /* IEmotionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0CBA9234C8A9200EC24E7 /* IEmotionModule.swift */; };
 		A0B0CBAC234C8AC700EC24E7 /* EmotionModuleDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0CBAB234C8AC700EC24E7 /* EmotionModuleDelegateManager.swift */; };
 		A0B0CBAE234C8B1800EC24E7 /* IEmotionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0CBAD234C8B1800EC24E7 /* IEmotionDelegate.swift */; };
+		A0B0CBB0234C95F600EC24E7 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0CBAF234C95F600EC24E7 /* Emotion.swift */; };
+		A0B0CBB2234C9BCA00EC24E7 /* ImageViewEmotionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0CBB1234C9BCA00EC24E7 /* ImageViewEmotionModule.swift */; };
 		A0B5F0B6233DF9AC006F0C96 /* NewInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5F0B5233DF9AC006F0C96 /* NewInterfaceViewController.swift */; };
 		A0B5F0B8233E2F65006F0C96 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5F0B7233E2F65006F0C96 /* CameraView.swift */; };
 		A0B755D82329039100FE8FB8 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B755D72329039100FE8FB8 /* StartupViewController.swift */; };
@@ -115,19 +115,19 @@
 		A06EE690229EFAAE00D2F9AA /* ProxyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyTest.swift; sourceTree = "<group>"; };
 		A06EE692229EFC7E00D2F9AA /* modules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = modules.plist; sourceTree = "<group>"; };
 		A0A07E8722C5203600454940 /* CPULineGraphController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPULineGraphController.swift; sourceTree = "<group>"; };
-		A0B0CB94234C85FC00EC24E7 /* laughting_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = laughting_new.png; path = ../../../../../Documents/Robobo/Caras/laughting_new.png; sourceTree = "<group>"; };
-		A0B0CB95234C85FC00EC24E7 /* tired_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tired_new.png; path = ../../../../../Documents/Robobo/Caras/tired_new.png; sourceTree = "<group>"; };
-		A0B0CB96234C85FC00EC24E7 /* surprised_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = surprised_new.png; path = ../../../../../Documents/Robobo/Caras/surprised_new.png; sourceTree = "<group>"; };
-		A0B0CB97234C85FC00EC24E7 /* sad_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sad_new.png; path = ../../../../../Documents/Robobo/Caras/sad_new.png; sourceTree = "<group>"; };
-		A0B0CB98234C85FD00EC24E7 /* very_surprised_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = very_surprised_new.png; path = ../../../../../Documents/Robobo/Caras/very_surprised_new.png; sourceTree = "<group>"; };
-		A0B0CB99234C85FD00EC24E7 /* angry_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = angry_new.png; path = ../../../../../Documents/Robobo/Caras/angry_new.png; sourceTree = "<group>"; };
-		A0B0CB9A234C85FD00EC24E7 /* sleeping_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sleeping_new.png; path = ../../../../../Documents/Robobo/Caras/sleeping_new.png; sourceTree = "<group>"; };
-		A0B0CB9B234C85FD00EC24E7 /* afraid_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = afraid_new.png; path = ../../../../../Documents/Robobo/Caras/afraid_new.png; sourceTree = "<group>"; };
-		A0B0CB9C234C85FD00EC24E7 /* normal_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = normal_new.png; path = ../../../../../Documents/Robobo/Caras/normal_new.png; sourceTree = "<group>"; };
-		A0B0CB9D234C85FD00EC24E7 /* smile_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smile_new.png; path = ../../../../../Documents/Robobo/Caras/smile_new.png; sourceTree = "<group>"; };
+		A0B0CB94234C85FC00EC24E7 /* laughting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = laughting.png; path = ../../../../../Documents/Robobo/Caras/laughting.png; sourceTree = "<group>"; };
+		A0B0CB95234C85FC00EC24E7 /* tired.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tired.png; path = ../../../../../Documents/Robobo/Caras/tired.png; sourceTree = "<group>"; };
+		A0B0CB96234C85FC00EC24E7 /* surprised.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = surprised.png; path = ../../../../../Documents/Robobo/Caras/surprised.png; sourceTree = "<group>"; };
+		A0B0CB97234C85FC00EC24E7 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sad.png; path = ../../../../../Documents/Robobo/Caras/sad.png; sourceTree = "<group>"; };
+		A0B0CB99234C85FD00EC24E7 /* angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = angry.png; path = ../../../../../Documents/Robobo/Caras/angry.png; sourceTree = "<group>"; };
+		A0B0CB9A234C85FD00EC24E7 /* sleeping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sleeping.png; path = ../../../../../Documents/Robobo/Caras/sleeping.png; sourceTree = "<group>"; };
+		A0B0CB9B234C85FD00EC24E7 /* afraid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = afraid.png; path = ../../../../../Documents/Robobo/Caras/afraid.png; sourceTree = "<group>"; };
+		A0B0CB9C234C85FD00EC24E7 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = normal.png; path = ../../../../../Documents/Robobo/Caras/normal.png; sourceTree = "<group>"; };
 		A0B0CBA9234C8A9200EC24E7 /* IEmotionModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEmotionModule.swift; sourceTree = "<group>"; };
 		A0B0CBAB234C8AC700EC24E7 /* EmotionModuleDelegateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionModuleDelegateManager.swift; sourceTree = "<group>"; };
 		A0B0CBAD234C8B1800EC24E7 /* IEmotionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEmotionDelegate.swift; sourceTree = "<group>"; };
+		A0B0CBAF234C95F600EC24E7 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		A0B0CBB1234C9BCA00EC24E7 /* ImageViewEmotionModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewEmotionModule.swift; sourceTree = "<group>"; };
 		A0B5F0B5233DF9AC006F0C96 /* NewInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInterfaceViewController.swift; sourceTree = "<group>"; };
 		A0B5F0B7233E2F65006F0C96 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		A0B755D72329039100FE8FB8 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
@@ -254,16 +254,14 @@
 		A0B0CB93234C85EA00EC24E7 /* faces */ = {
 			isa = PBXGroup;
 			children = (
-				A0B0CB9B234C85FD00EC24E7 /* afraid_new.png */,
-				A0B0CB99234C85FD00EC24E7 /* angry_new.png */,
-				A0B0CB94234C85FC00EC24E7 /* laughting_new.png */,
-				A0B0CB9C234C85FD00EC24E7 /* normal_new.png */,
-				A0B0CB97234C85FC00EC24E7 /* sad_new.png */,
-				A0B0CB9A234C85FD00EC24E7 /* sleeping_new.png */,
-				A0B0CB9D234C85FD00EC24E7 /* smile_new.png */,
-				A0B0CB96234C85FC00EC24E7 /* surprised_new.png */,
-				A0B0CB95234C85FC00EC24E7 /* tired_new.png */,
-				A0B0CB98234C85FD00EC24E7 /* very_surprised_new.png */,
+				A0B0CB9B234C85FD00EC24E7 /* afraid.png */,
+				A0B0CB99234C85FD00EC24E7 /* angry.png */,
+				A0B0CB94234C85FC00EC24E7 /* laughting.png */,
+				A0B0CB9C234C85FD00EC24E7 /* normal.png */,
+				A0B0CB97234C85FC00EC24E7 /* sad.png */,
+				A0B0CB9A234C85FD00EC24E7 /* sleeping.png */,
+				A0B0CB96234C85FC00EC24E7 /* surprised.png */,
+				A0B0CB95234C85FC00EC24E7 /* tired.png */,
 			);
 			path = faces;
 			sourceTree = "<group>";
@@ -274,6 +272,8 @@
 				A0B0CBA9234C8A9200EC24E7 /* IEmotionModule.swift */,
 				A0B0CBAB234C8AC700EC24E7 /* EmotionModuleDelegateManager.swift */,
 				A0B0CBAD234C8B1800EC24E7 /* IEmotionDelegate.swift */,
+				A0B0CBAF234C95F600EC24E7 /* Emotion.swift */,
+				A0B0CBB1234C9BCA00EC24E7 /* ImageViewEmotionModule.swift */,
 			);
 			path = Emotions;
 			sourceTree = "<group>";
@@ -370,22 +370,22 @@
 				A05910432327BA400027CF84 /* green_unpressed_458.png in Resources */,
 				A016DC06232FEBB80015CEE3 /* Roboto-Regular.ttf in Resources */,
 				A016DC10232FEBB80015CEE3 /* Roboto-Italic.ttf in Resources */,
-				A0B0CBA1234C85FD00EC24E7 /* sad_new.png in Resources */,
+				A0B0CBA1234C85FD00EC24E7 /* sad.png in Resources */,
 				A059104B2328E3780027CF84 /* orange_pressed.png in Resources */,
 				A016DC08232FEBB80015CEE3 /* RobotoCondensed-Italic.ttf in Resources */,
 				A06EE693229EFC7E00D2F9AA /* modules.plist in Resources */,
 				A016DC05232FEBB80015CEE3 /* RobotoCondensed-Light.ttf in Resources */,
-				A0B0CBA6234C85FD00EC24E7 /* normal_new.png in Resources */,
+				A0B0CBA6234C85FD00EC24E7 /* normal.png in Resources */,
 				A016DC04232FEBB80015CEE3 /* RobotoCondensed-Bold.ttf in Resources */,
 				A06EE689229EF89A00D2F9AA /* LaunchScreen.storyboard in Resources */,
 				A016DC0D232FEBB80015CEE3 /* RobotoCondensed-Regular.ttf in Resources */,
-				A0B0CBA3234C85FD00EC24E7 /* angry_new.png in Resources */,
+				A0B0CBA3234C85FD00EC24E7 /* angry.png in Resources */,
 				A0691BD3232FCDBA00E80AB2 /* orangre_pressed_espacio.png in Resources */,
 				A016DC12232FEBB80015CEE3 /* Roboto-Bold.ttf in Resources */,
 				A016DC0B232FEBB80015CEE3 /* RobotoCondensed-LightItalic.ttf in Resources */,
-				A0B0CB9E234C85FD00EC24E7 /* laughting_new.png in Resources */,
+				A0B0CB9E234C85FD00EC24E7 /* laughting.png in Resources */,
 				A0046EC82346519C006AF39F /* Localizable.strings in Resources */,
-				A0B0CBA0234C85FD00EC24E7 /* surprised_new.png in Resources */,
+				A0B0CBA0234C85FD00EC24E7 /* surprised.png in Resources */,
 				A06EE686229EF89A00D2F9AA /* Assets.xcassets in Resources */,
 				A016DC14232FEBB80015CEE3 /* Roboto-Black.ttf in Resources */,
 				A016DC0C232FEBB80015CEE3 /* Roboto-ThinItalic.ttf in Resources */,
@@ -394,15 +394,13 @@
 				A016DC02232FEBB80015CEE3 /* Roboto-Medium.ttf in Resources */,
 				A016DC13232FEBB80015CEE3 /* Roboto-Thin.ttf in Resources */,
 				A016DC0E232FEBB80015CEE3 /* Roboto-BoldItalic.ttf in Resources */,
-				A0B0CBA4234C85FD00EC24E7 /* sleeping_new.png in Resources */,
+				A0B0CBA4234C85FD00EC24E7 /* sleeping.png in Resources */,
 				A016DC03232FEBB80015CEE3 /* Roboto-Light.ttf in Resources */,
 				A016DC11232FEBB80015CEE3 /* Roboto-BlackItalic.ttf in Resources */,
 				A06EE684229EF89900D2F9AA /* Main.storyboard in Resources */,
-				A0B0CB9F234C85FD00EC24E7 /* tired_new.png in Resources */,
-				A0B0CBA7234C85FD00EC24E7 /* smile_new.png in Resources */,
-				A0B0CBA2234C85FD00EC24E7 /* very_surprised_new.png in Resources */,
+				A0B0CB9F234C85FD00EC24E7 /* tired.png in Resources */,
 				A016DC0A232FEBB80015CEE3 /* Apache License.txt in Resources */,
-				A0B0CBA5234C85FD00EC24E7 /* afraid_new.png in Resources */,
+				A0B0CBA5234C85FD00EC24E7 /* afraid.png in Resources */,
 				A059103B232798060027CF84 /* logo_ios_458.png in Resources */,
 				A05910422327BA400027CF84 /* orange_Unpressed_458.png in Resources */,
 			);
@@ -463,6 +461,7 @@
 				A062637B22C2654000D39558 /* AccelerationLineGraphController.swift in Sources */,
 				A0B5F0B8233E2F65006F0C96 /* CameraView.swift in Sources */,
 				A0D2FCEE232BAC6C00037090 /* SettingsViewController.swift in Sources */,
+				A0B0CBB2234C9BCA00EC24E7 /* ImageViewEmotionModule.swift in Sources */,
 				A06EE691229EFAAE00D2F9AA /* ProxyTest.swift in Sources */,
 				A0B0CBAA234C8A9200EC24E7 /* IEmotionModule.swift in Sources */,
 				A06EE681229EF89900D2F9AA /* ViewController.swift in Sources */,
@@ -471,6 +470,7 @@
 				A05910452327BB350027CF84 /* ImageButton.swift in Sources */,
 				A06EE67F229EF89900D2F9AA /* AppDelegate.swift in Sources */,
 				A0A07E8822C5203600454940 /* CPULineGraphController.swift in Sources */,
+				A0B0CBB0234C95F600EC24E7 /* Emotion.swift in Sources */,
 				A062637F22C37F2700D39558 /* RoboboWidgetContainer.swift in Sources */,
 				A062637D22C2701200D39558 /* CounterView.swift in Sources */,
 			);

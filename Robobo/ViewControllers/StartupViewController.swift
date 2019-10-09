@@ -16,7 +16,6 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     public var peripheralCon: CBPeripheral! = nil
     
-    @IBOutlet var loadingSpinner: UIActivityIndicatorView!
     @IBOutlet var pickerArrow: UILabel!
     private var centralManager: CBCentralManager?
     private var peripherals = Array<CBPeripheral>()
@@ -46,7 +45,6 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         self.devicePicker.delegate = self
         self.devicePicker.dataSource = self
-        loadingSpinner.hidesWhenStopped = true
         
         
         // Do any additional setup after loading the view.
@@ -171,11 +169,11 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        loadingSpinner.startAnimating()
 
         centralManager?.stopScan()
         
-        if (segue.identifier == "mainView") {
+        
+        if (segue.identifier == "newMainView") {
             (segue.destination as! NewInterfaceViewController).text = pickerData[devicePicker.selectedRow(inComponent: 0)];
         }
         pickerData = []
@@ -190,7 +188,6 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
    
     @IBAction func connectButton(_ sender: ImageButton) {
-        loadingSpinner.startAnimating()
         print("CONNECT BUTTON")
         sleep(1)
     }

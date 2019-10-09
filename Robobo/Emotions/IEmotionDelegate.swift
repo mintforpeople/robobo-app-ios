@@ -8,6 +8,6 @@
 
 import robobo_framework_ios_pod
 
-class IEmotionDelegate: IModuleDelegate {
-
+protocol IEmotionDelegate: IModuleDelegate {
+    func onEmotion(_ emotion:Emotion)
 }

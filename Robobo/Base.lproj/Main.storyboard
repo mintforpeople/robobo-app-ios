@@ -303,7 +303,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-zp-oh1" userLabel="faceContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="80" width="135" height="199"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3K6-tU-Qdh">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="3K6-tU-Qdh">
                                                 <rect key="frame" x="10" y="10" width="115" height="179"/>
                                             </imageView>
                                         </subviews>
@@ -913,13 +913,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="feh-dx-r84">
-                                                <rect key="frame" x="202" y="96" width="20" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="LIZ-fT-4q4"/>
-                                                    <constraint firstAttribute="width" constant="20" id="OeS-tT-BK3"/>
-                                                </constraints>
-                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.077775262299999995" green="0.64446153610000001" blue="0.99672597650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -932,14 +925,12 @@
                                                 </userDefinedRuntimeAttributes>
                                             </constraint>
                                             <constraint firstItem="GLc-BW-aXr" firstAttribute="centerY" secondItem="74i-oQ-dFO" secondAttribute="centerY" id="CVH-Po-kj9"/>
-                                            <constraint firstItem="feh-dx-r84" firstAttribute="leading" secondItem="GLc-BW-aXr" secondAttribute="trailing" constant="120" id="Jqm-Tm-23A"/>
                                             <constraint firstItem="N2S-Mc-WNg" firstAttribute="centerX" secondItem="74i-oQ-dFO" secondAttribute="centerX" constant="-3" id="LdU-s3-0PB"/>
                                             <constraint firstAttribute="trailing" secondItem="EXy-Hp-Aq7" secondAttribute="trailing" constant="-20" id="Mrw-Qf-Q9O"/>
                                             <constraint firstItem="EXy-Hp-Aq7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="74i-oQ-dFO" secondAttribute="leading" constant="20" symbolic="YES" id="V6v-rA-Y1W"/>
                                             <constraint firstItem="GLc-BW-aXr" firstAttribute="centerX" secondItem="74i-oQ-dFO" secondAttribute="centerX" constant="-65" id="aMO-q5-eNZ"/>
                                             <constraint firstItem="EXy-Hp-Aq7" firstAttribute="top" secondItem="74i-oQ-dFO" secondAttribute="top" constant="20" id="bqO-fJ-UI1"/>
                                             <constraint firstItem="N2S-Mc-WNg" firstAttribute="width" secondItem="74i-oQ-dFO" secondAttribute="width" id="cuK-ms-h7v"/>
-                                            <constraint firstItem="feh-dx-r84" firstAttribute="centerY" secondItem="GLc-BW-aXr" secondAttribute="centerY" id="eXA-4V-LS7"/>
                                             <constraint firstItem="EXy-Hp-Aq7" firstAttribute="width" secondItem="74i-oQ-dFO" secondAttribute="width" id="eky-Zc-cqj"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -1072,7 +1063,6 @@
                         <outlet property="backgroundView" destination="Okb-lq-a50" id="xUC-DQ-Vpw"/>
                         <outlet property="devicePicker" destination="N2S-Mc-WNg" id="h6x-Fc-Zdl"/>
                         <outlet property="ipLabel" destination="VYz-7H-6Sr" id="MmY-0I-WNa"/>
-                        <outlet property="loadingSpinner" destination="feh-dx-r84" id="39h-AX-c9A"/>
                         <outlet property="pickerArrow" destination="GLc-BW-aXr" id="HWY-k8-oDP"/>
                     </connections>
                 </viewController>
@@ -1085,6 +1075,7 @@
         <image name="green-pressed_espacio.png" width="89.292579650878906" height="28.45414924621582"/>
         <image name="green_unpressed_458.png" width="89.292579650878906" height="28.768558502197266"/>
         <image name="logo_ios_458.png" width="139" height="36.314411163330078"/>
+        <image name="normal.png" width="270" height="480"/>
         <image name="orange_Unpressed_458.png" width="89.292579650878906" height="28.768558502197266"/>
         <image name="orangre_pressed_espacio.png" width="89.292579650878906" height="28.45414924621582"/>
     </resources>

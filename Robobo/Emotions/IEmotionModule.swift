@@ -8,6 +8,12 @@
 
 import robobo_framework_ios_pod
 
-protocol IEmotionModule: IModule {
+public protocol IEmotionModule: IModule {
+    
+    var delegateManager: EmotionModuleDelegateManager! {get}
+
+    func  setCurrentEmotion(_ emotion:Emotion)
+    
+    func setTemporalEmotion(_ emotion:Emotion, _ duration:Int, _ nextEmotion: Emotion)
     
 }
