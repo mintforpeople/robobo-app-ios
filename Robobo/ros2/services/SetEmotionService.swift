@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * ROS2 service for changing the emotion of the robot.
+ *
+ * It sends a SET-EMOTION command to the robobo remote control module.
+ *
+ */
 public class SetEmotionService {
     
     private var commandNode: CommandNode

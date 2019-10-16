@@ -18,7 +18,5 @@ public protocol IRos2RemoteControlModule: IModule {
     func getStatusNode() -> StatusNode
     
     func getCommandNode() -> CommandNode
-    
-    func run()
-    
+        
 }

@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the irs status
+ *
+ * The topic is irs
+ *
+ */
 public class IRsStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "irs"

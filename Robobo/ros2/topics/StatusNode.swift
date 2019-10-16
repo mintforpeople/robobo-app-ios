@@ -11,6 +11,10 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * The main functionality of StatusNode is to instantiate the publishers nodes and add to the ros executor.
+ */
+
 public class StatusNode {
     
     private static var STATUS_BATBASE: String = "BAT-BASE"
@@ -92,10 +96,10 @@ public class StatusNode {
         
         self.ambientLightStatusTopic = Int32StatusTopic(node: self, nodeName: "AmbientLightStatusTopic", topicName: StatusNode.TOPIC_ALIGHT, statusName: StatusNode.STATUS_ALIGHT, valueKey: "level")
         self.ambientLightStatusTopic!.start()
-        
+       /*
         self.emotionStatusTopic = StringStatusTopic(node: self, topicName: StatusNode.TOPIC_EMOTION, statusName: StatusNode.STATUS_EMOTION, valueKey: "emotion")
         self.emotionStatusTopic!.start()
-        
+        */
         self.accelStatusTopic = AccelerationStatusTopic(node: self)
         self.accelStatusTopic!.start()
         
@@ -149,9 +153,11 @@ public class StatusNode {
             case StatusNode.STATUS_ALIGHT:
                 self.ambientLightStatusTopic!.publishStatus(status: status)
                 break
+                /*
             case StatusNode.STATUS_EMOTION:
                 self.emotionStatusTopic!.publishStatus(status: status)
                 break
+ */
             case AccelerationStatusTopic.STATUS:
                 self.accelStatusTopic!.publishStatus(status: status)
                 break
@@ -171,7 +177,7 @@ public class StatusNode {
             case TapStatusTopic.STATUS:
                 self.tapStatusTopic!.publishStatus(status: status)
                 break
- */
+                 */
             case FlingStatusTopic.STATUS:
                 self.flingStatusTopic!.publishStatus(status: status)
                 break

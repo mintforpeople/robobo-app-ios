@@ -10,6 +10,13 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the acceleration status
+ *
+ * The topic is accel
+ *
+ */
+
 public class AccelerationStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "accel"

@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * ROS2 service for the Reset Wheels commands.
+ *
+ * It sends a RESET-WHEELS command to the robobo remote control module.
+ *
+ */
 public class ResetWheelsService {
     
     private var commandNode: CommandNode

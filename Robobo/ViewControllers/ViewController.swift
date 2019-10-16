@@ -81,6 +81,9 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
     var selectedRob: String = ""
     var userExit: Bool = false
     
+    var ros2CameraModule: Ros2CameraTopicModule!
+    var frameExtractor: FrameExtractor!
+
     
     @IBOutlet var mainView: UIView!
     @IBOutlet var ipTextField: UILabel!
@@ -174,6 +177,10 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
             
             module = try manager.getModuleInstance("IRobInterfaceModule")
             bluetoothRob = module as? BluetoothRobInterfaceModule
+            
+            module = try manager.getModuleInstance("Ros2CameraTopicModule")
+            ros2CameraModule = module as? Ros2CameraTopicModule
+            
         }catch{
             print(error)
         }
@@ -203,12 +210,19 @@ class ViewController: UIViewController, RoboboManagerDelegate, IRobDelegate{
 
         }
         accelModule.delegateManager.suscribe(accelGraph)
-
-
-
+        
+       // frameExtractor = FrameExtractor()
+        //frameExtractor.delegate = self
         
     }
-    
+    /*
+    func captured(image: UIImage) {
+       // imageView.image = image
+        guard let data = image.pngData() else { return }
+        ros2CameraModule.getCameraTopicRos2().publishCompressedImageMessage(compressedImage: data, format: "PNG", width: image.size.width, height: image.size.height) //era JPEG
+        print("cap")
+    }
+    */
    
     
     override func didReceiveMemoryWarning() {

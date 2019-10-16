@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * ROS2 service for the Play Sound commands.
+ *
+ * It sends a PLAY-SOUND command to the robobo remote control module.
+ *
+ */
 public class PlaySoundService {
     
     private var commandNode: CommandNode

@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the move status.
+ *
+ * The topic is unlock/move
+ *
+ */
 public class UnlockMoveStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "unlock/move"

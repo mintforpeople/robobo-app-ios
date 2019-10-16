@@ -9,12 +9,20 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * ROS2 service changing the active camera of the robot
+ *
+ * It sends a SET-CAMERA command to the robobo remote control module.
+ *
+ */
 public class SetCameraService {
     
     private var commandNode: CommandNode
     private var setCameraServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_SetCamera>? = nil
     let queue = DispatchQueue(label: "SetCameraService", qos: .userInteractive)
+    public static var camera: String = "front"
+
 
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
@@ -42,12 +50,14 @@ func callbackSetCameraService(msg: NSObject?, request: NSObject?, response: NSOb
     var req = request as! ROS_robobo_msgs_srv_SetCamera_Request
     var resp = response as! ROS_robobo_msgs_srv_SetCamera_Response
     
-    var camera: String = "front"
+    //var camera: String = "front"
     if req.camera.data == 1 {
-        camera = "back"
+        SetCameraService.camera
+         = "back"
     }
     var parameters: [String: String] = [String: String]()
-    parameters["camera"] = camera
+    parameters["camera"] = SetCameraService.camera
+
     var command: RemoteCommand = RemoteCommand("SET-CAMERA", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
     

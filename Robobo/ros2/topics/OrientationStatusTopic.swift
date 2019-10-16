@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the orientation status.
+ *
+ * The topic is orientation
+ *
+ */
 public class OrientationStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "orientation"

@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * ROS2 service for the Talk commands.
+ *
+ * It sends a TALK command to the robobo remote control module.
+ *
+ */
 public class TalkService {
     
     private var commandNode: CommandNode

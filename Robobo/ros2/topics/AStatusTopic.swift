@@ -9,6 +9,7 @@
 import Foundation
 import robobo_remote_control_ios
 
+
 public class AStatusTopic: IStatusTopic {
     
     private final var statusName: String

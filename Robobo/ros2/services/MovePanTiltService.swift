@@ -9,6 +9,13 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * ROS2 service for the Move Pan and Tilt command.
+ *
+ * It sends a MOVEPAN-BLOCKING and/or MOVETILT-BLOCKING commands to the robobo remote control module.
+ *
+ */
+
 public class MovePanTiltService {
     
     private var commandNode: CommandNode

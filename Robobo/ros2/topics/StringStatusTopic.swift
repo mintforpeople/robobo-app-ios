@@ -9,8 +9,14 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the string status
+ *
+ * The topic used to be emotion
+ *
+ */
 public class StringStatusTopic: AStatusTopic {
-    
+
     private var publisher: ROSPublisher<ROS_std_msgs_msg_String>? = nil
     private var stringNode: ROSNode? = nil
     let queue = DispatchQueue(label: "StringStatusTopic", qos: .userInteractive)

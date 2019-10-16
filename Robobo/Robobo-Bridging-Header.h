@@ -17,7 +17,13 @@
 
 #import "ROS_builtin_interfaces/msg/Duration.h"
 
+#import "ROS_builtin_interfaces/msg/Time.h"
+
 #import "ROS_sensor_msgs/msg/Range.h"
+
+#import "ROS_sensor_msgs/msg/CameraInfo.h"
+
+#import "ROS_sensor_msgs/msg/CompressedImage.h"
 
 #import "ROS_geometry_msgs/msg/Accel.h"
 

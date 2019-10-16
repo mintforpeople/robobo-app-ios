@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * ROS2 service for change the update frequency of the robot sensors
+ *
+ * It sends a SET-SENSOR-FREQUENCY command to the robobo remote control module.
+ *
+ */
 public class SetFrequencyService {
     
     private var commandNode: CommandNode

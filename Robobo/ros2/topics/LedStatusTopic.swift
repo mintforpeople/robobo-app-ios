@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the led status
+ *
+ * The topic is leds
+ *
+ */
 public class LedStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "leds"

@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the robot talk status.
+ *
+ * The topic is unlock/talk
+ *
+ */
 public class UnlockTalkStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "unlock/talk"

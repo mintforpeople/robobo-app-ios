@@ -10,6 +10,10 @@ import Foundation
 import robobo_remote_control_ios
 import robobo_framework_ios_pod
 
+/**
+ * The main functionality of CommandNode is to instantiate the services nodes 
+ */
+
 public class CommandNode {
     
     private var remoteControlModule: IRemoteControlModule? = nil

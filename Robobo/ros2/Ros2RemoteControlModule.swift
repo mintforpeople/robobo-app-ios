@@ -20,8 +20,6 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     
     public static var ROBOBO_NAME: String = "robobo.name"
     
-    //private var context: Context
-    
     private var statusNode: StatusNode? = nil
     
     private var commandNode: CommandNode? = nil
@@ -29,16 +27,6 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     private var roboName: String = ""
     
     public static var remoteControlModule: IRemoteControlModule? = nil
-    
-    //private var wakeLock: PowerManager.WakeLock
-    
-    //private var wifiLock: WifiManager.WifiLock
-    
-    //private var rosExecutor: Executor
-    
-    //private var handler: Handler
-    
-    //private var timer: Timer
     
     
     public func startup(_ manager: RoboboManager) throws{
@@ -75,7 +63,7 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     
     public func notifyStatus(_ status: Status) {
        // if statusNode!= nil {
-            statusNode!.publishStatusMessage(status: status)
+//            statusNode!.publishStatusMessage(status: status)
         //}
     }
     
@@ -83,36 +71,6 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
         //
     }
     
-    
-    public func run(){
-        
-    }
-    /*
-     //@Override
-     public func getExecutor() -> Executor {
-     return self.rosExecutor
-     }
-     
-     internal func createExecutor() -> Executor {
-     return SingleThreadedExecutor()()
-     }
-     
-     public func run() {
-     
-     this.timer = new Timer()
-     this.timer.scheduleAtFixedRate(new TimerTask() {
-     public void run() {
-     Runnable runnable = new Runnable() {
-     public void run() {
-     Ros2RemoteControlModule.this.getExecutor().spinSome()
-     }
-     }
-     Ros2RemoteControlModule.this.handler.post(runnable)
-     }
-     }, 0L, 200L)
-     
-     }
-     */
     
     public func getStatusNode() -> StatusNode {
         return self.statusNode!
@@ -128,15 +86,11 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     
     public func initRoboboRos2Nodes(remoteControlModule: IRemoteControlModule, roboboName: String){
         
-     //   DispatchQueue.global(qos: .default).async {
-            self.statusNode = StatusNode(roboboName: roboboName)
-            self.statusNode!.onStart()
-     //   }
-        
-     //   DispatchQueue.global(qos: .default).async {
-            self.commandNode = CommandNode(remoteControlModule: remoteControlModule, roboboName: roboboName)
-            self.commandNode!.onStart()
-       // }
+        self.statusNode = StatusNode(roboboName: roboboName)
+        self.statusNode!.onStart()
+
+        self.commandNode = CommandNode(remoteControlModule: remoteControlModule, roboboName: roboboName)
+        self.commandNode!.onStart()
  
     }
     

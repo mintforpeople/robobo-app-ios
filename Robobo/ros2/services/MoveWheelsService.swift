@@ -9,6 +9,13 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * ROS2 service for the Move Wheels commands.
+ *
+ * It sends a MOVE-BLOCKING command to the robobo remote control module.
+ *
+ */
+
 public class MoveWheelsService {
     
     private var commandNode: CommandNode

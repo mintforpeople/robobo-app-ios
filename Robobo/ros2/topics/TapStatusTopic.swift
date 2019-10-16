@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the tap status
+ *
+ * The topic is tap
+ *
+ */
 public class TapStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "tap"

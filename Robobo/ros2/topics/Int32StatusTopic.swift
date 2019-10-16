@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the robot base battery level.
+ *
+ * The topic is robot/battery/base
+ *
+ */
 public class Int32StatusTopic: AStatusTopic {
     
     private var publisher: ROSPublisher<ROS_std_msgs_msg_Int32>? = nil

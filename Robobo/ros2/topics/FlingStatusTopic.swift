@@ -9,6 +9,12 @@
 import Foundation
 import robobo_remote_control_ios
 
+/**
+ * Status Topic for the fling status
+ *
+ * The topic is fling
+ *
+ */
 public class FlingStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "fling";
