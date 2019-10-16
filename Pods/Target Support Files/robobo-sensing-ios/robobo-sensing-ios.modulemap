@@ -1,0 +1,6 @@
+framework module robobo_sensing_ios {
+  umbrella header "robobo-sensing-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

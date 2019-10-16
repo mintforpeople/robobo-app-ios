@@ -1,0 +1,6 @@
+framework module robobo_remote_control_ios {
+  umbrella header "robobo-remote-control-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
