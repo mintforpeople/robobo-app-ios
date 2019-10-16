@@ -179,7 +179,7 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         pickerData = []
     }
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool{
-        if (pickerData.count==0){
+        if ((pickerData.count==0)&&(identifier == "newMainView") ){
             return false
         } else {
             return true

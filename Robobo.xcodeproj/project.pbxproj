@@ -128,6 +128,7 @@
 		A0B0CBAD234C8B1800EC24E7 /* IEmotionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEmotionDelegate.swift; sourceTree = "<group>"; };
 		A0B0CBAF234C95F600EC24E7 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		A0B0CBB1234C9BCA00EC24E7 /* ImageViewEmotionModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewEmotionModule.swift; sourceTree = "<group>"; };
+		A0B0CBB4234DE74800EC24E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		A0B5F0B5233DF9AC006F0C96 /* NewInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInterfaceViewController.swift; sourceTree = "<group>"; };
 		A0B5F0B7233E2F65006F0C96 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		A0B755D72329039100FE8FB8 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
@@ -493,6 +494,7 @@
 			children = (
 				A06EE683229EF89900D2F9AA /* Base */,
 				A0046EC6234650EE006AF39F /* es */,
+				A0B0CBB4234DE74800EC24E7 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -631,7 +633,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEE00B67F40277460CC2B484 /* Pods-Robobo.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMDK4H4H7C;
 				INFOPLIST_FILE = Robobo/Info.plist;
@@ -640,10 +642,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = UMDK4H4H7C.com.mintforpeople.Robobo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintforpeople.RoboboDeveloper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -651,7 +653,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 761EB9AC4336BE025B1413C4 /* Pods-Robobo.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMDK4H4H7C;
 				INFOPLIST_FILE = Robobo/Info.plist;
@@ -660,10 +662,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = UMDK4H4H7C.com.mintforpeople.Robobo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintforpeople.RoboboDeveloper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

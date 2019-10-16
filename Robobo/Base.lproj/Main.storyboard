@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gvm-SJ-hSw">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -26,26 +26,26 @@
             <objects>
                 <viewController storyboardIdentifier="mainView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Robobo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TJ-cg-oJY" userLabel="IPView" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                <rect key="frame" x="15" y="40" width="290" height="50"/>
+                                <rect key="frame" x="15" y="40" width="384" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWA-ET-1sJ" userLabel="ipText">
-                                        <rect key="frame" x="20" y="13.5" width="24" height="23"/>
+                                        <rect key="frame" x="20" y="13.666666666666664" width="24" height="23"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                         <color key="textColor" red="0.76812213659286499" green="0.90463453531265259" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-mz-Oze" userLabel="ip">
-                                        <rect key="frame" x="64" y="14.5" width="43.5" height="21"/>
+                                        <rect key="frame" x="64" y="14.666666666666664" width="43.666666666666657" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" red="0.76800709962844849" green="0.90865236520767212" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odz-ck-Cg8">
-                                        <rect key="frame" x="186" y="10" width="72" height="30"/>
+                                        <rect key="frame" x="280" y="10" width="72" height="30"/>
                                         <state key="normal" title="CONNECT">
                                             <color key="titleColor" red="0.75571566820000002" green="0.91270720959999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -54,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDS-Vg-iSp">
-                                        <rect key="frame" x="151" y="4" width="30" height="42"/>
+                                        <rect key="frame" x="245" y="4" width="30" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="+">
                                             <color key="titleColor" red="0.75571566820000002" green="0.91270720959999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,10 +90,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrd-Do-SPa" userLabel="GViewContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                <rect key="frame" x="15" y="100" width="290" height="180"/>
+                                <rect key="frame" x="15" y="100" width="384" height="180"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsV-V3-zlp" userLabel="GView">
-                                        <rect key="frame" x="10" y="10" width="270" height="160"/>
+                                        <rect key="frame" x="10" y="10" width="364" height="160"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -118,7 +118,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0L6-Wl-JhI" userLabel="CView" customClass="CounterView" customModule="Robobo" customModuleProvider="target">
-                                <rect key="frame" x="15" y="290" width="290" height="180"/>
+                                <rect key="frame" x="15" y="290" width="384" height="180"/>
                                 <color key="backgroundColor" red="0.27979627251625061" green="0.72457742691040039" blue="0.99909049272537231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
@@ -142,10 +142,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-Km-0iz" userLabel="LView" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                <rect key="frame" x="15" y="480" width="290" height="68"/>
+                                <rect key="frame" x="15" y="480" width="384" height="236"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roz-dB-85Z" customClass="RoboboLogWidget" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="10" width="270" height="48"/>
+                                        <rect key="frame" x="10" y="10" width="364" height="216"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -218,17 +218,17 @@
             <objects>
                 <viewController id="85w-fP-Kqn" customClass="NewInterfaceViewController" customModule="Robobo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pl6-DL-pjw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtI-gx-6Ic">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3t4-ng-95w" userLabel="ipContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="40" width="135" height="30"/>
+                                        <rect key="frame" x="20" y="40" width="182" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="IP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46I-u5-bAc">
-                                                <rect key="frame" x="8" y="5.5" width="19" height="19"/>
+                                                <rect key="frame" x="8" y="5.6666666666666643" width="19" height="19"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -264,10 +264,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nll-ez-09T" userLabel="cameraContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="165" y="40" width="135" height="239"/>
+                                        <rect key="frame" x="212" y="40" width="182" height="323"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vps-35-osw" customClass="CameraView" customModule="Robobo" customModuleProvider="target">
-                                                <rect key="frame" x="10" y="10" width="115" height="219"/>
+                                                <rect key="frame" x="10" y="10" width="162" height="303"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" startsMediaSession="YES"/>
@@ -301,10 +301,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-zp-oh1" userLabel="faceContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="80" width="135" height="199"/>
+                                        <rect key="frame" x="20" y="80" width="182" height="283"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="3K6-tU-Qdh">
-                                                <rect key="frame" x="10" y="10" width="115" height="179"/>
+                                                <rect key="frame" x="10" y="10" width="162" height="263"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.2797962725" green="0.72457742690000004" blue="0.99909049270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -329,10 +329,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOj-Fl-xdr" userLabel="infoContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="289" width="280" height="239"/>
+                                        <rect key="frame" x="20" y="373" width="374" height="323"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acceleration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uab-g0-95y">
-                                                <rect key="frame" x="20" y="20" width="117.5" height="23"/>
+                                                <rect key="frame" x="20.000000000000007" y="20" width="117.66666666666669" height="23"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                 <color key="textColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -404,13 +404,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yAccelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pi2-gQ-8Ke">
-                                                <rect key="frame" x="48" y="72" width="212" height="21"/>
+                                                <rect key="frame" x="48" y="72" width="306" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zAccelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-Jm-hUe">
-                                                <rect key="frame" x="48" y="97" width="92.5" height="21"/>
+                                                <rect key="frame" x="48.000000000000007" y="97" width="92.666666666666686" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -570,27 +570,27 @@
             <objects>
                 <viewController storyboardIdentifier="settingsView" id="3TG-k0-CMh" userLabel="Settings View Controller" customClass="SettingsViewController" customModule="Robobo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="296-tV-13b">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkh-9M-aAZ" userLabel="Corner Cover">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                                 <color key="backgroundColor" red="0.077775262299999995" green="0.64446153610000001" blue="0.99672597650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Kcd-Ja-Qtm"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9J-W5-ZHF" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIGURE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqp-PC-tcu">
-                                        <rect key="frame" x="0.0" y="60" width="320" height="38"/>
+                                        <rect key="frame" x="0.0" y="60" width="414" height="38"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="32"/>
                                         <color key="textColor" red="0.75571566820000002" green="0.91270720959999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x49-zq-zIX" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="118" width="280" height="128"/>
+                                        <rect key="frame" x="20" y="118" width="374" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LANGUAGE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udi-FA-fiI">
                                                 <rect key="frame" x="20" y="20" width="162" height="20"/>
@@ -603,7 +603,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oQi-Sc-QSr" userLabel="LangSwitch">
-                                                <rect key="frame" x="20" y="58" width="240" height="41"/>
+                                                <rect key="frame" x="20" y="58" width="334" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="KRJ-9o-6Ck"/>
                                                 </constraints>
@@ -658,10 +658,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4h-38-EEr" userLabel="about" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                <rect key="frame" x="20" y="266" width="280" height="262"/>
+                                <rect key="frame" x="20" y="266" width="374" height="430"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="white" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHB-qJ-uLt">
-                                        <rect key="frame" x="15" y="46" width="250" height="196"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="white" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHB-qJ-uLt" userLabel="AboutEs">
+                                        <rect key="frame" x="15" y="46" width="344" height="364"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Licencias:">
@@ -758,6 +758,111 @@
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="white" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGe-x0-Brv" userLabel="AboutEn">
+                                        <rect key="frame" x="15" y="46" width="344" height="364"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Licenses">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=":">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <font key="NSOriginalFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content"> This app uses software libraries under the following licenses: 
+- Apache License 2.0 - MIT License  </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Copyright:">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <font key="NSOriginalFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" © 2019 - MINT Manufactura de Ingenios Tecnológicos S.L. ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="www.mintforpeople.com">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                    <url key="NSLink" string="http://www.mintforpeople.com"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="  ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Contact: ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <font key="NSOriginalFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="info@mintforpeople.com">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                    <url key="NSLink" string="http://info@mintforpeople.com"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lys-4S-HdX">
                                         <rect key="frame" x="20" y="20" width="54" height="18"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="15"/>
@@ -767,11 +872,15 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.077775262299999995" green="0.64446153610000001" blue="0.99672597650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="OGe-x0-Brv" firstAttribute="leading" secondItem="PHB-qJ-uLt" secondAttribute="leading" id="2wH-po-X6d"/>
                                     <constraint firstItem="PHB-qJ-uLt" firstAttribute="leading" secondItem="X4h-38-EEr" secondAttribute="leading" constant="15" id="5BC-gD-sED"/>
                                     <constraint firstAttribute="bottom" secondItem="PHB-qJ-uLt" secondAttribute="bottom" constant="20" id="DHr-ox-9nT"/>
+                                    <constraint firstItem="OGe-x0-Brv" firstAttribute="height" secondItem="PHB-qJ-uLt" secondAttribute="height" id="RAx-dU-UKY"/>
                                     <constraint firstItem="lys-4S-HdX" firstAttribute="top" secondItem="X4h-38-EEr" secondAttribute="top" constant="20" id="dcU-Wm-N9M"/>
                                     <constraint firstItem="PHB-qJ-uLt" firstAttribute="top" secondItem="lys-4S-HdX" secondAttribute="bottom" constant="8" id="lsO-ox-8iy"/>
+                                    <constraint firstItem="OGe-x0-Brv" firstAttribute="top" secondItem="PHB-qJ-uLt" secondAttribute="top" id="mOI-ti-IxY"/>
                                     <constraint firstItem="PHB-qJ-uLt" firstAttribute="centerX" secondItem="X4h-38-EEr" secondAttribute="centerX" id="r4e-dP-jlb"/>
+                                    <constraint firstItem="OGe-x0-Brv" firstAttribute="width" secondItem="PHB-qJ-uLt" secondAttribute="width" id="uQ6-ir-EUG"/>
                                     <constraint firstItem="lys-4S-HdX" firstAttribute="leading" secondItem="X4h-38-EEr" secondAttribute="leading" constant="20" id="weL-6J-5SL"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -809,6 +918,8 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="AboutEnView" destination="OGe-x0-Brv" id="AVh-9v-Mdd"/>
+                        <outlet property="AboutEsView" destination="PHB-qJ-uLt" id="4AS-eB-RIZ"/>
                         <outlet property="langSwitch" destination="oQi-Sc-QSr" id="oLa-Gs-KtJ"/>
                         <segue destination="gD3-dH-gkL" kind="unwind" identifier="unwindSegueToStartup" unwindAction="unwindToStartupWithSegue:" id="Kz0-Ig-gvs"/>
                     </connections>
@@ -829,21 +940,21 @@
             <objects>
                 <viewController storyboardIdentifier="startupView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bzc-Nc-c3U" customClass="StartupViewController" customModule="Robobo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PxL-Qv-yxz" userLabel="MainView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okb-lq-a50" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="474"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="642"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_ios_458.png" translatesAutoresizingMaskIntoConstraints="NO" id="JzC-fx-cBb" userLabel="RoboboLogo">
-                                        <rect key="frame" x="26.5" y="30" width="267" height="82"/>
+                                        <rect key="frame" x="73.666666666666686" y="30" width="267" height="82"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="267" id="0hT-Ij-AlV"/>
                                             <constraint firstAttribute="width" secondItem="JzC-fx-cBb" secondAttribute="height" multiplier="267:82" id="YcF-Vg-qNP"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZN4-9l-qsd" userLabel="IpContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="132" width="280" height="90"/>
+                                        <rect key="frame" x="20" y="132" width="374" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVICE IP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMR-OY-WMv">
                                                 <rect key="frame" x="20" y="15" width="162" height="20"/>
@@ -889,10 +1000,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74i-oQ-dFO" userLabel="DeviceList" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="242" width="280" height="212"/>
+                                        <rect key="frame" x="20" y="242" width="374" height="316"/>
                                         <subviews>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2S-Mc-WNg">
-                                                <rect key="frame" x="-3" y="50" width="280" height="112"/>
+                                                <rect key="frame" x="-3" y="50" width="374" height="216"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -900,7 +1011,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT YOUR ROBOBO BASE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXy-Hp-Aq7">
-                                                <rect key="frame" x="20" y="20" width="280" height="20"/>
+                                                <rect key="frame" x="20" y="20" width="374" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="C2u-Wf-IlX"/>
                                                 </constraints>
@@ -909,7 +1020,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-BW-aXr">
-                                                <rect key="frame" x="68" y="92.5" width="14" height="27"/>
+                                                <rect key="frame" x="115" y="144.66666666666669" width="14" height="27"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -970,10 +1081,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4m-Y5-qf8" userLabel="ButtonContainer">
-                                <rect key="frame" x="0.0" y="474" width="320" height="94"/>
+                                <rect key="frame" x="0.0" y="642" width="414" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAQ-v4-he2" customClass="ImageButton" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="178" y="18.5" width="122" height="57"/>
+                                        <rect key="frame" x="148" y="18.666666666666629" width="89.333333333333314" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="RU6-8y-Rko"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="mAg-aD-J8J"/>
@@ -994,7 +1105,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ6-I1-O5X" customClass="ImageButton" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="18.5" width="122" height="57"/>
+                                        <rect key="frame" x="20" y="18.666666666666629" width="92" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="hkt-LS-pWQ"/>
                                             <constraint firstAttribute="height" constant="57" id="k4t-jc-sdK"/>
@@ -1014,7 +1125,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7n-KK-Wes" userLabel="Separador">
-                                        <rect key="frame" x="143" y="0.0" width="34" height="94"/>
+                                        <rect key="frame" x="113" y="0.0" width="34" height="94"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="A8L-xw-6jR"/>
@@ -1035,7 +1146,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdw-Tx-Ut8">
-                                <rect key="frame" x="0.0" y="-10" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="-10" width="414" height="30"/>
                                 <color key="backgroundColor" red="0.077775262299999995" green="0.64446153610000001" blue="0.99672597650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hzx-br-5zW"/>

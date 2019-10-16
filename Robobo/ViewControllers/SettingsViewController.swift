@@ -12,6 +12,21 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet var langSwitch: UISegmentedControl!
     
+    @IBOutlet var aboutEnView: UITextView!
+    @IBOutlet var aboutEsView: UITextView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let langStr = Locale.current.languageCode
+        print(langStr)
+        if langStr == "es" {
+            aboutEnView.isHidden = true
+            aboutEsView.isHidden = false
+        }else{
+            aboutEnView.isHidden = false
+            aboutEsView.isHidden = true
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let font: [AnyHashable : Any] = [NSAttributedString.Key.font : UIFont.init(name: "roboto", size: 17)]

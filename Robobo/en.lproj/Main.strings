@@ -1,0 +1,93 @@
+
+/* Class = "UILabel"; text = "Y:"; ObjectID = "0kV-jc-FNe"; */
+"0kV-jc-FNe.text" = "Y:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2Us-mz-Oze"; */
+"2Us-mz-Oze.text" = "Label";
+
+/* Class = "UILabel"; text = "IP:"; ObjectID = "46I-u5-bAc"; */
+"46I-u5-bAc.text" = "IP:";
+
+/* Class = "UILabel"; text = "pitchLabel"; ObjectID = "9Aa-g4-LoH"; */
+"9Aa-g4-LoH.text" = "pitchLabel";
+
+/* Class = "UILabel"; text = "Orientation:"; ObjectID = "Bwp-zT-4Qp"; */
+"Bwp-zT-4Qp.text" = "Orientation:";
+
+/* Class = "UILabel"; text = "SELECT YOUR ROBOBO BASE:"; ObjectID = "EXy-Hp-Aq7"; */
+"EXy-Hp-Aq7.text" = "SELECT YOUR ROBOBO BASE:";
+
+/* Class = "UILabel"; text = ">"; ObjectID = "GLc-BW-aXr"; */
+"GLc-BW-aXr.text" = ">";
+
+/* Class = "UILabel"; text = "Roll:"; ObjectID = "Kfe-9P-yTF"; */
+"Kfe-9P-yTF.text" = "Roll:";
+
+/* Class = "UILabel"; text = "yawLabel"; ObjectID = "Oru-Jn-Ocd"; */
+"Oru-Jn-Ocd.text" = "yawLabel";
+
+/* Class = "UILabel"; text = "192.168.1.X"; ObjectID = "PMz-c1-4fw"; */
+"PMz-c1-4fw.text" = "192.168.1.X";
+
+/* Class = "UILabel"; text = "yAccelLabel"; ObjectID = "Pi2-gQ-8Ke"; */
+"Pi2-gQ-8Ke.text" = "yAccelLabel";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "TDS-Vg-iSp"; */
+"TDS-Vg-iSp.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "Acceleration:"; ObjectID = "Uab-g0-95y"; */
+"Uab-g0-95y.text" = "Acceleration:";
+
+/* Class = "UILabel"; text = "LANGUAGE:"; ObjectID = "Udi-FA-fiI"; */
+"Udi-FA-fiI.text" = "LANGUAGE:";
+
+/* Class = "UILabel"; text = "rollLabel"; ObjectID = "UqL-CV-77z"; */
+"UqL-CV-77z.text" = "rollLabel";
+
+/* Class = "UILabel"; text = "192.168.1.150"; ObjectID = "VYz-7H-6Sr"; */
+"VYz-7H-6Sr.text" = "192.168.1.150";
+
+/* Class = "UILabel"; text = "xAccelLabel"; ObjectID = "W9I-ny-CQY"; */
+"W9I-ny-CQY.text" = "xAccelLabel";
+
+/* Class = "UILabel"; text = "Z:"; ObjectID = "bVu-E4-jzK"; */
+"bVu-E4-jzK.text" = "Z:";
+
+/* Class = "UILabel"; text = "Yaw:"; ObjectID = "cYH-OV-dtQ"; */
+"cYH-OV-dtQ.text" = "Yaw:";
+
+/* Class = "UILabel"; text = "CONFIGURE"; ObjectID = "fqp-PC-tcu"; */
+"fqp-PC-tcu.text" = "CONFIGURE";
+
+/* Class = "UILabel"; text = "X:"; ObjectID = "iPA-lx-OjW"; */
+"iPA-lx-OjW.text" = "X:";
+
+/* Class = "UILabel"; text = "ABOUT:"; ObjectID = "lys-4S-HdX"; */
+"lys-4S-HdX.text" = "ABOUT:";
+
+/* Class = "UIButton"; normalTitle = "CONFIGURE"; ObjectID = "mJ6-I1-O5X"; */
+"mJ6-I1-O5X.normalTitle" = "CONFIGURE";
+
+/* Class = "UILabel"; text = "DEVICE IP:"; ObjectID = "mMR-OY-WMv"; */
+"mMR-OY-WMv.text" = "DEVICE IP:";
+
+/* Class = "UISegmentedControl"; oQi-Sc-QSr.segmentTitles[0] = "English"; ObjectID = "oQi-Sc-QSr"; */
+"oQi-Sc-QSr.segmentTitles[0]" = "English";
+
+/* Class = "UISegmentedControl"; oQi-Sc-QSr.segmentTitles[1] = "Spanish"; ObjectID = "oQi-Sc-QSr"; */
+"oQi-Sc-QSr.segmentTitles[1]" = "Spanish";
+
+/* Class = "UILabel"; text = "IP:"; ObjectID = "oWA-ET-1sJ"; */
+"oWA-ET-1sJ.text" = "IP:";
+
+/* Class = "UIButton"; normalTitle = "CONNECT"; ObjectID = "odz-ck-Cg8"; */
+"odz-ck-Cg8.normalTitle" = "CONNECT";
+
+/* Class = "UIButton"; normalTitle = "START"; ObjectID = "qAQ-v4-he2"; */
+"qAQ-v4-he2.normalTitle" = "START";
+
+/* Class = "UILabel"; text = "zAccelLabel"; ObjectID = "qbb-Jm-hUe"; */
+"qbb-Jm-hUe.text" = "zAccelLabel";
+
+/* Class = "UILabel"; text = "Pitch:"; ObjectID = "yQq-bp-34G"; */
+"yQq-bp-34G.text" = "Pitch:";
