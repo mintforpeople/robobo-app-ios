@@ -6,7 +6,6 @@
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
 // inspired in https://medium.com/ios-os-x-development/ios-camera-frames-extraction-d2c0f80ed05a
-
 import UIKit
 import AVFoundation
 

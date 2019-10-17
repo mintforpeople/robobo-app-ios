@@ -5,7 +5,6 @@
 //  Created by Lorena Bajo Rebollo on 25/9/19.
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
-
 import Foundation
 import robobo_remote_control_ios
 
@@ -24,7 +23,7 @@ public class UnlockTalkStatusTopic: AStatusTopic {
     private var publisher: ROSPublisher<ROS_std_msgs_msg_Empty>? = nil
     private var unlockTalkNode: ROSNode? = nil
     let queue = DispatchQueue(label: "UnlockTalkStatusTopic", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.unlockTalkNode!
     }
@@ -50,5 +49,3 @@ public class UnlockTalkStatusTopic: AStatusTopic {
         }
     }
 }
-
-

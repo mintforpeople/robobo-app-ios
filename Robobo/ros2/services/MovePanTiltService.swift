@@ -22,7 +22,7 @@ public class MovePanTiltService {
     private var movePanTiltServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_MovePanTilt>? = nil
     let queue = DispatchQueue(label: "MovePanTiltService", qos: .userInteractive)
-
+    
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.movePanTiltServiceNode = ROSRCLObjC.createNode("MovePanTiltService")
@@ -34,7 +34,7 @@ public class MovePanTiltService {
     
     public func start() {
         self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_srv_MovePanTilt.self, "move_pan_tilt", callbackMovePanTiltService) as? ROSService<ROS_robobo_msgs_srv_MovePanTilt>
-    
+        
         queue.async(flags: .barrier) {
             while(ROSRCLObjC.ok()) {
                 ROSRCLObjC.spinOnce(self.getNode())
@@ -63,14 +63,14 @@ func callbackMovePanTiltService(msg: NSObject?, request: NSObject?, response: NS
     var tiltId: Int = Int(req.tiltunlockid.data)
     //Log.i("MOVE-PT", "MovePanMsg: " + (String)tiltParams.get("pos") + " - " + (String)tiltParams.get("speed"))
     var tiltCommand: RemoteCommand = RemoteCommand("MOVETILT-BLOCKING", tiltId, tiltParams)
-
-     if panId > 0 {
+    
+    if panId > 0 {
         Ros2RemoteControlModule.remoteControlModule?.queueCommand(panCommand)
-     }
-     if tiltId > 0 {
+    }
+    if tiltId > 0 {
         Ros2RemoteControlModule.remoteControlModule?.queueCommand(tiltCommand)
-     }
-
+    }
+    
     
     var r = resp.error
     r?.data = 0

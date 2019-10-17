@@ -5,9 +5,7 @@
 //  Created by Lorena Bajo Rebollo on 25/9/19.
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
-
 // libc++abi.dylib: terminating with uncaught exception of type std::__1::system_error: kqueue: Too many open files swift
-
 import Foundation
 import robobo_remote_control_ios
 
@@ -61,7 +59,7 @@ public class StatusNode {
     private var started: Bool = false
     
     let queue = DispatchQueue(label: "StatusNode", qos: .userInteractive)
-
+    
     
     public init(roboboName: String){
         
@@ -84,7 +82,7 @@ public class StatusNode {
         
         self.baseBatteryStatusTopic = Int8StatusTopic(node: self, nodeName: "BaseBatteryStatusTopic", topicName: StatusNode.TOPIC_BATBASE, statusName: StatusNode.STATUS_BATBASE, valueKey: StatusNode.KEY_BATTERY)
         self.baseBatteryStatusTopic!.start()
-
+        
         self.phoneBatteryStatusTopic = Int8StatusTopic(node: self, nodeName: "PhoneBatteryStatusTopic", topicName: StatusNode.TOPIC_PHONEBASE, statusName: StatusNode.STATUS_PHONEBASE, valueKey: StatusNode.KEY_BATTERY)
         self.phoneBatteryStatusTopic!.start()
         
@@ -96,10 +94,10 @@ public class StatusNode {
         
         self.ambientLightStatusTopic = Int32StatusTopic(node: self, nodeName: "AmbientLightStatusTopic", topicName: StatusNode.TOPIC_ALIGHT, statusName: StatusNode.STATUS_ALIGHT, valueKey: "level")
         self.ambientLightStatusTopic!.start()
-       /*
-        self.emotionStatusTopic = StringStatusTopic(node: self, topicName: StatusNode.TOPIC_EMOTION, statusName: StatusNode.STATUS_EMOTION, valueKey: "emotion")
-        self.emotionStatusTopic!.start()
-        */
+        /*
+         self.emotionStatusTopic = StringStatusTopic(node: self, topicName: StatusNode.TOPIC_EMOTION, statusName: StatusNode.STATUS_EMOTION, valueKey: "emotion")
+         self.emotionStatusTopic!.start()
+         */
         self.accelStatusTopic = AccelerationStatusTopic(node: self)
         self.accelStatusTopic!.start()
         
@@ -114,14 +112,14 @@ public class StatusNode {
         
         self.wheelsStatusTopic = WheelsStatusTopic(node: self)
         self.wheelsStatusTopic!.start()
-
-        /*
-        self.ledStatusTopic = LedStatusTopic(node: self)
-        self.ledStatusTopic!.start()
         
-        self.tapStatusTopic = TapStatusTopic(node: self)
-        self.tapStatusTopic!.start()
-        */
+        /*
+         self.ledStatusTopic = LedStatusTopic(node: self)
+         self.ledStatusTopic!.start()
+         
+         self.tapStatusTopic = TapStatusTopic(node: self)
+         self.tapStatusTopic!.start()
+         */
         
         self.flingStatusTopic = FlingStatusTopic(node: self)
         self.flingStatusTopic!.start()
@@ -154,10 +152,10 @@ public class StatusNode {
                 self.ambientLightStatusTopic!.publishStatus(status: status)
                 break
                 /*
-            case StatusNode.STATUS_EMOTION:
-                self.emotionStatusTopic!.publishStatus(status: status)
-                break
- */
+                 case StatusNode.STATUS_EMOTION:
+                 self.emotionStatusTopic!.publishStatus(status: status)
+                 break
+                 */
             case AccelerationStatusTopic.STATUS:
                 self.accelStatusTopic!.publishStatus(status: status)
                 break
@@ -171,12 +169,12 @@ public class StatusNode {
                 self.wheelsStatusTopic!.publishStatus(status: status)
                 break
                 /*
-            case LedStatusTopic.STATUS:
-                self.ledStatusTopic!.publishStatus(status: status)
-                break
-            case TapStatusTopic.STATUS:
-                self.tapStatusTopic!.publishStatus(status: status)
-                break
+                 case LedStatusTopic.STATUS:
+                 self.ledStatusTopic!.publishStatus(status: status)
+                 break
+                 case TapStatusTopic.STATUS:
+                 self.tapStatusTopic!.publishStatus(status: status)
+                 break
                  */
             case FlingStatusTopic.STATUS:
                 self.flingStatusTopic!.publishStatus(status: status)

@@ -32,6 +32,9 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
     var selectedRob: String = ""
     var userExit: Bool = false
     var text :String = ""
+    var ros2CameraModule: Ros2CameraTopicModule!
+    var ros2Module: IRos2RemoteControlModule!
+
 
     func onAccelerationChange() {
         
@@ -159,8 +162,11 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
             module = try manager.getModuleInstance("IRemoteControlModule")
             remote = module as? IRemoteControlModule
             
-            module = try manager.getModuleInstance("RemoteControlModuleWS")
-            proxy = module as? RemoteControlModuleWS
+            //module = try manager.getModuleInstance("RemoteControlModuleWS")
+            //proxy = module as? RemoteControlModuleWS
+            
+            module = try manager.getModuleInstance("IRos2RemoteControlModule")
+            ros2Module = module as? IRos2RemoteControlModule
             
             module = try manager.getModuleInstance("ITouchModule")
             touchModule = module as? ITouchModule
@@ -176,11 +182,14 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
             
             module = try manager.getModuleInstance("IRobInterfaceModule")
             bluetoothRob = module as? BluetoothRobInterfaceModule
+            
+            module = try manager.getModuleInstance("Ros2CameraTopicModule")
+            ros2CameraModule = module as? Ros2CameraTopicModule
         }catch{
             print(error)
         }
         print(self.bluetoothRob.getBtDevices())
-        remote.registerRemoteControlProxy(proxy)
+        //remote.registerRemoteControlProxy(proxy)
         
         speechModule.setLanguage(lang)
         

@@ -21,7 +21,7 @@ public class TalkService {
     private var talkServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_Talk>? = nil
     let queue = DispatchQueue(label: "TalkService", qos: .userInteractive)
-
+    
     
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
@@ -53,7 +53,7 @@ func callbackTalkService(msg: NSObject?, request: NSObject?, response: NSObject?
     
     var command: RemoteCommand = RemoteCommand("TALK", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
-
+    
     var r = resp.error
     r!.data = UInt8(0)
     resp.error = r

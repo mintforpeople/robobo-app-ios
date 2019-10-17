@@ -5,7 +5,6 @@
 //  Created by Lorena Bajo Rebollo on 25/9/19.
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
-
 import Foundation
 import robobo_remote_control_ios
 
@@ -19,11 +18,11 @@ public class IRsStatusTopic: AStatusTopic {
     
     private static var TOPIC: String = "irs"
     public static var STATUS: String = "IRS"
-
+    
     private var publisher: ROSPublisher<ROS_robobo_msgs_msg_IRs>? = nil
     private var irsNode: ROSNode? = nil
     let queue = DispatchQueue(label: "IRsStatusTopic", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.irsNode!
     }
@@ -56,7 +55,7 @@ public class IRsStatusTopic: AStatusTopic {
                     
                     if BackC != "" && BackR != "" && BackL != "" && FrontC != ""
                         && FrontR != "" && FrontRR != "" && FrontL != "" && FrontLL != "" {
-                       
+                        
                         msg.backc.range = Float(BackC)!
                         msg.backc.min_range = 0
                         msg.backc.max_range = 1.0 //1.0f revisar
@@ -113,4 +112,3 @@ public class IRsStatusTopic: AStatusTopic {
         }
     }
 }
-

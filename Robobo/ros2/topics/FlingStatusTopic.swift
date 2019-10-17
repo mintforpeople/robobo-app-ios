@@ -22,7 +22,7 @@ public class FlingStatusTopic: AStatusTopic {
     private var publisher: ROSPublisher<ROS_robobo_msgs_msg_Fling>? = nil
     private var flingNode: ROSNode? = nil
     let queue = DispatchQueue(label: "FlingStatusTopic", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.flingNode!
     }

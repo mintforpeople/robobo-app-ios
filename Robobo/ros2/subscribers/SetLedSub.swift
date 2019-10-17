@@ -16,7 +16,7 @@ public class SetLedSub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_SetLedTopic>? = nil
     private var setLedSubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "SetLedSub", qos: .userInteractive)
-
+    
     
     public func getNode() -> ROSNode{
         return self.setLedSubNode!
@@ -48,5 +48,5 @@ func callbackSetLedSub(message: NSObject?) -> Void {
     parameters["color"] = String(msg.color.data)
     var command: RemoteCommand = RemoteCommand("SET-LEDCOLOR", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
-
+    
 }

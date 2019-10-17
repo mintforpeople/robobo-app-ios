@@ -17,7 +17,7 @@ public class MovePanTiltSub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_MovePanTiltTopic>? = nil
     private var movePanTiltSubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "MovePanTiltSub", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.movePanTiltSubNode!
     }
@@ -52,21 +52,21 @@ func callbackMovePanSub(message: NSObject?) -> Void {
     panParams["speed"] = String(msg.panspeed.data)
     var panId: Int = Int(msg.panunlockid.data)
     panParams["blockid"] = String(panId)
-     //print("MOVE-PT, MovePanMsg: " + String(panParams["pos"]!) + " - " + String(panParams["speed"]!))
+    //print("MOVE-PT, MovePanMsg: " + String(panParams["pos"]!) + " - " + String(panParams["speed"]!))
     var panCommand: RemoteCommand = RemoteCommand("MOVEPAN-BLOCKING", panId, panParams)
-     
+    
     var tiltParams: [String: String] = [String: String]()
     tiltParams["pos"] = String(msg.tiltpos.data)
     tiltParams["speed"] = String(msg.tiltspeed.data)
     var tiltId: Int = Int(msg.tiltunlockid.data)
-     //Log.i("MOVE-PT", "MovePanMsg: " + String(tiltParams["pos"]) + " - " +String(tiltParams["speed"]))
+    //Log.i("MOVE-PT", "MovePanMsg: " + String(tiltParams["pos"]) + " - " +String(tiltParams["speed"]))
     var tiltCommand: RemoteCommand = RemoteCommand("MOVETILT-BLOCKING", tiltId, tiltParams)
     
     if panId > 0 {
         Ros2RemoteControlModule.remoteControlModule?.queueCommand(panCommand)
     }
-     if tiltId > 0 {
+    if tiltId > 0 {
         Ros2RemoteControlModule.remoteControlModule?.queueCommand(tiltCommand)
-     }
+    }
     
 }

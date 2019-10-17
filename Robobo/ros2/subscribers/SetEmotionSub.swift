@@ -16,7 +16,7 @@ public class SetEmotionSub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_SetEmotionTopic>? = nil
     private var setEmotionSubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "SetEmotionSub", qos: .userInteractive)
-
+    
     
     public func getNode() -> ROSNode{
         return self.setEmotionSubNode!
@@ -47,5 +47,5 @@ func callbackSetEmotionSub(message: NSObject?) -> Void {
     parameters["emotion"] = String(msg.emotion.data)
     var command: RemoteCommand = RemoteCommand("SET-EMOTION", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
-
+    
 }

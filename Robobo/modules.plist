@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>9.Ros2CameraTopicModule</key>
-	<string>Robobo.Ros2CameraTopicModule</string>
+	<string>RoboboDeveloper.Ros2CameraTopicModule</string>
 	<key>8.IRemoteRobModule</key>
 	<string>robobo_rob_interface_module_pod.RemoteRobModuleImplementation</string>
 	<key>7.IRobInterfaceModule</key>

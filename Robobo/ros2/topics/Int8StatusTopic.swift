@@ -20,7 +20,7 @@ public class Int8StatusTopic: AStatusTopic {
     private var publisher: ROSPublisher<ROS_std_msgs_msg_Int8>? = nil
     private var int8Node: ROSNode? = nil
     let queue = DispatchQueue(label: "Int8StatusTopic", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.int8Node!
     }

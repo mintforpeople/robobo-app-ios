@@ -21,7 +21,7 @@ public class SetLedService {
     private var setLedServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_SetLed>? = nil
     let queue = DispatchQueue(label: "SetLedService", qos: .userInteractive)
-
+    
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.setLedServiceNode = ROSRCLObjC.createNode("SetLedService")
@@ -50,12 +50,12 @@ func callbackSetLedService(msg: NSObject?, request: NSObject?, response: NSObjec
     var parameters: [String: String] = [String: String]()
     parameters["led"] = String(req.id.data)
     parameters["color"] = String(req.color.data)
-
+    
     var command: RemoteCommand = RemoteCommand("SET-LEDCOLOR", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
-
+    
     var r = resp.error
     r!.data = UInt8(0)
     resp.error = r
-  
+    
 }

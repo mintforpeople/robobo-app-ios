@@ -16,7 +16,7 @@ public class TalkSub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_TalkTopic>? = nil
     private var talkSubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "TalkSub", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.talkSubNode!
     }

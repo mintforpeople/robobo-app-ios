@@ -5,7 +5,6 @@
 //  Created by Lorena Bajo Rebollo on 25/9/19.
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
-
 import Foundation
 import robobo_remote_control_ios
 
@@ -20,7 +19,7 @@ public class Int32StatusTopic: AStatusTopic {
     private var publisher: ROSPublisher<ROS_std_msgs_msg_Int32>? = nil
     private var int32Node: ROSNode? = nil
     let queue = DispatchQueue(label: "Int32StatusTopic", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.int32Node!
     }
@@ -53,5 +52,3 @@ public class Int32StatusTopic: AStatusTopic {
     }
     
 }
-
-

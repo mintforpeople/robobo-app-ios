@@ -21,7 +21,7 @@ public class SetEmotionService {
     private var setEmotionServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_SetEmotion>? = nil
     let queue = DispatchQueue(label: "SetEmotionService", qos: .userInteractive)
-
+    
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.setEmotionServiceNode = ROSRCLObjC.createNode("SetEmotionService")
@@ -50,12 +50,12 @@ func callbackSetEmotionService(msg: NSObject?, request: NSObject?, response: NSO
     
     var parameters: [String: String] = [String: String]()
     parameters["emotion"] = String(req.emotion.data)
-   
+    
     var command: RemoteCommand = RemoteCommand("SET-EMOTION", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
-
+    
     var r = resp.error
     r!.data = UInt8(0)
     resp.error = r
-  
+    
 }

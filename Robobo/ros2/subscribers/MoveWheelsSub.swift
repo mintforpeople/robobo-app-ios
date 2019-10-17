@@ -51,5 +51,5 @@ func callbackMoveWheelsSub(message: NSObject?) -> Void {
     var id: Int =  Int(msg.unlockid.data)
     parameters["blockid"] = String(id)
     var command: RemoteCommand = RemoteCommand("MOVE-BLOCKING", id, parameters)
-    Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)    
+    Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
 }

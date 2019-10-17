@@ -5,7 +5,6 @@
 //  Created by Lorena Bajo Rebollo on 25/9/19.
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
-
 import Foundation
 import robobo_remote_control_ios
 
@@ -23,7 +22,7 @@ public class OrientationStatusTopic: AStatusTopic {
     private var publisher: ROSPublisher<ROS_geometry_msgs_msg_Quaternion>? = nil
     private var orientationNode: ROSNode? = nil
     let queue = DispatchQueue(label: "OrientationStatusTopic", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.orientationNode!
     }

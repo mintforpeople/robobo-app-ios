@@ -5,7 +5,6 @@
 //  Created by Lorena Bajo Rebollo on 3/10/19.
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
-
 import Foundation
 import UIKit
 import robobo_framework_ios_pod
@@ -31,15 +30,15 @@ public class CameraTopicRos2: FrameExtractorDelegate {
     private var numFrames: Int = 0
     
     var node: ROSNode
-        
+    
     var frameExtractor: FrameExtractor!
     
     private var robobo: RoboboManager
     
     private var imageCompressedPublisher: ROSPublisher<ROS_sensor_msgs_msg_CompressedImage>? = nil
-
+    
     private var cameraInfoPublisher: ROSPublisher<ROS_sensor_msgs_msg_CameraInfo>? = nil
-
+    
     public init(_ robobo: RoboboManager, ros2RemoteControlModule: Ros2RemoteControlModule){
         print("init camera")
         self.robobo = robobo
@@ -47,7 +46,7 @@ public class CameraTopicRos2: FrameExtractorDelegate {
         if ros2RemoteControlModule == nil {
             print("The parametemer ros2RemoteControlModule is requierd")
         }
-
+        
         self.roboName = ros2RemoteControlModule.getRoboboName()
         
         if !ROSRCLObjC.ok() {
@@ -60,7 +59,7 @@ public class CameraTopicRos2: FrameExtractorDelegate {
         frameExtractor.delegate = self
         
         onStart()
-                
+        
     }
     
     public func getNode() -> ROSNode{
@@ -68,14 +67,14 @@ public class CameraTopicRos2: FrameExtractorDelegate {
     }
     
     public func onStart() {
-    
+        
         self.imageCompressedPublisher = (getNode().createPublisher(ROS_sensor_msgs_msg_CompressedImage.self,CameraTopicRos2.TOPIC_IMAGE_COMPRESSED) as!ROSPublisher<ROS_sensor_msgs_msg_CompressedImage>)
         
         self.cameraInfoPublisher = (getNode().createPublisher(ROS_sensor_msgs_msg_CameraInfo.self,CameraTopicRos2.TOPIC_CAMERA_INFO) as!ROSPublisher<ROS_sensor_msgs_msg_CameraInfo>)
         
         print("onstart")
     }
-   
+    
     public func publishCompressedImageMessage(compressedImage: Data, format: String, width: CGFloat, height: CGFloat){
         
         if(self.imageCompressedPublisher==nil){
@@ -97,16 +96,16 @@ public class CameraTopicRos2: FrameExtractorDelegate {
         messageCompressedImage.format = format as NSString
         messageCompressedImage.header.stamp = currentTime
         messageCompressedImage.header.frame_id = frameId as NSString
-
+        
         var array = NSMutableArray.init(array: compressedImage.toByteArray())
         messageCompressedImage.data = array
-
+        
         //publish the frame
         if ROSRCLObjC.ok() && compressedImage.toByteArray().count > 0 {
             let queueImg = DispatchQueue(label: "pubImageCompressed", qos: .userInteractive)
-                self.imageCompressedPublisher!.publish(messageCompressedImage)
-                queueImg.async(flags: .barrier) {
-                    ROSRCLObjC.spinOnce(self.node)
+            self.imageCompressedPublisher!.publish(messageCompressedImage)
+            queueImg.async(flags: .barrier) {
+                ROSRCLObjC.spinOnce(self.node)
             }
         }
         
@@ -116,15 +115,15 @@ public class CameraTopicRos2: FrameExtractorDelegate {
         cameraInfo.header.frame_id = frameId as NSString
         cameraInfo.width = UInt32(width)
         cameraInfo.height = UInt32(height)
- 
+        
         //publish camera info
         if ROSRCLObjC.ok() {
             let queueCam = DispatchQueue(label: "pubCameraInfo", qos: .userInteractive)
-                self.cameraInfoPublisher!.publish(cameraInfo)
-                queueCam.async(flags: .barrier) {
+            self.cameraInfoPublisher!.publish(cameraInfo)
+            queueCam.async(flags: .barrier) {
                 ROSRCLObjC.spinOnce(self.node)
             }
         }
-
+        
     }
 }

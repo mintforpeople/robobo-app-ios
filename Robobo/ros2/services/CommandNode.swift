@@ -11,7 +11,7 @@ import robobo_remote_control_ios
 import robobo_framework_ios_pod
 
 /**
- * The main functionality of CommandNode is to instantiate the services nodes 
+ * The main functionality of CommandNode is to instantiate the services nodes
  */
 
 public class CommandNode {
@@ -30,7 +30,7 @@ public class CommandNode {
     private var setLedService: SetLedService? = nil
     private var talkService: TalkService? = nil
     let queue = DispatchQueue(label: "CommandNode", qos: .userInteractive)
-
+    
     
     public init(remoteControlModule: IRemoteControlModule, roboboName: String){
         
@@ -57,50 +57,50 @@ public class CommandNode {
     public func onStart() {
         
         DispatchQueue.global(qos: .default).async {
-        self.moveWheelsService = MoveWheelsService(commandNode: self)
-        self.moveWheelsService!.start()
+            self.moveWheelsService = MoveWheelsService(commandNode: self)
+            self.moveWheelsService!.start()
         }
         
         DispatchQueue.global(qos: .default).async {
-        self.movePanTiltService = MovePanTiltService(commandNode: self)
-        self.movePanTiltService!.start()
+            self.movePanTiltService = MovePanTiltService(commandNode: self)
+            self.movePanTiltService!.start()
         }
         
         DispatchQueue.global(qos: .default).async {
-        self.playSoundService = PlaySoundService(commandNode: self)
-        self.playSoundService!.start()
+            self.playSoundService = PlaySoundService(commandNode: self)
+            self.playSoundService!.start()
         }
         
         DispatchQueue.global(qos: .default).async {
-        self.resetWheelsService = ResetWheelsService(commandNode: self)
-        self.resetWheelsService!.start()
+            self.resetWheelsService = ResetWheelsService(commandNode: self)
+            self.resetWheelsService!.start()
         }
         
         DispatchQueue.global(qos: .default).async {
-        self.setCameraService = SetCameraService(commandNode: self)
-        self.setCameraService!.start()
+            self.setCameraService = SetCameraService(commandNode: self)
+            self.setCameraService!.start()
         }
         
         DispatchQueue.global(qos: .default).async {
-        self.setEmotionService = SetEmotionService(commandNode: self)
-        self.setEmotionService!.start()
+            self.setEmotionService = SetEmotionService(commandNode: self)
+            self.setEmotionService!.start()
         }
         
         DispatchQueue.global(qos: .default).async {
-        self.setFrequencyService = SetFrequencyService(commandNode: self)
-        self.setFrequencyService!.start()
+            self.setFrequencyService = SetFrequencyService(commandNode: self)
+            self.setFrequencyService!.start()
         }
         
         DispatchQueue.global(qos: .default).async {
-        self.setLedService = SetLedService(commandNode: self)
-        self.setLedService!.start()
+            self.setLedService = SetLedService(commandNode: self)
+            self.setLedService!.start()
         }
         
         DispatchQueue.global(qos: .default).async {
-        self.talkService = TalkService(commandNode: self)
-        self.talkService!.start()
+            self.talkService = TalkService(commandNode: self)
+            self.talkService!.start()
         }
- 
+        
     }
     
 }

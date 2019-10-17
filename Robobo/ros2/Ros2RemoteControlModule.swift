@@ -5,7 +5,6 @@
 //  Created by Lorena Bajo Rebollo on 25/9/19.
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
-
 import Foundation
 import robobo_framework_ios_pod
 import robobo_remote_control_ios
@@ -31,7 +30,7 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     
     public func startup(_ manager: RoboboManager) throws{
         manager.log("Starting ROS2 Remote Control Module", .DEBUG)
-
+        
         var module = try manager.getModuleInstance("IRemoteControlModule")
         Ros2RemoteControlModule.remoteControlModule = module as? IRemoteControlModule
         
@@ -42,7 +41,7 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
         }
         
         ROSRCLObjC.rclInit()
-
+        
         initRoboboRos2Nodes(remoteControlModule: Ros2RemoteControlModule.remoteControlModule! , roboboName: roboName)
         
         Ros2RemoteControlModule.remoteControlModule?.registerRemoteControlProxy(self)
@@ -50,7 +49,7 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     }
     
     public func shutdown(){
-     
+        
     }
     
     public func getModuleInfo() -> String {
@@ -62,8 +61,8 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     }
     
     public func notifyStatus(_ status: Status) {
-       // if statusNode!= nil {
-//            statusNode!.publishStatusMessage(status: status)
+        // if statusNode!= nil {
+        //            statusNode!.publishStatusMessage(status: status)
         //}
     }
     
@@ -88,11 +87,10 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
         
         self.statusNode = StatusNode(roboboName: roboboName)
         self.statusNode!.onStart()
-
+        
         self.commandNode = CommandNode(remoteControlModule: remoteControlModule, roboboName: roboboName)
         self.commandNode!.onStart()
- 
+        
     }
     
 }
-

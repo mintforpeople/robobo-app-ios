@@ -5,7 +5,6 @@
 //  Created by Lorena Bajo Rebollo on 25/9/19.
 //  Copyright © 2019 MANUFACTURA DE INGENIOS TECNOLOGICOS SL. All rights reserved.
 //
-
 import Foundation
 import robobo_remote_control_ios
 
@@ -24,7 +23,7 @@ public class LedStatusTopic: AStatusTopic {
     private var publisher: ROSPublisher<ROS_robobo_msgs_msg_Led>? = nil
     private var ledNode: ROSNode? = nil
     let queue = DispatchQueue(label: "LedStatusTopic", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.ledNode!
     }
@@ -66,4 +65,3 @@ public class LedStatusTopic: AStatusTopic {
         }
     }
 }
-

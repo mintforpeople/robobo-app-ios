@@ -20,7 +20,7 @@ public class Int16StatusTopic: AStatusTopic {
     private var publisher: ROSPublisher<ROS_std_msgs_msg_Int16>? = nil
     private var int16Node: ROSNode? = nil
     let queue = DispatchQueue(label: "Int16StatusTopic", qos: .userInteractive)
-
+    
     public func getNode() -> ROSNode{
         return self.int16Node!
     }

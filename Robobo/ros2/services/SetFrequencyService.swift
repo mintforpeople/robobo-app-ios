@@ -21,7 +21,7 @@ public class SetFrequencyService {
     private var setFrequencyServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_SetSensorFrequency>? = nil
     let queue = DispatchQueue(label: "SetFrequencyService", qos: .userInteractive)
-
+    
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.setFrequencyServiceNode = ROSRCLObjC.createNode("SetFrequencyService")
@@ -72,7 +72,7 @@ func callbackSetFrequencyService(msg: NSObject?, request: NSObject?, response: N
     
     var command: RemoteCommand = RemoteCommand("SET-SENSOR-FREQUENCY", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
-
+    
     var r = resp.error
     r!.data = UInt8(0)
     resp.error = r

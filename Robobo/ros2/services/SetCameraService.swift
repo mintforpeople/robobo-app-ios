@@ -22,8 +22,8 @@ public class SetCameraService {
     private var service: ROSService<ROS_robobo_msgs_srv_SetCamera>? = nil
     let queue = DispatchQueue(label: "SetCameraService", qos: .userInteractive)
     public static var camera: String = "front"
-
-
+    
+    
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.setCameraServiceNode = ROSRCLObjC.createNode("SetCameraService")
@@ -53,17 +53,17 @@ func callbackSetCameraService(msg: NSObject?, request: NSObject?, response: NSOb
     //var camera: String = "front"
     if req.camera.data == 1 {
         SetCameraService.camera
-         = "back"
+            = "back"
     }
     var parameters: [String: String] = [String: String]()
     parameters["camera"] = SetCameraService.camera
-
+    
     var command: RemoteCommand = RemoteCommand("SET-CAMERA", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
     
     var r = resp.error
     r!.data = UInt8(0)
     resp.error = r
- 
+    
     
 }

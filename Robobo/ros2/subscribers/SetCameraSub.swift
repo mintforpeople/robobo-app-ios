@@ -17,7 +17,7 @@ public class SetCameraSub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_SetCameraTopic>? = nil
     private var setCameraSubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "SetCameraSub", qos: .userInteractive)
-
+    
     
     public func getNode() -> ROSNode{
         return self.setCameraSubNode!
@@ -52,5 +52,5 @@ func callbackSetCameraSub(message: NSObject?) -> Void {
     parameters["camera"] = camera
     var command: RemoteCommand = RemoteCommand("SET-CAMERA", 0, parameters)
     Ros2RemoteControlModule.remoteControlModule?.queueCommand(command)
-
+    
 }
