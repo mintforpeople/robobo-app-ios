@@ -6,7 +6,7 @@ This app currently uses the websocket module for communications, but in the futu
 
 A new branch has been generated with the source code corresponding to the new ros2-remote-control module for iOS.
 
-# ros2 module
+### ros2 module
 
 This module is composed by 3 directories:
 
@@ -49,7 +49,7 @@ Some examples to test from ROS2... you have to run the next commands from termin
 
   `ros2 topic list`
 
-# ros2 camera module
+### ros2 camera module
 
 ## Acknowledgement
 <!-- 
