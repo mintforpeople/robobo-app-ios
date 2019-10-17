@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gvm-SJ-hSw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gvm-SJ-hSw">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1169,11 +1169,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="green-pressed_espacio.png" width="568" height="181"/>
-        <image name="green_unpressed_458.png" width="568" height="183"/>
-        <image name="logo_ios_458.png" width="884" height="231"/>
+        <image name="green-pressed_espacio.png" width="89.292579650878906" height="28.45414924621582"/>
+        <image name="green_unpressed_458.png" width="89.292579650878906" height="28.768558502197266"/>
+        <image name="logo_ios_458.png" width="139" height="36.314411163330078"/>
         <image name="normal.png" width="270" height="480"/>
-        <image name="orange_Unpressed_458.png" width="568" height="183"/>
-        <image name="orangre_pressed_espacio.png" width="568" height="181"/>
+        <image name="orange_Unpressed_458.png" width="89.292579650878906" height="28.768558502197266"/>
+        <image name="orangre_pressed_espacio.png" width="89.292579650878906" height="28.45414924621582"/>
     </resources>
 </document>

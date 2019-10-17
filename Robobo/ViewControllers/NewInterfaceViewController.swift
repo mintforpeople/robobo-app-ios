@@ -158,6 +158,13 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let addr = getWiFiAddress() {
+            print(addr)
+            ipLabel.text = addr
+        } else {
+            print("No WiFi address")
+        }
+        
         selectedRob = self.text
         manager = RoboboManager()
         
@@ -227,6 +234,7 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
         print("Trying to connect to: " + selectedRob)
         
         DispatchQueue.main.async {
+            
             self.bluetoothRob.connectToDevice(self.selectedRob)
             
         }
