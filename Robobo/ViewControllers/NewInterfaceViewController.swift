@@ -15,9 +15,21 @@ import robobo_sensing_ios
 import robobo_remote_control_ws_ios
 import robobo_rob_interface_module_pod
 
-class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobDelegate, IAccelerationDelegate, IOrientationDelegate{
+class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobDelegate, IAccelerationDelegate, IOrientationDelegate, FrameExtractorDelegate{
+    func captured(image: UIImage) {
+        print("ey")
+        DispatchQueue.main.async {
+            self.imageView.image = image
+        }
+        guard let data = image.pngData() else { return }
+        
+        if (ros2CameraModule.cameraTopicRos2?.isStarted())!{
+            ros2CameraModule.cameraTopicRos2?.publishCompressedImageMessage(compressedImage: data, format: "PNG", width: image.size.width, height: image.size.height) //era JPEG
+        }
+    }
     
     
+  
     var manager : RoboboManager!
     
     var emotionModule:ImageViewEmotionModule!
@@ -34,6 +46,9 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
     var text :String = ""
     var ros2CameraModule: Ros2CameraTopicModule!
     var ros2Module: IRos2RemoteControlModule!
+    
+    var frameExtractor: FrameExtractor!
+
 
 
     func onAccelerationChange() {
@@ -119,6 +134,8 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
     @IBOutlet var rollLabel: UILabel!
     @IBOutlet var mainView: UIView!
     @IBOutlet var faceView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
+
     
     @IBAction func backSwipe(_ sender: Any) {
         userExit = true
@@ -216,6 +233,11 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
         
         accelModule.delegateManager.suscribe(self)
         oriModule.delegateManager.suscribe(self)
+        
+        if (ros2CameraModule.cameraTopicRos2?.isStarted())!{
+            frameExtractor = FrameExtractor()
+            frameExtractor.delegate = self
+        }
 
         // Do any additional setup after loading the view.
     }

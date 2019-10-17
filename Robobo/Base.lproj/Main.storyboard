@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gvm-SJ-hSw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gvm-SJ-hSw">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -266,28 +266,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nll-ez-09T" userLabel="cameraContainer" customClass="RoboboWidgetContainer" customModule="Robobo" customModuleProvider="target">
                                         <rect key="frame" x="212" y="40" width="182" height="323"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vps-35-osw" customClass="CameraView" customModule="Robobo" customModuleProvider="target">
-                                                <rect key="frame" x="10" y="10" width="162" height="303"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" startsMediaSession="YES"/>
-                                                </accessibility>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtH-bG-Yqj">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="323"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.2797962725" green="0.72457742690000004" blue="0.99909049270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="vps-35-osw" firstAttribute="centerX" secondItem="nll-ez-09T" secondAttribute="centerX" id="1co-0t-BMK"/>
-                                            <constraint firstAttribute="trailing" secondItem="vps-35-osw" secondAttribute="trailing" constant="10" id="FSv-Pd-zDe"/>
-                                            <constraint firstItem="vps-35-osw" firstAttribute="top" secondItem="nll-ez-09T" secondAttribute="top" constant="10" id="I8I-7N-5oN"/>
-                                            <constraint firstItem="vps-35-osw" firstAttribute="leading" secondItem="nll-ez-09T" secondAttribute="leading" constant="10" id="K9o-hZ-1sp"/>
-                                            <constraint firstItem="vps-35-osw" firstAttribute="centerY" secondItem="nll-ez-09T" secondAttribute="centerY" id="oRR-0R-hAQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="vps-35-osw" secondAttribute="bottom" constant="10" id="qQo-9y-a5T"/>
-                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -528,6 +512,7 @@
                     <navigationItem key="navigationItem" id="uIw-g4-r2l"/>
                     <connections>
                         <outlet property="faceView" destination="3K6-tU-Qdh" id="c5i-0Q-p8T"/>
+                        <outlet property="imageView" destination="xtH-bG-Yqj" id="Uqi-Zv-voY"/>
                         <outlet property="ipLabel" destination="PMz-c1-4fw" id="C9s-Wd-cJ7"/>
                         <outlet property="mainView" destination="pl6-DL-pjw" id="86O-xZ-ANt"/>
                         <outlet property="pitchLabel" destination="9Aa-g4-LoH" id="1BS-dv-yhw"/>
@@ -548,7 +533,7 @@
                     </connections>
                 </screenEdgePanGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1624.8" y="682.75862068965523"/>
+            <point key="canvasLocation" x="1624.6376811594205" y="682.33695652173924"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Sa-Te-LUJ">
@@ -1084,7 +1069,7 @@
                                 <rect key="frame" x="0.0" y="642" width="414" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAQ-v4-he2" customClass="ImageButton" customModule="Robobo" customModuleProvider="target">
-                                        <rect key="frame" x="148" y="18.666666666666629" width="89.333333333333314" height="57"/>
+                                        <rect key="frame" x="148" y="18.666666666666629" width="89" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="RU6-8y-Rko"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="mAg-aD-J8J"/>
@@ -1184,11 +1169,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="green-pressed_espacio.png" width="89.292579650878906" height="28.45414924621582"/>
-        <image name="green_unpressed_458.png" width="89.292579650878906" height="28.768558502197266"/>
-        <image name="logo_ios_458.png" width="139" height="36.314411163330078"/>
+        <image name="green-pressed_espacio.png" width="568" height="181"/>
+        <image name="green_unpressed_458.png" width="568" height="183"/>
+        <image name="logo_ios_458.png" width="884" height="231"/>
         <image name="normal.png" width="270" height="480"/>
-        <image name="orange_Unpressed_458.png" width="89.292579650878906" height="28.768558502197266"/>
-        <image name="orangre_pressed_espacio.png" width="89.292579650878906" height="28.45414924621582"/>
+        <image name="orange_Unpressed_458.png" width="568" height="183"/>
+        <image name="orangre_pressed_espacio.png" width="568" height="181"/>
     </resources>
 </document>

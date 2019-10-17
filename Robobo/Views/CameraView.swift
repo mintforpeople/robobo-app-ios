@@ -6,7 +6,7 @@ import AVFoundation
 import UIKit
 
 final class CameraView: UIView {
-    
+
     private lazy var videoDataOutput: AVCaptureVideoDataOutput = {
         let v = AVCaptureVideoDataOutput()
         v.alwaysDiscardsLateVideoFrames = true

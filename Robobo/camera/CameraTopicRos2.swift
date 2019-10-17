@@ -10,13 +10,19 @@ import UIKit
 import robobo_framework_ios_pod
 import robobo_remote_control_ios
 
-public class CameraTopicRos2: FrameExtractorDelegate {
-    
+public class CameraTopicRos2 {
+    /*
     func captured(image: UIImage) {
-        guard let data = image.pngData() else { print("return") ;return }
+        
+        DispatchQueue.main.async {
+            //imageView.image = image
+        }
+        
+        guard let data = image.pngData() else { return }
         self.publishCompressedImageMessage(compressedImage: data, format: "PNG", width: image.size.width, height: image.size.height) //era JPEG
+       
     }
-    
+    */
     private static var TAG: String = "CameraTopicRos2"
     
     private static var NAME_NODE_ROB_CAMERA: String = "camera"
@@ -39,8 +45,12 @@ public class CameraTopicRos2: FrameExtractorDelegate {
     
     private var cameraInfoPublisher: ROSPublisher<ROS_sensor_msgs_msg_CameraInfo>? = nil
     
+    private var started: Bool = false
+    
     public init(_ robobo: RoboboManager, ros2RemoteControlModule: Ros2RemoteControlModule){
-        print("init camera")
+        
+        print("Init camera...")
+        
         self.robobo = robobo
         
         if ros2RemoteControlModule == nil {
@@ -55,11 +65,17 @@ public class CameraTopicRos2: FrameExtractorDelegate {
         
         self.node = ROSRCLObjC.createNode("camera")
         
-        frameExtractor = FrameExtractor()
-        frameExtractor.delegate = self
+        //frameExtractor = FrameExtractor()
+        //frameExtractor.delegate = self
         
         onStart()
         
+        started = true
+        
+    }
+    
+    public func isStarted() -> Bool{
+        return started
     }
     
     public func getNode() -> ROSNode{
@@ -72,7 +88,6 @@ public class CameraTopicRos2: FrameExtractorDelegate {
         
         self.cameraInfoPublisher = (getNode().createPublisher(ROS_sensor_msgs_msg_CameraInfo.self,CameraTopicRos2.TOPIC_CAMERA_INFO) as!ROSPublisher<ROS_sensor_msgs_msg_CameraInfo>)
         
-        print("onstart")
     }
     
     public func publishCompressedImageMessage(compressedImage: Data, format: String, width: CGFloat, height: CGFloat){
