@@ -51,6 +51,23 @@ Some examples to test from ROS2... you have to run the next commands from termin
 
 ### ros2 camera module
 
+This module is composed by:
+
+* `CameraTopicRos2:`
+
+     This class in charge of managing the ROS2 camera topic of Robobo. It receives camera frames from the Robobo framework as a ICameraLister, compresses each frame using a ROS2 compression format, and publishes the frame in a camera topic.
+
+* `Ros2CameraTopicModule:`
+
+     Camera topic module, it creates a ROS2 camera topic and sends images captured with the camera module.
+
+
+To test this module there are two options:
+* Use ROS2 and create a node subscribed to the topics of `CameraTopicRos2` or in the terminal:
+     `ros2 topic echo /robot/camera/image/compressed`
+* Use the [ros1_bridge](https://github.com/ros2/ros1_bridge), and create a ROS node subscribed to the topic of `CameraTopicRos2` or launch rviz from ROS.
+
+
 ## Acknowledgement
 <!-- 
     ROSIN acknowledgement from the ROSIN press kit
