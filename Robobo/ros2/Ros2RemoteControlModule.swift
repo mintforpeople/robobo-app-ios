@@ -62,7 +62,7 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     
     public func notifyStatus(_ status: Status) {
         // if statusNode!= nil {
-        //            statusNode!.publishStatusMessage(status: status)
+        statusNode!.publishStatusMessage(status: status)
         //}
     }
     
