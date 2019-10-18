@@ -648,10 +648,11 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="white" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHB-qJ-uLt" userLabel="AboutEs">
                                         <rect key="frame" x="15" y="46" width="344" height="364"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.7918258789" green="0.93156526269999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Licencias:">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <font key="NSOriginalFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -659,7 +660,7 @@
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
@@ -668,14 +669,14 @@
                                                 <string key="content"> Esta aplicación utiliza librerias de software bajo las siguientes licencias: 
 - Apache License 2.0 - MIT License  </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="Copyright:">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <font key="NSOriginalFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -683,21 +684,21 @@
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" © 2019 - MINT Manufactura de Ingenios Tecnológicos S.L. ">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="www.mintforpeople.com">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
                                                     <url key="NSLink" string="http://www.mintforpeople.com"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -705,14 +706,29 @@
                                             </fragment>
                                             <fragment content="  ">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Política de Privacidad:">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <font key="NSOriginalFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="  https://www.theroboboproject.com/politica-privacidad-robobo-ios/  ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="Contacto: ">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <font key="NSOriginalFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -720,21 +736,21 @@
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="info@mintforpeople.com">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.77608627080000003" green="0.91304796929999998" blue="0.98012238740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
                                                     <url key="NSLink" string="http://info@mintforpeople.com"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -742,10 +758,12 @@
                                             </fragment>
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="white" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGe-x0-Brv" userLabel="AboutEn">
                                         <rect key="frame" x="15" y="46" width="344" height="364"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.7918258789" green="0.93156526269999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Licenses">
                                                 <attributes>
@@ -815,6 +833,21 @@
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
+                                            <fragment content="Privacy Policy:">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <font key="NSOriginalFont" size="15" name=".AppleSystemUIFontEmphasized"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="  www.theroboboproject.com/en/robobo-ios-privacy-policy/  ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
                                             <fragment content="Contact: ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.79182587886676814" green="0.93156526270364004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -847,6 +880,7 @@
                                             </fragment>
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lys-4S-HdX">
                                         <rect key="frame" x="20" y="20" width="54" height="18"/>
