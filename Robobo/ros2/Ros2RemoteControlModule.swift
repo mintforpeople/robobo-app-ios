@@ -43,13 +43,20 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
         ROSRCLObjC.rclInit()
         
         initRoboboRos2Nodes(remoteControlModule: Ros2RemoteControlModule.remoteControlModule! , roboboName: roboName)
-        
+    
         Ros2RemoteControlModule.remoteControlModule?.registerRemoteControlProxy(self)
         
     }
     
     public func shutdown(){
-        
+        self.getCommandNode().stopThreads()
+        // HAY QUE ESPERAR UN POCO PARA HACER EL CLEANUP
+        //sleep(1)
+        if (self.getCommandNode().isAllCancelled){
+            ROSRCLObjC.cleanup()
+            ROSRCLObjC.nativeShutdown()
+            print("SHUTDOWN")
+        }
     }
     
     public func getModuleInfo() -> String {

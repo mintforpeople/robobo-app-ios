@@ -21,8 +21,9 @@ public class MoveWheelsService {
     private var commandNode: CommandNode
     private var moveWheelsServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_MoveWheels>? = nil
-    let queue = DispatchQueue(label: "MoveWheelsService", qos: .userInteractive)
-    
+    public let queue = DispatchQueue(label: "MoveWheelsService", qos: .userInteractive)
+    public var stopped: Bool = false
+    public var workItem: DispatchWorkItem?
     
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
@@ -33,16 +34,28 @@ public class MoveWheelsService {
         return self.moveWheelsServiceNode
     }
     
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
+    }
+    
     public func start() {
         self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_aux_srv_MoveWheels.self, "move_wheels", callbackMoveWheelsService) as? ROSService<ROS_robobo_msgs_srv_MoveWheels>
         
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
         }
+       
+        if (!self.stopped){
+            queue.async(execute: workItem!)
+        }
+      
     }
+    
 }
+
 
 func callbackMoveWheelsService(msg: NSObject?, request: NSObject?, response: NSObject?) -> Void {
     

@@ -21,7 +21,9 @@ public class SetEmotionService {
     private var setEmotionServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_SetEmotion>? = nil
     let queue = DispatchQueue(label: "SetEmotionService", qos: .userInteractive)
-    
+    public var stopped: Bool = false
+    public var workItem: DispatchWorkItem?
+
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.setEmotionServiceNode = ROSRCLObjC.createNode("SetEmotionService")
@@ -31,14 +33,22 @@ public class SetEmotionService {
         return self.setEmotionServiceNode
     }
     
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
+    }
+    
     public func start() {
         self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_srv_SetEmotion.self, "set_emotion", callbackSetEmotionService) as? ROSService<ROS_robobo_msgs_srv_SetEmotion>
         
-        let queue = DispatchQueue(label: "SetEmotionService", qos: .userInteractive)
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
+        }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
         }
     }
 }

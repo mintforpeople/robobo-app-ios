@@ -21,8 +21,9 @@ public class TalkService {
     private var talkServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_Talk>? = nil
     let queue = DispatchQueue(label: "TalkService", qos: .userInteractive)
-    
-    
+    public var stopped: Bool = false
+    public var workItem: DispatchWorkItem?
+
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.talkServiceNode = ROSRCLObjC.createNode("TalkService")
@@ -32,13 +33,22 @@ public class TalkService {
         return self.talkServiceNode
     }
     
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
+    }
+    
     public func start() {
         self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_srv_Talk.self, "talk", callbackTalkService) as? ROSService<ROS_robobo_msgs_srv_Talk>
         
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
+        }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
         }
     }
 }

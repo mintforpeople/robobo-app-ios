@@ -24,6 +24,7 @@ public class SubNode {
     private var setFrequencySub: SetFrequencySub? = nil
     private var setLedSub: SetLedSub? = nil
     private var talkSub: TalkSub? = nil
+    public var isAllCancelled: Bool = false
     
     public init(remoteControlModule: IRemoteControlModule, roboboName: String) throws {
         if roboboName == "" {
@@ -72,5 +73,51 @@ public class SubNode {
         self.talkSub = TalkSub(subNode: self, topicName: "talk")
         self.talkSub!.start()
     }
+    
+    public func stopThreads(){
+  
+        self.moveWheelsSub!.stopped = true
+        self.moveWheelsSub?.getWorkItem().cancel()
+
+        self.movePanTiltSub!.stopped = true
+        self.movePanTiltSub?.getWorkItem().cancel()
+
+        self.playSoundSub!.stopped = true
+        self.playSoundSub?.getWorkItem().cancel()
+
+        self.resetWheelsSub!.stopped = true
+        self.resetWheelsSub?.getWorkItem().cancel()
+
+        self.setCameraSub!.stopped = true
+        self.setCameraSub?.getWorkItem().cancel()
+
+        self.setEmotionSub!.stopped = true
+        self.setEmotionSub?.getWorkItem().cancel()
+
+        self.setFrequencySub!.stopped = true
+        self.setFrequencySub?.getWorkItem().cancel()
+
+        self.setLedSub!.stopped = true
+        self.setLedSub?.getWorkItem().cancel()
+
+        self.talkSub!.stopped = true
+        self.talkSub?.getWorkItem().cancel()
+        
+        
+        if ((moveWheelsSub?.getWorkItem().isCancelled)!
+            && (movePanTiltSub?.getWorkItem().isCancelled)!
+            && (playSoundSub?.getWorkItem().isCancelled)!
+            && (resetWheelsSub?.getWorkItem().isCancelled)!
+            && (setCameraSub?.getWorkItem().isCancelled)!
+            && (setEmotionSub?.getWorkItem().isCancelled)!
+            && (setFrequencySub?.getWorkItem().isCancelled)!
+            && (setLedSub?.getWorkItem().isCancelled)!
+            && (talkSub?.getWorkItem().isCancelled)!){
+            
+            isAllCancelled = true
+        }
+
+    }
+
     
 }

@@ -16,9 +16,15 @@ public class PlaySoundSub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_PlaySoundTopic>? = nil
     private var playSoundSubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "PlaySoundSub", qos: .userInteractive)
-    
+    public var stopped: Bool = false
+    private var workItem: DispatchWorkItem?
+
     public func getNode() -> ROSNode{
         return self.playSoundSubNode!
+    }
+    
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
     }
     
     public init(subNode: SubNode, topicName: String) {
@@ -30,10 +36,15 @@ public class PlaySoundSub {
     public func start(){
         self.subscriber = self.getNode().createSubscription(withCallback: ROS_robobo_msgs_msg_PlaySoundTopic.self, topicName, callbackPlaySoundSub) as? ROSSubscription<ROS_robobo_msgs_msg_PlaySoundTopic>
         
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
+        }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
         }
     }
 }

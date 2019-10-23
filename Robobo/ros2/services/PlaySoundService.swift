@@ -21,7 +21,9 @@ public class PlaySoundService {
     private var playSoundServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_PlaySound>? = nil
     let queue = DispatchQueue(label: "PlaySoundService", qos: .userInteractive)
-    
+    public var stopped: Bool = false
+    public var workItem: DispatchWorkItem?
+
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.playSoundServiceNode = ROSRCLObjC.createNode("PlaySoundService")
@@ -31,14 +33,22 @@ public class PlaySoundService {
         return self.playSoundServiceNode
     }
     
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
+    }
+    
     public func start() {
         self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_srv_PlaySound.self, "play_sound", callbackPlaySoundService) as? ROSService<ROS_robobo_msgs_srv_PlaySound>
         
-        let queue = DispatchQueue(label: "PlaySoundService", qos: .userInteractive)
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
+        }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
         }
     }
 }

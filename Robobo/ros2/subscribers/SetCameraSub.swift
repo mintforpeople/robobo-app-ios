@@ -17,10 +17,15 @@ public class SetCameraSub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_SetCameraTopic>? = nil
     private var setCameraSubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "SetCameraSub", qos: .userInteractive)
-    
+    public var stopped: Bool = false
+    private var workItem: DispatchWorkItem?
     
     public func getNode() -> ROSNode{
         return self.setCameraSubNode!
+    }
+    
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
     }
     
     public init(subNode: SubNode, topicName: String) {
@@ -32,10 +37,15 @@ public class SetCameraSub {
     public func start(){
         self.subscriber = self.getNode().createSubscription(withCallback: ROS_robobo_msgs_msg_SetCameraTopic.self, topicName, callbackSetCameraSub) as? ROSSubscription<ROS_robobo_msgs_msg_SetCameraTopic>
         
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
+        }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
         }
     }
 }

@@ -16,10 +16,15 @@ public class SetLedSub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_SetLedTopic>? = nil
     private var setLedSubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "SetLedSub", qos: .userInteractive)
-    
-    
+    public var stopped: Bool = false
+    private var workItem: DispatchWorkItem?
+
     public func getNode() -> ROSNode{
         return self.setLedSubNode!
+    }
+    
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
     }
     
     public init(subNode: SubNode, topicName: String) {
@@ -31,11 +36,18 @@ public class SetLedSub {
     public func start(){
         self.subscriber = self.getNode().createSubscription(withCallback: ROS_robobo_msgs_msg_SetLedTopic.self, topicName, callbackSetLedSub) as? ROSSubscription<ROS_robobo_msgs_msg_SetLedTopic>
         
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
         }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
+        }
+        
+        
     }
 }
 

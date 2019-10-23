@@ -22,7 +22,8 @@ public class SetCameraService {
     private var service: ROSService<ROS_robobo_msgs_srv_SetCamera>? = nil
     let queue = DispatchQueue(label: "SetCameraService", qos: .userInteractive)
     public static var camera: String = "front"
-    
+    public var stopped: Bool = false
+    public var workItem: DispatchWorkItem?
     
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
@@ -33,13 +34,22 @@ public class SetCameraService {
         return self.setCameraServiceNode
     }
     
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
+    }
+    
     public func start() {
         self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_srv_SetCamera.self, "set_camera", callbackSetCameraService) as? ROSService<ROS_robobo_msgs_srv_SetCamera>
         
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
+        }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
         }
     }
     

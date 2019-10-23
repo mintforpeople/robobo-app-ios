@@ -17,7 +17,6 @@ import robobo_rob_interface_module_pod
 
 class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobDelegate, IAccelerationDelegate, IOrientationDelegate, FrameExtractorDelegate{
     func captured(image: UIImage) {
-        print("ey")
         DispatchQueue.main.async {
             self.imageView.image = image
         }

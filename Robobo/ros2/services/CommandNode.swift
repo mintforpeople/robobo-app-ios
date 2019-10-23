@@ -30,6 +30,7 @@ public class CommandNode {
     private var setLedService: SetLedService? = nil
     private var talkService: TalkService? = nil
     let queue = DispatchQueue(label: "CommandNode", qos: .userInteractive)
+    public var isAllCancelled: Bool = false
     
     
     public init(remoteControlModule: IRemoteControlModule, roboboName: String){
@@ -40,7 +41,6 @@ public class CommandNode {
         
         if remoteControlModule == nil {
             print("The parameter remoteControlModule is required.")
-            //manager.log("The parameter remoteControlModule is required", .ERROR)
         }
         
         self.remoteControlModule = remoteControlModule
@@ -56,51 +56,101 @@ public class CommandNode {
     
     public func onStart() {
         
-        DispatchQueue.global(qos: .default).async {
+        //DispatchQueue.global(qos: .default).async {
             self.moveWheelsService = MoveWheelsService(commandNode: self)
             self.moveWheelsService!.start()
-        }
-        
-        DispatchQueue.global(qos: .default).async {
+       // }
+        /*
+       // DispatchQueue.global(qos: .default).async {
             self.movePanTiltService = MovePanTiltService(commandNode: self)
             self.movePanTiltService!.start()
-        }
+        //}
         
-        DispatchQueue.global(qos: .default).async {
+     //   DispatchQueue.global(qos: .default).async {
             self.playSoundService = PlaySoundService(commandNode: self)
             self.playSoundService!.start()
-        }
+       // }
         
-        DispatchQueue.global(qos: .default).async {
+       // DispatchQueue.global(qos: .default).async {
             self.resetWheelsService = ResetWheelsService(commandNode: self)
             self.resetWheelsService!.start()
-        }
+        //}
         
-        DispatchQueue.global(qos: .default).async {
+        //DispatchQueue.global(qos: .default).async {
             self.setCameraService = SetCameraService(commandNode: self)
             self.setCameraService!.start()
-        }
+        //}
         
-        DispatchQueue.global(qos: .default).async {
+        //DispatchQueue.global(qos: .default).async {
             self.setEmotionService = SetEmotionService(commandNode: self)
             self.setEmotionService!.start()
-        }
+        //}
         
-        DispatchQueue.global(qos: .default).async {
+        //DispatchQueue.global(qos: .default).async {
             self.setFrequencyService = SetFrequencyService(commandNode: self)
             self.setFrequencyService!.start()
-        }
+        //}
         
-        DispatchQueue.global(qos: .default).async {
+       // DispatchQueue.global(qos: .default).async {
             self.setLedService = SetLedService(commandNode: self)
             self.setLedService!.start()
-        }
+       // }
         
-        DispatchQueue.global(qos: .default).async {
+      //  DispatchQueue.global(qos: .default).async {
             self.talkService = TalkService(commandNode: self)
             self.talkService!.start()
-        }
+        //}
+    */
+    }
+    
+    public func stopThreads(){
         
+        self.moveWheelsService!.stopped = true
+        self.moveWheelsService?.getWorkItem().cancel()
+        /*
+        self.movePanTiltService!.stopped = true
+        self.movePanTiltService!.getWorkItem().cancel()
+        
+        self.playSoundService!.stopped = true
+        self.playSoundService!.getWorkItem().cancel()
+        
+        self.resetWheelsService!.stopped = true
+        self.resetWheelsService!.getWorkItem().cancel()
+        
+        self.setCameraService!.stopped = true
+        self.setCameraService!.getWorkItem().cancel()
+        
+        self.setEmotionService!.stopped = true
+        self.setEmotionService!.getWorkItem().cancel()
+        
+        self.setFrequencyService!.stopped = true
+        self.setFrequencyService!.getWorkItem().cancel()
+        
+        self.setLedService!.stopped = true
+        self.setLedService!.getWorkItem().cancel()
+        
+        self.talkService!.stopped = true
+        self.talkService!.getWorkItem().cancel()
+ */
+       
+        if ((moveWheelsService?.getWorkItem().isCancelled)!){
+            isAllCancelled = true
+        }
+ 
+        /*
+        if ((moveWheelsService?.getWorkItem().isCancelled)!
+            && (movePanTiltService?.getWorkItem().isCancelled)!
+            && (playSoundService?.getWorkItem().isCancelled)!
+            && (resetWheelsService?.getWorkItem().isCancelled)!
+            && (setCameraService?.getWorkItem().isCancelled)!
+            && (setEmotionService?.getWorkItem().isCancelled)!
+            && (setFrequencyService?.getWorkItem().isCancelled)!
+            && (setLedService?.getWorkItem().isCancelled)!
+            && (talkService?.getWorkItem().isCancelled)!){
+            
+            isAllCancelled = true
+        }
+ */
     }
     
 }

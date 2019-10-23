@@ -21,7 +21,9 @@ public class SetFrequencyService {
     private var setFrequencyServiceNode: ROSNode
     private var service: ROSService<ROS_robobo_msgs_srv_SetSensorFrequency>? = nil
     let queue = DispatchQueue(label: "SetFrequencyService", qos: .userInteractive)
-    
+    public var stopped: Bool = false
+    public var workItem: DispatchWorkItem?
+
     public init(commandNode: CommandNode) {
         self.commandNode = commandNode
         self.setFrequencyServiceNode = ROSRCLObjC.createNode("SetFrequencyService")
@@ -31,14 +33,22 @@ public class SetFrequencyService {
         return self.setFrequencyServiceNode
     }
     
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
+    }
+    
     public func start() {
         self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_srv_SetSensorFrequency.self, "set_sensor_frequency", callbackSetFrequencyService) as? ROSService<ROS_robobo_msgs_srv_SetSensorFrequency>
         
-        let queue = DispatchQueue(label: "SetFrequencyService", qos: .userInteractive)
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
+        }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
         }
     }
 }

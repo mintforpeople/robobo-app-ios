@@ -16,9 +16,15 @@ public class SetFrequencySub {
     private var subscriber: ROSSubscription<ROS_robobo_msgs_msg_SetSensorFrequencyTopic>? = nil
     private var setFrequencySubNode: ROSNode? = nil
     let queue = DispatchQueue(label: "SetFrequencySub", qos: .userInteractive)
-    
+    public var stopped: Bool = false
+    private var workItem: DispatchWorkItem?
+
     public func getNode() -> ROSNode{
         return self.setFrequencySubNode!
+    }
+    
+    public func getWorkItem() -> DispatchWorkItem{
+        return self.workItem!
     }
     
     public init(subNode: SubNode, topicName: String) {
@@ -30,10 +36,15 @@ public class SetFrequencySub {
     public func start(){
         self.subscriber = self.getNode().createSubscription(withCallback: ROS_robobo_msgs_msg_SetSensorFrequencyTopic.self, topicName, callbackSetFrequencySub) as? ROSSubscription<ROS_robobo_msgs_msg_SetSensorFrequencyTopic>
         
-        queue.async(flags: .barrier) {
-            while(ROSRCLObjC.ok()) {
+        workItem = DispatchWorkItem {
+            while(ROSRCLObjC.ok() && !self.stopped) {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
+            self.workItem?.cancel()
+        }
+        
+        if (!self.stopped){
+            queue.async(execute: workItem!)
         }
     }
 }

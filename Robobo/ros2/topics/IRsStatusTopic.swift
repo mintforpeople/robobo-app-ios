@@ -34,6 +34,7 @@ public class IRsStatusTopic: AStatusTopic {
     
     public override func start() {
         self.publisher = self.getNode().createPublisher(ROS_robobo_msgs_msg_IRs.self, self.getTopicName()) as! ROSPublisher<ROS_robobo_msgs_msg_IRs>
+        
     }
     
     public override func publishStatus(status: Status) {
