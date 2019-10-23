@@ -60,7 +60,7 @@ public class CommandNode {
             self.moveWheelsService = MoveWheelsService(commandNode: self)
             self.moveWheelsService!.start()
        // }
-        /*
+        
        // DispatchQueue.global(qos: .default).async {
             self.movePanTiltService = MovePanTiltService(commandNode: self)
             self.movePanTiltService!.start()
@@ -100,14 +100,14 @@ public class CommandNode {
             self.talkService = TalkService(commandNode: self)
             self.talkService!.start()
         //}
-    */
+
     }
     
     public func stopThreads(){
         
         self.moveWheelsService!.stopped = true
         self.moveWheelsService?.getWorkItem().cancel()
-        /*
+        
         self.movePanTiltService!.stopped = true
         self.movePanTiltService!.getWorkItem().cancel()
         
@@ -131,13 +131,13 @@ public class CommandNode {
         
         self.talkService!.stopped = true
         self.talkService!.getWorkItem().cancel()
- */
-       
+ 
+       /*
         if ((moveWheelsService?.getWorkItem().isCancelled)!){
             isAllCancelled = true
         }
- 
-        /*
+ */
+        
         if ((moveWheelsService?.getWorkItem().isCancelled)!
             && (movePanTiltService?.getWorkItem().isCancelled)!
             && (playSoundService?.getWorkItem().isCancelled)!
@@ -150,7 +150,7 @@ public class CommandNode {
             
             isAllCancelled = true
         }
- */
+ 
     }
     
 }

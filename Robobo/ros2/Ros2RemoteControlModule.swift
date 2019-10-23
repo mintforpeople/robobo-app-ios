@@ -51,7 +51,7 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     public func shutdown(){
         self.getCommandNode().stopThreads()
         // HAY QUE ESPERAR UN POCO PARA HACER EL CLEANUP
-        //sleep(1)
+        sleep(1)
         if (self.getCommandNode().isAllCancelled){
             ROSRCLObjC.cleanup()
             ROSRCLObjC.nativeShutdown()
