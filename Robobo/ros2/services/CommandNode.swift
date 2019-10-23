@@ -111,9 +111,9 @@ public class CommandNode {
         self.movePanTiltService!.stopped = true
         self.movePanTiltService!.getWorkItem().cancel()
         
-        self.playSoundService!.stopped = true
+        /*self.playSoundService!.stopped = true
         self.playSoundService!.getWorkItem().cancel()
-        
+        */
         self.resetWheelsService!.stopped = true
         self.resetWheelsService!.getWorkItem().cancel()
         
@@ -140,11 +140,11 @@ public class CommandNode {
         
         if ((moveWheelsService?.getWorkItem().isCancelled)!
             && (movePanTiltService?.getWorkItem().isCancelled)!
-            && (playSoundService?.getWorkItem().isCancelled)!
+            /*&& (playSoundService?.getWorkItem().isCancelled)!*/
             && (resetWheelsService?.getWorkItem().isCancelled)!
             && (setCameraService?.getWorkItem().isCancelled)!
             && (setEmotionService?.getWorkItem().isCancelled)!
-            && (setFrequencyService?.getWorkItem().isCancelled)!
+            /*&& (setFrequencyService?.getWorkItem().isCancelled)!*/
             && (setLedService?.getWorkItem().isCancelled)!
             && (talkService?.getWorkItem().isCancelled)!){
             

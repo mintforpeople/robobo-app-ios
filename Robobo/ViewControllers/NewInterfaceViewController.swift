@@ -22,8 +22,7 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
            
         }
         guard let data = image.pngData() else { return }
-        print(image.size.width)
-        print(image.size.height)
+
         if (ros2CameraModule.cameraTopicRos2?.isStarted())!{
             ros2CameraModule.cameraTopicRos2?.publishCompressedImageMessage(compressedImage: data, format: "PNG", width: image.size.width, height: image.size.height) //era JPEG
         }
