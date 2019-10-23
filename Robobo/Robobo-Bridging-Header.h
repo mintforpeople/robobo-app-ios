@@ -76,31 +76,3 @@
 #import "ROS_robobo_msgs/srv/SetSensorFrequency.h"
 
 #import "ROS_robobo_msgs/srv/Talk.h"
-
-// apaño
-
-#import "ROS_robobo_msgs_aux/srv/MovePanTilt.h"
-#import "ROS_robobo_msgs_aux/srv/MoveWheels.h"
-#import "ROS_robobo_msgs_aux/srv/PlaySound.h"
-#import "ROS_robobo_msgs_aux/srv/ResetWheels.h"
-#import "ROS_robobo_msgs_aux/srv/SetCamera.h"
-#import "ROS_robobo_msgs_aux/srv/SetEmotion.h"
-#import "ROS_robobo_msgs_aux/srv/SetLed.h"
-#import "ROS_robobo_msgs_aux/srv/SetSensorFrequency.h"
-#import "ROS_robobo_msgs_aux/srv/Talk.h"
-
-#import "ROS_robobo_msgs_aux/msg/Fling.h"
-#import "ROS_robobo_msgs_aux/msg/IRs.h"
-#import "ROS_robobo_msgs_aux/msg/Led.h"
-#import "ROS_robobo_msgs_aux/msg/Tap.h"
-#import "ROS_robobo_msgs_aux/msg/Wheels.h"
-
-#import "ROS_robobo_msgs_aux/msg/MovePanTiltTopic.h"
-#import "ROS_robobo_msgs_aux/msg/MoveWheelsTopic.h"
-#import "ROS_robobo_msgs_aux/msg/PlaySoundTopic.h"
-#import "ROS_robobo_msgs_aux/msg/ResetWheelsTopic.h"
-#import "ROS_robobo_msgs_aux/msg/SetCameraTopic.h"
-#import "ROS_robobo_msgs_aux/msg/SetEmotionTopic.h"
-#import "ROS_robobo_msgs_aux/msg/SetSensorFrequencyTopic.h"
-#import "ROS_robobo_msgs_aux/msg/SetLedTopic.h"
-#import "ROS_robobo_msgs_aux/msg/TalkTopic.h"

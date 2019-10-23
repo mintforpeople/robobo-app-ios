@@ -39,7 +39,7 @@ public class MoveWheelsService {
     }
     
     public func start() {
-        self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_aux_srv_MoveWheels.self, "move_wheels", callbackMoveWheelsService) as? ROSService<ROS_robobo_msgs_srv_MoveWheels>
+        self.service = self.getNode().createService(withCallback: ROS_robobo_msgs_srv_MoveWheels.self, "move_wheels", callbackMoveWheelsService) as? ROSService<ROS_robobo_msgs_srv_MoveWheels>
         
         workItem = DispatchWorkItem {
             while(ROSRCLObjC.ok() && !self.stopped) {

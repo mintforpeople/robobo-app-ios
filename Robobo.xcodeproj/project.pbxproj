@@ -9,116 +9,44 @@
 /* Begin PBXBuildFile section */
 		4F9F852F235DCFB600DAC75D /* librclobjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F852E235DCFB600DAC75D /* librclobjc.a */; };
 		4F9F8531235DD06F00DAC75D /* ros2_objc in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F8530235DD06F00DAC75D /* ros2_objc */; };
-		4FE3CDEA235742FB009A5706 /* libstereo_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD69235742EC009A5706 /* libstereo_msgs__rosidl_typesupport_c.a */; };
-		4FE3CDEB235742FB009A5706 /* librcl_interfaces__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD6A235742EC009A5706 /* librcl_interfaces__rosidl_typesupport_c.a */; };
 		4FE3CDEC235742FB009A5706 /* libsensor_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD6B235742EC009A5706 /* libsensor_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CDED235742FB009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD6C235742EC009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_c.a */; };
 		4FE3CDEE235742FB009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD6D235742EC009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CDEF235742FB009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD6E235742EC009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.a */; };
 		4FE3CDF0235742FB009A5706 /* libROS_sensor_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD6F235742EC009A5706 /* libROS_sensor_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CDF1235742FB009A5706 /* liblifecycle_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD70235742EC009A5706 /* liblifecycle_msgs__rosidl_generator_c.a */; };
 		4FE3CDF2235742FB009A5706 /* libfastcdr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD71235742ED009A5706 /* libfastcdr.a */; };
-		4FE3CDF3235742FB009A5706 /* librobobo_msgs_aux__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD72235742ED009A5706 /* librobobo_msgs_aux__rosidl_typesupport_cpp.a */; };
-		4FE3CDF4235742FB009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD73235742ED009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_c.a */; };
-		4FE3CDF5235742FB009A5706 /* libshape_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD74235742ED009A5706 /* libshape_msgs__rosidl_typesupport_c.a */; };
 		4FE3CDF6235742FB009A5706 /* libsensor_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD75235742ED009A5706 /* libsensor_msgs__rosidl_generator_c.a */; };
-		4FE3CDF7235742FB009A5706 /* libexample_interfaces__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD76235742ED009A5706 /* libexample_interfaces__rosidl_generator_c.a */; };
-		4FE3CDF8235742FB009A5706 /* libtest_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD77235742ED009A5706 /* libtest_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CDF9235742FB009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD78235742ED009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CDFA235742FB009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD79235742ED009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_cpp.a */; };
 		4FE3CDFB235742FB009A5706 /* librmw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD7A235742ED009A5706 /* librmw.a */; };
-		4FE3CDFC235742FB009A5706 /* libROS_robobo_msgs_aux__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD7B235742ED009A5706 /* libROS_robobo_msgs_aux__rosidl_typesupport_introspection_c.a */; };
-		4FE3CDFD235742FB009A5706 /* libshape_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD7C235742ED009A5706 /* libshape_msgs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CDFE235742FB009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD7D235742ED009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CDFF235742FB009A5706 /* libsensor_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD7E235742ED009A5706 /* libsensor_msgs__rosidl_typesupport_c.a */; };
 		4FE3CE00235742FB009A5706 /* libstd_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD7F235742ED009A5706 /* libstd_msgs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE01235742FB009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD80235742EE009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE02235742FB009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD81235742EE009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CE03235742FB009A5706 /* libnav_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD82235742EE009A5706 /* libnav_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE04235742FB009A5706 /* libshape_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD83235742EE009A5706 /* libshape_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE05235742FB009A5706 /* libROS_rosgraph_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD84235742EE009A5706 /* libROS_rosgraph_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE06235742FB009A5706 /* libactionlib_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD85235742EE009A5706 /* libactionlib_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE07235742FB009A5706 /* libtest_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD86235742EE009A5706 /* libtest_msgs__rosidl_typesupport_c.a */; };
 		4FE3CE08235742FB009A5706 /* libbuiltin_interfaces__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD87235742EE009A5706 /* libbuiltin_interfaces__rosidl_generator_c.a */; };
-		4FE3CE09235742FB009A5706 /* libactionlib_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD88235742EE009A5706 /* libactionlib_msgs__rosidl_typesupport_c.a */; };
 		4FE3CE0A235742FB009A5706 /* librosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD89235742EE009A5706 /* librosidl_typesupport_introspection_c.a */; };
 		4FE3CE0B235742FB009A5706 /* libROS_robobo_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD8A235742EE009A5706 /* libROS_robobo_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE0C235742FB009A5706 /* libdiagnostic_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD8B235742EE009A5706 /* libdiagnostic_msgs__rosidl_generator_c.a */; };
-		4FE3CE0D235742FB009A5706 /* libtest_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD8C235742EE009A5706 /* libtest_msgs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CE0E235742FB009A5706 /* libROS_stereo_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD8D235742EE009A5706 /* libROS_stereo_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE0F235742FB009A5706 /* librcl_lifecycle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD8E235742EE009A5706 /* librcl_lifecycle.a */; };
 		4FE3CE10235742FB009A5706 /* librobobo_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD8F235742EF009A5706 /* librobobo_msgs__rosidl_generator_c.a */; };
-		4FE3CE11235742FB009A5706 /* librosgraph_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD90235742EF009A5706 /* librosgraph_msgs__rosidl_typesupport_c.a */; };
-		4FE3CE12235742FB009A5706 /* libdiagnostic_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD91235742EF009A5706 /* libdiagnostic_msgs__rosidl_typesupport_c.a */; };
-		4FE3CE13235742FB009A5706 /* libactionlib_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD92235742EF009A5706 /* libactionlib_msgs__rosidl_generator_c.a */; };
-		4FE3CE14235742FB009A5706 /* libexample_interfaces__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD93235742EF009A5706 /* libexample_interfaces__rosidl_typesupport_cpp.a */; };
 		4FE3CE15235742FB009A5706 /* librmw_fastrtps_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD94235742EF009A5706 /* librmw_fastrtps_cpp.a */; };
 		4FE3CE16235742FB009A5706 /* libgeometry_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD95235742EF009A5706 /* libgeometry_msgs__rosidl_generator_c.a */; };
 		4FE3CE17235742FB009A5706 /* libbuiltin_interfaces__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD96235742EF009A5706 /* libbuiltin_interfaces__rosidl_typesupport_cpp.a */; };
-		4FE3CE18235742FB009A5706 /* libROS_test_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD97235742F0009A5706 /* libROS_test_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE19235742FB009A5706 /* libdiagnostic_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD98235742F0009A5706 /* libdiagnostic_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE1A235742FB009A5706 /* libnav_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD99235742F0009A5706 /* libnav_msgs__rosidl_typesupport_c.a */; };
 		4FE3CE1B235742FB009A5706 /* libgeometry_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD9A235742F0009A5706 /* libgeometry_msgs__rosidl_typesupport_cpp.a */; };
 		4FE3CE1C235742FB009A5706 /* libROS_builtin_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD9B235742F0009A5706 /* libROS_builtin_interfaces__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE1D235742FB009A5706 /* libROS_actionlib_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD9C235742F0009A5706 /* libROS_actionlib_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE1E235742FB009A5706 /* libtrajectory_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD9D235742F0009A5706 /* libtrajectory_msgs__rosidl_generator_c.a */; };
 		4FE3CE1F235742FB009A5706 /* libROS_std_srvs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD9E235742F0009A5706 /* libROS_std_srvs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE20235742FB009A5706 /* librcl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CD9F235742F0009A5706 /* librcl.a */; };
-		4FE3CE21235742FB009A5706 /* librcl_interfaces__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA0235742F0009A5706 /* librcl_interfaces__rosidl_typesupport_cpp.a */; };
-		4FE3CE22235742FB009A5706 /* liblifecycle_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA1235742F0009A5706 /* liblifecycle_msgs__rosidl_typesupport_c.a */; };
-		4FE3CE23235742FB009A5706 /* libtrajectory_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA2235742F1009A5706 /* libtrajectory_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE24235742FB009A5706 /* libROS_nav_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA3235742F1009A5706 /* libROS_nav_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE25235742FB009A5706 /* libtest_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA4235742F1009A5706 /* libtest_msgs__rosidl_generator_c.a */; };
-		4FE3CE26235742FB009A5706 /* libvisualization_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA5235742F1009A5706 /* libvisualization_msgs__rosidl_typesupport_c.a */; };
-		4FE3CE27235742FB009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA6235742F1009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE28235742FB009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA7235742F1009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE29235742FB009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA8235742F1009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE2A235742FB009A5706 /* libROS_rcl_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDA9235742F1009A5706 /* libROS_rcl_interfaces__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE2B235742FB009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDAA235742F1009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE2C235742FB009A5706 /* libfastrtps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDAB235742F1009A5706 /* libfastrtps.a */; };
-		4FE3CE2D235742FB009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDAC235742F1009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CE2E235742FB009A5706 /* libnav_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDAD235742F2009A5706 /* libnav_msgs__rosidl_generator_c.a */; };
-		4FE3CE2F235742FB009A5706 /* libROS_diagnostic_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDAE235742F2009A5706 /* libROS_diagnostic_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE30235742FB009A5706 /* libexample_interfaces__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDAF235742F2009A5706 /* libexample_interfaces__rosidl_typesupport_c.a */; };
-		4FE3CE31235742FB009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB0235742F2009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CE32235742FB009A5706 /* librobobo_msgs_aux__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB1235742F2009A5706 /* librobobo_msgs_aux__rosidl_typesupport_c.a */; };
 		4FE3CE33235742FB009A5706 /* libstd_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB2235742F2009A5706 /* libstd_msgs__rosidl_generator_c.a */; };
 		4FE3CE34235742FB009A5706 /* libament_index_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB3235742F2009A5706 /* libament_index_cpp.a */; };
-		4FE3CE35235742FB009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB4235742F2009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE36235742FB009A5706 /* libstd_srvs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB5235742F2009A5706 /* libstd_srvs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CE37235742FB009A5706 /* libshape_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB6235742F2009A5706 /* libshape_msgs__rosidl_generator_c.a */; };
 		4FE3CE38235742FB009A5706 /* libROS_geometry_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB7235742F3009A5706 /* libROS_geometry_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE39235742FB009A5706 /* libROS_trajectory_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB8235742F3009A5706 /* libROS_trajectory_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE3A235742FB009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDB9235742F3009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE3B235742FB009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDBA235742F3009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE3C235742FB009A5706 /* libROS_visualization_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDBB235742F3009A5706 /* libROS_visualization_msgs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE3D235742FB009A5706 /* librobobo_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDBC235742F3009A5706 /* librobobo_msgs__rosidl_typesupport_c.a */; };
 		4FE3CE3E235742FB009A5706 /* libstd_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDBD235742F3009A5706 /* libstd_msgs__rosidl_typesupport_introspection_cpp.a */; };
 		4FE3CE3F235742FB009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDBE235742F3009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_cpp.a */; };
 		4FE3CE40235742FB009A5706 /* librosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDBF235742F3009A5706 /* librosidl_typesupport_c.a */; };
-		4FE3CE41235742FB009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC0235742F3009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CE42235742FB009A5706 /* libROS_lifecycle_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC1235742F3009A5706 /* libROS_lifecycle_msgs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE43235742FB009A5706 /* libgeometry_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC2235742F3009A5706 /* libgeometry_msgs__rosidl_typesupport_c.a */; };
-		4FE3CE44235742FB009A5706 /* librosgraph_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC3235742F3009A5706 /* librosgraph_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE45235742FB009A5706 /* librcl_interfaces__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC4235742F8009A5706 /* librcl_interfaces__rosidl_generator_c.a */; };
 		4FE3CE46235742FB009A5706 /* librosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC5235742F8009A5706 /* librosidl_typesupport_cpp.a */; };
-		4FE3CE47235742FB009A5706 /* libvisualization_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC6235742F8009A5706 /* libvisualization_msgs__rosidl_generator_c.a */; };
 		4FE3CE48235742FB009A5706 /* libROS_std_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC7235742F8009A5706 /* libROS_std_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE49235742FB009A5706 /* libtest_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC8235742F8009A5706 /* libtest_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE4A235742FB009A5706 /* libvisualization_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDC9235742F8009A5706 /* libvisualization_msgs__rosidl_typesupport_cpp.a */; };
 		4FE3CE4B235742FB009A5706 /* libstd_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDCA235742F8009A5706 /* libstd_msgs__rosidl_typesupport_c.a */; };
-		4FE3CE4C235742FB009A5706 /* liblifecycle_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDCB235742F8009A5706 /* liblifecycle_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE4D235742FB009A5706 /* libROS_example_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDCC235742F8009A5706 /* libROS_example_interfaces__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE4E235742FB009A5706 /* librobobo_msgs_aux__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDCD235742F9009A5706 /* librobobo_msgs_aux__rosidl_generator_c.a */; };
 		4FE3CE4F235742FB009A5706 /* librosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDCE235742F9009A5706 /* librosidl_typesupport_introspection_cpp.a */; };
 		4FE3CE50235742FB009A5706 /* libstd_srvs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDCF235742F9009A5706 /* libstd_srvs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE51235742FB009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD0235742F9009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_cpp.a */; };
 		4FE3CE52235742FB009A5706 /* librcl_yaml_param_parser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD1235742F9009A5706 /* librcl_yaml_param_parser.a */; };
-		4FE3CE53235742FB009A5706 /* libROS_shape_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD2235742F9009A5706 /* libROS_shape_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE54235742FB009A5706 /* libnav_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD3235742F9009A5706 /* libnav_msgs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE55235742FB009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD4235742F9009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CE56235742FB009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD5235742F9009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE57235742FB009A5706 /* librosgraph_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD6235742F9009A5706 /* librosgraph_msgs__rosidl_generator_c.a */; };
 		4FE3CE58235742FB009A5706 /* librosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD7235742F9009A5706 /* librosidl_generator_c.a */; };
 		4FE3CE59235742FB009A5706 /* libstd_srvs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD8235742F9009A5706 /* libstd_srvs__rosidl_generator_c.a */; };
 		4FE3CE5A235742FB009A5706 /* librcutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDD9235742F9009A5706 /* librcutils.a */; };
@@ -126,16 +54,9 @@
 		4FE3CE5C235742FB009A5706 /* librobobo_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDDB235742F9009A5706 /* librobobo_msgs__rosidl_typesupport_introspection_cpp.a */; };
 		4FE3CE5D235742FB009A5706 /* librobobo_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDDC235742F9009A5706 /* librobobo_msgs__rosidl_typesupport_cpp.a */; };
 		4FE3CE5E235742FB009A5706 /* libstd_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDDD235742F9009A5706 /* libstd_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE5F235742FB009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDDE235742F9009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_cpp.a */; };
 		4FE3CE60235742FB009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDDF235742FA009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_c.a */; };
-		4FE3CE61235742FB009A5706 /* libstereo_msgs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE0235742FA009A5706 /* libstereo_msgs__rosidl_typesupport_cpp.a */; };
-		4FE3CE62235742FB009A5706 /* libnav_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE1235742FA009A5706 /* libnav_msgs__rosidl_typesupport_introspection_cpp.a */; };
-		4FE3CE63235742FB009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE2235742FA009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_cpp.a */; };
 		4FE3CE64235742FB009A5706 /* libbuiltin_interfaces__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE3235742FA009A5706 /* libbuiltin_interfaces__rosidl_typesupport_c.a */; };
-		4FE3CE66235742FB009A5706 /* libstereo_msgs__rosidl_generator_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE5235742FA009A5706 /* libstereo_msgs__rosidl_generator_c.a */; };
 		4FE3CE67235742FB009A5706 /* libstd_srvs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE6235742FA009A5706 /* libstd_srvs__rosidl_typesupport_c.a */; };
-		4FE3CE68235742FB009A5706 /* libtrajectory_msgs__rosidl_typesupport_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE7235742FA009A5706 /* libtrajectory_msgs__rosidl_typesupport_c.a */; };
-		4FE3CE69235742FB009A5706 /* libshape_msgs__rosidl_typesupport_introspection_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE8235742FA009A5706 /* libshape_msgs__rosidl_typesupport_introspection_c.a */; };
 		4FE3CE6A235742FB009A5706 /* libstd_srvs__rosidl_typesupport_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3CDE9235742FA009A5706 /* libstd_srvs__rosidl_typesupport_cpp.a */; };
 		4FE3CEBB23574696009A5706 /* Ros2RemoteControlModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3CEBA23574696009A5706 /* Ros2RemoteControlModule.swift */; };
 		4FE3CEC2235746EA009A5706 /* CameraTopicRos2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3CEC1235746EA009A5706 /* CameraTopicRos2.swift */; };
@@ -243,116 +164,44 @@
 		4F9F852E235DCFB600DAC75D /* librclobjc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librclobjc.a; path = ../ros2_mod_ws/install/lib/librclobjc.a; sourceTree = "<group>"; };
 		4F9F8530235DD06F00DAC75D /* ros2_objc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ros2_objc; path = ../ros2_mod_ws/src/ros2_objc/ros2_objc; sourceTree = "<group>"; };
 		4FE3CD6623574107009A5706 /* Robobo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Robobo-Bridging-Header.h"; sourceTree = "<group>"; };
-		4FE3CD69235742EC009A5706 /* libstereo_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstereo_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libstereo_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CD6A235742EC009A5706 /* librcl_interfaces__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcl_interfaces__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/librcl_interfaces__rosidl_typesupport_c.a; sourceTree = "<group>"; };
 		4FE3CD6B235742EC009A5706 /* libsensor_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsensor_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libsensor_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CD6C235742EC009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs_aux__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs_aux__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CD6D235742EC009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgeometry_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CD6E235742EC009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CD6F235742EC009A5706 /* libROS_sensor_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_sensor_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_sensor_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD70235742EC009A5706 /* liblifecycle_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblifecycle_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/liblifecycle_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CD71235742ED009A5706 /* libfastcdr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfastcdr.a; path = ../ros2_mod_ws/install/lib/libfastcdr.a; sourceTree = "<group>"; };
-		4FE3CD72235742ED009A5706 /* librobobo_msgs_aux__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs_aux__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs_aux__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CD73235742ED009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcl_interfaces__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/librcl_interfaces__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD74235742ED009A5706 /* libshape_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libshape_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libshape_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
 		4FE3CD75235742ED009A5706 /* libsensor_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsensor_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libsensor_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
-		4FE3CD76235742ED009A5706 /* libexample_interfaces__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libexample_interfaces__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libexample_interfaces__rosidl_generator_c.a; sourceTree = "<group>"; };
-		4FE3CD77235742ED009A5706 /* libtest_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtest_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libtest_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CD78235742ED009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libactionlib_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libactionlib_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CD79235742ED009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libexample_interfaces__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libexample_interfaces__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CD7A235742ED009A5706 /* librmw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librmw.a; path = ../ros2_mod_ws/install/lib/librmw.a; sourceTree = "<group>"; };
-		4FE3CD7B235742ED009A5706 /* libROS_robobo_msgs_aux__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_robobo_msgs_aux__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_robobo_msgs_aux__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD7C235742ED009A5706 /* libshape_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libshape_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libshape_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CD7D235742ED009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvisualization_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libvisualization_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CD7E235742ED009A5706 /* libsensor_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsensor_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libsensor_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
 		4FE3CD7F235742ED009A5706 /* libstd_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libstd_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CD80235742EE009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgeometry_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD81235742EE009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtrajectory_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libtrajectory_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CD82235742EE009A5706 /* libnav_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnav_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libnav_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CD83235742EE009A5706 /* libshape_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libshape_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libshape_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CD84235742EE009A5706 /* libROS_rosgraph_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_rosgraph_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_rosgraph_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD85235742EE009A5706 /* libactionlib_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libactionlib_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libactionlib_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CD86235742EE009A5706 /* libtest_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtest_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libtest_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
 		4FE3CD87235742EE009A5706 /* libbuiltin_interfaces__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbuiltin_interfaces__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libbuiltin_interfaces__rosidl_generator_c.a; sourceTree = "<group>"; };
-		4FE3CD88235742EE009A5706 /* libactionlib_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libactionlib_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libactionlib_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
 		4FE3CD89235742EE009A5706 /* librosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/librosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CD8A235742EE009A5706 /* libROS_robobo_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_robobo_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_robobo_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD8B235742EE009A5706 /* libdiagnostic_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdiagnostic_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libdiagnostic_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
-		4FE3CD8C235742EE009A5706 /* libtest_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtest_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libtest_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CD8D235742EE009A5706 /* libROS_stereo_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_stereo_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_stereo_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD8E235742EE009A5706 /* librcl_lifecycle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcl_lifecycle.a; path = ../ros2_mod_ws/install/lib/librcl_lifecycle.a; sourceTree = "<group>"; };
 		4FE3CD8F235742EF009A5706 /* librobobo_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
-		4FE3CD90235742EF009A5706 /* librosgraph_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosgraph_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/librosgraph_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CD91235742EF009A5706 /* libdiagnostic_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdiagnostic_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libdiagnostic_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CD92235742EF009A5706 /* libactionlib_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libactionlib_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libactionlib_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
-		4FE3CD93235742EF009A5706 /* libexample_interfaces__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libexample_interfaces__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libexample_interfaces__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
 		4FE3CD94235742EF009A5706 /* librmw_fastrtps_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librmw_fastrtps_cpp.a; path = ../ros2_mod_ws/install/lib/librmw_fastrtps_cpp.a; sourceTree = "<group>"; };
 		4FE3CD95235742EF009A5706 /* libgeometry_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgeometry_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libgeometry_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CD96235742EF009A5706 /* libbuiltin_interfaces__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbuiltin_interfaces__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CD97235742F0009A5706 /* libROS_test_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_test_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_test_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD98235742F0009A5706 /* libdiagnostic_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdiagnostic_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libdiagnostic_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CD99235742F0009A5706 /* libnav_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnav_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libnav_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
 		4FE3CD9A235742F0009A5706 /* libgeometry_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgeometry_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libgeometry_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
 		4FE3CD9B235742F0009A5706 /* libROS_builtin_interfaces__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_builtin_interfaces__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_builtin_interfaces__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD9C235742F0009A5706 /* libROS_actionlib_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_actionlib_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_actionlib_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CD9D235742F0009A5706 /* libtrajectory_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtrajectory_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libtrajectory_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CD9E235742F0009A5706 /* libROS_std_srvs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_std_srvs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_std_srvs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CD9F235742F0009A5706 /* librcl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcl.a; path = ../ros2_mod_ws/install/lib/librcl.a; sourceTree = "<group>"; };
-		4FE3CDA0235742F0009A5706 /* librcl_interfaces__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcl_interfaces__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/librcl_interfaces__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CDA1235742F0009A5706 /* liblifecycle_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblifecycle_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/liblifecycle_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDA2235742F1009A5706 /* libtrajectory_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtrajectory_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libtrajectory_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CDA3235742F1009A5706 /* libROS_nav_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_nav_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_nav_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDA4235742F1009A5706 /* libtest_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtest_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libtest_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
-		4FE3CDA5235742F1009A5706 /* libvisualization_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvisualization_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libvisualization_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDA6235742F1009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libactionlib_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libactionlib_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDA7235742F1009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosgraph_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDA8235742F1009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstereo_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libstereo_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDA9235742F1009A5706 /* libROS_rcl_interfaces__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_rcl_interfaces__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_rcl_interfaces__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDAA235742F1009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libexample_interfaces__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libexample_interfaces__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CDAB235742F1009A5706 /* libfastrtps.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfastrtps.a; path = ../ros2_mod_ws/install/lib/libfastrtps.a; sourceTree = "<group>"; };
-		4FE3CDAC235742F1009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs_aux__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs_aux__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CDAD235742F2009A5706 /* libnav_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnav_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libnav_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
-		4FE3CDAE235742F2009A5706 /* libROS_diagnostic_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_diagnostic_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_diagnostic_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDAF235742F2009A5706 /* libexample_interfaces__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libexample_interfaces__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libexample_interfaces__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDB0235742F2009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosgraph_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CDB1235742F2009A5706 /* librobobo_msgs_aux__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs_aux__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs_aux__rosidl_typesupport_c.a; sourceTree = "<group>"; };
 		4FE3CDB2235742F2009A5706 /* libstd_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libstd_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDB3235742F2009A5706 /* libament_index_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libament_index_cpp.a; path = ../ros2_mod_ws/install/lib/libament_index_cpp.a; sourceTree = "<group>"; };
-		4FE3CDB4235742F2009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtrajectory_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CDB5235742F2009A5706 /* libstd_srvs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_srvs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CDB6235742F2009A5706 /* libshape_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libshape_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libshape_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDB7235742F3009A5706 /* libROS_geometry_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_geometry_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_geometry_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDB8235742F3009A5706 /* libROS_trajectory_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_trajectory_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_trajectory_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDB9235742F3009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblifecycle_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CDBA235742F3009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbuiltin_interfaces__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDBB235742F3009A5706 /* libROS_visualization_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_visualization_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_visualization_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CDBC235742F3009A5706 /* librobobo_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
 		4FE3CDBD235742F3009A5706 /* libstd_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CDBE235742F3009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsensor_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CDBF235742F3009A5706 /* librosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/librosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDC0235742F3009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstereo_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libstereo_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CDC1235742F3009A5706 /* libROS_lifecycle_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_lifecycle_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_lifecycle_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CDC2235742F3009A5706 /* libgeometry_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgeometry_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libgeometry_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDC3235742F3009A5706 /* librosgraph_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosgraph_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/librosgraph_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CDC4235742F8009A5706 /* librcl_interfaces__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcl_interfaces__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/librcl_interfaces__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDC5235742F8009A5706 /* librosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/librosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CDC6235742F8009A5706 /* libvisualization_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvisualization_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libvisualization_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDC7235742F8009A5706 /* libROS_std_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_std_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_std_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDC8235742F8009A5706 /* libtest_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtest_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libtest_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDC9235742F8009A5706 /* libvisualization_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvisualization_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libvisualization_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
 		4FE3CDCA235742F8009A5706 /* libstd_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libstd_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDCB235742F8009A5706 /* liblifecycle_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblifecycle_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/liblifecycle_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CDCC235742F8009A5706 /* libROS_example_interfaces__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_example_interfaces__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_example_interfaces__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDCD235742F9009A5706 /* librobobo_msgs_aux__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs_aux__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs_aux__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDCE235742F9009A5706 /* librosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/librosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CDCF235742F9009A5706 /* libstd_srvs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_srvs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libstd_srvs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDD0235742F9009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblifecycle_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CDD1235742F9009A5706 /* librcl_yaml_param_parser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcl_yaml_param_parser.a; path = ../ros2_mod_ws/install/lib/librcl_yaml_param_parser.a; sourceTree = "<group>"; };
-		4FE3CDD2235742F9009A5706 /* libROS_shape_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROS_shape_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libROS_shape_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDD3235742F9009A5706 /* libnav_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnav_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libnav_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CDD4235742F9009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CDD5235742F9009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdiagnostic_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDD6235742F9009A5706 /* librosgraph_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosgraph_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/librosgraph_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDD7235742F9009A5706 /* librosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/librosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDD8235742F9009A5706 /* libstd_srvs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_srvs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libstd_srvs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDD9235742F9009A5706 /* librcutils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcutils.a; path = ../ros2_mod_ws/install/lib/librcutils.a; sourceTree = "<group>"; };
@@ -360,16 +209,9 @@
 		4FE3CDDB235742F9009A5706 /* librobobo_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CDDC235742F9009A5706 /* librobobo_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librobobo_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/librobobo_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
 		4FE3CDDD235742F9009A5706 /* libstd_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libstd_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CDDE235742F9009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcl_interfaces__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CDDF235742FA009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsensor_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libsensor_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
-		4FE3CDE0235742FA009A5706 /* libstereo_msgs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstereo_msgs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libstereo_msgs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
-		4FE3CDE1235742FA009A5706 /* libnav_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnav_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
-		4FE3CDE2235742FA009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvisualization_msgs__rosidl_typesupport_introspection_cpp.a; path = ../ros2_mod_ws/install/lib/libvisualization_msgs__rosidl_typesupport_introspection_cpp.a; sourceTree = "<group>"; };
 		4FE3CDE3235742FA009A5706 /* libbuiltin_interfaces__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbuiltin_interfaces__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libbuiltin_interfaces__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDE5235742FA009A5706 /* libstereo_msgs__rosidl_generator_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstereo_msgs__rosidl_generator_c.a; path = ../ros2_mod_ws/install/lib/libstereo_msgs__rosidl_generator_c.a; sourceTree = "<group>"; };
 		4FE3CDE6235742FA009A5706 /* libstd_srvs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_srvs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libstd_srvs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDE7235742FA009A5706 /* libtrajectory_msgs__rosidl_typesupport_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtrajectory_msgs__rosidl_typesupport_c.a; path = ../ros2_mod_ws/install/lib/libtrajectory_msgs__rosidl_typesupport_c.a; sourceTree = "<group>"; };
-		4FE3CDE8235742FA009A5706 /* libshape_msgs__rosidl_typesupport_introspection_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libshape_msgs__rosidl_typesupport_introspection_c.a; path = ../ros2_mod_ws/install/lib/libshape_msgs__rosidl_typesupport_introspection_c.a; sourceTree = "<group>"; };
 		4FE3CDE9235742FA009A5706 /* libstd_srvs__rosidl_typesupport_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstd_srvs__rosidl_typesupport_cpp.a; path = ../ros2_mod_ws/install/lib/libstd_srvs__rosidl_typesupport_cpp.a; sourceTree = "<group>"; };
 		4FE3CEBA23574696009A5706 /* Ros2RemoteControlModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ros2RemoteControlModule.swift; sourceTree = "<group>"; };
 		4FE3CEC1235746EA009A5706 /* CameraTopicRos2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTopicRos2.swift; sourceTree = "<group>"; };
@@ -488,116 +330,44 @@
 			files = (
 				4F9F8531235DD06F00DAC75D /* ros2_objc in Frameworks */,
 				4F9F852F235DCFB600DAC75D /* librclobjc.a in Frameworks */,
-				4FE3CDEA235742FB009A5706 /* libstereo_msgs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CDEB235742FB009A5706 /* librcl_interfaces__rosidl_typesupport_c.a in Frameworks */,
 				4FE3CDEC235742FB009A5706 /* libsensor_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CDED235742FB009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CDEE235742FB009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CDEF235742FB009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CDF0235742FB009A5706 /* libROS_sensor_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CDF1235742FB009A5706 /* liblifecycle_msgs__rosidl_generator_c.a in Frameworks */,
 				4FE3CDF2235742FB009A5706 /* libfastcdr.a in Frameworks */,
-				4FE3CDF3235742FB009A5706 /* librobobo_msgs_aux__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CDF4235742FB009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CDF5235742FB009A5706 /* libshape_msgs__rosidl_typesupport_c.a in Frameworks */,
 				4FE3CDF6235742FB009A5706 /* libsensor_msgs__rosidl_generator_c.a in Frameworks */,
-				4FE3CDF7235742FB009A5706 /* libexample_interfaces__rosidl_generator_c.a in Frameworks */,
-				4FE3CDF8235742FB009A5706 /* libtest_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CDF9235742FB009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CDFA235742FB009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CDFB235742FB009A5706 /* librmw.a in Frameworks */,
-				4FE3CDFC235742FB009A5706 /* libROS_robobo_msgs_aux__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CDFD235742FB009A5706 /* libshape_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CDFE235742FB009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CDFF235742FB009A5706 /* libsensor_msgs__rosidl_typesupport_c.a in Frameworks */,
 				4FE3CE00235742FB009A5706 /* libstd_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE01235742FB009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE02235742FB009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CE03235742FB009A5706 /* libnav_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE04235742FB009A5706 /* libshape_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE05235742FB009A5706 /* libROS_rosgraph_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE06235742FB009A5706 /* libactionlib_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE07235742FB009A5706 /* libtest_msgs__rosidl_typesupport_c.a in Frameworks */,
 				4FE3CE08235742FB009A5706 /* libbuiltin_interfaces__rosidl_generator_c.a in Frameworks */,
-				4FE3CE09235742FB009A5706 /* libactionlib_msgs__rosidl_typesupport_c.a in Frameworks */,
 				4FE3CE0A235742FB009A5706 /* librosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE0B235742FB009A5706 /* libROS_robobo_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE0C235742FB009A5706 /* libdiagnostic_msgs__rosidl_generator_c.a in Frameworks */,
-				4FE3CE0D235742FB009A5706 /* libtest_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CE0E235742FB009A5706 /* libROS_stereo_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE0F235742FB009A5706 /* librcl_lifecycle.a in Frameworks */,
 				4FE3CE10235742FB009A5706 /* librobobo_msgs__rosidl_generator_c.a in Frameworks */,
-				4FE3CE11235742FB009A5706 /* librosgraph_msgs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE12235742FB009A5706 /* libdiagnostic_msgs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE13235742FB009A5706 /* libactionlib_msgs__rosidl_generator_c.a in Frameworks */,
-				4FE3CE14235742FB009A5706 /* libexample_interfaces__rosidl_typesupport_cpp.a in Frameworks */,
 				4FE3CE15235742FB009A5706 /* librmw_fastrtps_cpp.a in Frameworks */,
 				4FE3CE16235742FB009A5706 /* libgeometry_msgs__rosidl_generator_c.a in Frameworks */,
 				4FE3CE17235742FB009A5706 /* libbuiltin_interfaces__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE18235742FB009A5706 /* libROS_test_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE19235742FB009A5706 /* libdiagnostic_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE1A235742FB009A5706 /* libnav_msgs__rosidl_typesupport_c.a in Frameworks */,
 				4FE3CE1B235742FB009A5706 /* libgeometry_msgs__rosidl_typesupport_cpp.a in Frameworks */,
 				4FE3CE1C235742FB009A5706 /* libROS_builtin_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE1D235742FB009A5706 /* libROS_actionlib_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE1E235742FB009A5706 /* libtrajectory_msgs__rosidl_generator_c.a in Frameworks */,
 				4FE3CE1F235742FB009A5706 /* libROS_std_srvs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE20235742FB009A5706 /* librcl.a in Frameworks */,
-				4FE3CE21235742FB009A5706 /* librcl_interfaces__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE22235742FB009A5706 /* liblifecycle_msgs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE23235742FB009A5706 /* libtrajectory_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE24235742FB009A5706 /* libROS_nav_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE25235742FB009A5706 /* libtest_msgs__rosidl_generator_c.a in Frameworks */,
-				4FE3CE26235742FB009A5706 /* libvisualization_msgs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE27235742FB009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE28235742FB009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE29235742FB009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE2A235742FB009A5706 /* libROS_rcl_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE2B235742FB009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE2C235742FB009A5706 /* libfastrtps.a in Frameworks */,
-				4FE3CE2D235742FB009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CE2E235742FB009A5706 /* libnav_msgs__rosidl_generator_c.a in Frameworks */,
-				4FE3CE2F235742FB009A5706 /* libROS_diagnostic_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE30235742FB009A5706 /* libexample_interfaces__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE31235742FB009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CE32235742FB009A5706 /* librobobo_msgs_aux__rosidl_typesupport_c.a in Frameworks */,
 				4FE3CE33235742FB009A5706 /* libstd_msgs__rosidl_generator_c.a in Frameworks */,
 				4FE3CE34235742FB009A5706 /* libament_index_cpp.a in Frameworks */,
-				4FE3CE35235742FB009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE36235742FB009A5706 /* libstd_srvs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CE37235742FB009A5706 /* libshape_msgs__rosidl_generator_c.a in Frameworks */,
 				4FE3CE38235742FB009A5706 /* libROS_geometry_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE39235742FB009A5706 /* libROS_trajectory_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE3A235742FB009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE3B235742FB009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE3C235742FB009A5706 /* libROS_visualization_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE3D235742FB009A5706 /* librobobo_msgs__rosidl_typesupport_c.a in Frameworks */,
 				4FE3CE3E235742FB009A5706 /* libstd_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CE3F235742FB009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CE40235742FB009A5706 /* librosidl_typesupport_c.a in Frameworks */,
-				4FE3CE41235742FB009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CE42235742FB009A5706 /* libROS_lifecycle_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE43235742FB009A5706 /* libgeometry_msgs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE44235742FB009A5706 /* librosgraph_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE45235742FB009A5706 /* librcl_interfaces__rosidl_generator_c.a in Frameworks */,
 				4FE3CE46235742FB009A5706 /* librosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE47235742FB009A5706 /* libvisualization_msgs__rosidl_generator_c.a in Frameworks */,
 				4FE3CE48235742FB009A5706 /* libROS_std_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE49235742FB009A5706 /* libtest_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE4A235742FB009A5706 /* libvisualization_msgs__rosidl_typesupport_cpp.a in Frameworks */,
 				4FE3CE4B235742FB009A5706 /* libstd_msgs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE4C235742FB009A5706 /* liblifecycle_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE4D235742FB009A5706 /* libROS_example_interfaces__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE4E235742FB009A5706 /* librobobo_msgs_aux__rosidl_generator_c.a in Frameworks */,
 				4FE3CE4F235742FB009A5706 /* librosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CE50235742FB009A5706 /* libstd_srvs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE51235742FB009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CE52235742FB009A5706 /* librcl_yaml_param_parser.a in Frameworks */,
-				4FE3CE53235742FB009A5706 /* libROS_shape_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE54235742FB009A5706 /* libnav_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE55235742FB009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CE56235742FB009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE57235742FB009A5706 /* librosgraph_msgs__rosidl_generator_c.a in Frameworks */,
 				4FE3CE58235742FB009A5706 /* librosidl_generator_c.a in Frameworks */,
 				4FE3CE59235742FB009A5706 /* libstd_srvs__rosidl_generator_c.a in Frameworks */,
 				4FE3CE5A235742FB009A5706 /* librcutils.a in Frameworks */,
@@ -605,16 +375,9 @@
 				4FE3CE5C235742FB009A5706 /* librobobo_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CE5D235742FB009A5706 /* librobobo_msgs__rosidl_typesupport_cpp.a in Frameworks */,
 				4FE3CE5E235742FB009A5706 /* libstd_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE5F235742FB009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CE60235742FB009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
-				4FE3CE61235742FB009A5706 /* libstereo_msgs__rosidl_typesupport_cpp.a in Frameworks */,
-				4FE3CE62235742FB009A5706 /* libnav_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
-				4FE3CE63235742FB009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_cpp.a in Frameworks */,
 				4FE3CE64235742FB009A5706 /* libbuiltin_interfaces__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE66235742FB009A5706 /* libstereo_msgs__rosidl_generator_c.a in Frameworks */,
 				4FE3CE67235742FB009A5706 /* libstd_srvs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE68235742FB009A5706 /* libtrajectory_msgs__rosidl_typesupport_c.a in Frameworks */,
-				4FE3CE69235742FB009A5706 /* libshape_msgs__rosidl_typesupport_introspection_c.a in Frameworks */,
 				4FE3CE6A235742FB009A5706 /* libstd_srvs__rosidl_typesupport_cpp.a in Frameworks */,
 				CF07730533E50BD63290EDC2 /* Pods_Robobo.framework in Frameworks */,
 			);
@@ -725,27 +488,12 @@
 			children = (
 				4F9F8530235DD06F00DAC75D /* ros2_objc */,
 				4F9F852E235DCFB600DAC75D /* librclobjc.a */,
-				4FE3CD92235742EF009A5706 /* libactionlib_msgs__rosidl_generator_c.a */,
-				4FE3CD88235742EE009A5706 /* libactionlib_msgs__rosidl_typesupport_c.a */,
-				4FE3CD85235742EE009A5706 /* libactionlib_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDA6235742F1009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CD78235742ED009A5706 /* libactionlib_msgs__rosidl_typesupport_introspection_cpp.a */,
 				4FE3CDB3235742F2009A5706 /* libament_index_cpp.a */,
 				4FE3CD87235742EE009A5706 /* libbuiltin_interfaces__rosidl_generator_c.a */,
 				4FE3CDE3235742FA009A5706 /* libbuiltin_interfaces__rosidl_typesupport_c.a */,
 				4FE3CD96235742EF009A5706 /* libbuiltin_interfaces__rosidl_typesupport_cpp.a */,
 				4FE3CDBA235742F3009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_c.a */,
 				4FE3CDD4235742F9009A5706 /* libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CD8B235742EE009A5706 /* libdiagnostic_msgs__rosidl_generator_c.a */,
-				4FE3CD91235742EF009A5706 /* libdiagnostic_msgs__rosidl_typesupport_c.a */,
-				4FE3CD98235742F0009A5706 /* libdiagnostic_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDD5235742F9009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CD6E235742EC009A5706 /* libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CD76235742ED009A5706 /* libexample_interfaces__rosidl_generator_c.a */,
-				4FE3CDAF235742F2009A5706 /* libexample_interfaces__rosidl_typesupport_c.a */,
-				4FE3CD93235742EF009A5706 /* libexample_interfaces__rosidl_typesupport_cpp.a */,
-				4FE3CDAA235742F1009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_c.a */,
-				4FE3CD79235742ED009A5706 /* libexample_interfaces__rosidl_typesupport_introspection_cpp.a */,
 				4FE3CD71235742ED009A5706 /* libfastcdr.a */,
 				4FE3CDAB235742F1009A5706 /* libfastrtps.a */,
 				4FE3CD95235742EF009A5706 /* libgeometry_msgs__rosidl_generator_c.a */,
@@ -753,22 +501,6 @@
 				4FE3CD9A235742F0009A5706 /* libgeometry_msgs__rosidl_typesupport_cpp.a */,
 				4FE3CD80235742EE009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_c.a */,
 				4FE3CD6D235742EC009A5706 /* libgeometry_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CD70235742EC009A5706 /* liblifecycle_msgs__rosidl_generator_c.a */,
-				4FE3CDA1235742F0009A5706 /* liblifecycle_msgs__rosidl_typesupport_c.a */,
-				4FE3CDCB235742F8009A5706 /* liblifecycle_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDB9235742F3009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDD0235742F9009A5706 /* liblifecycle_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CDAD235742F2009A5706 /* libnav_msgs__rosidl_generator_c.a */,
-				4FE3CD99235742F0009A5706 /* libnav_msgs__rosidl_typesupport_c.a */,
-				4FE3CD82235742EE009A5706 /* libnav_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDD3235742F9009A5706 /* libnav_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDE1235742FA009A5706 /* libnav_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CDC4235742F8009A5706 /* librcl_interfaces__rosidl_generator_c.a */,
-				4FE3CD6A235742EC009A5706 /* librcl_interfaces__rosidl_typesupport_c.a */,
-				4FE3CDA0235742F0009A5706 /* librcl_interfaces__rosidl_typesupport_cpp.a */,
-				4FE3CD73235742ED009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_c.a */,
-				4FE3CDDE235742F9009A5706 /* librcl_interfaces__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CD8E235742EE009A5706 /* librcl_lifecycle.a */,
 				4FE3CDD1235742F9009A5706 /* librcl_yaml_param_parser.a */,
 				4FE3CD9F235742F0009A5706 /* librcl.a */,
 				4FE3CDD9235742F9009A5706 /* librcutils.a */,
@@ -779,35 +511,12 @@
 				4FE3CDDC235742F9009A5706 /* librobobo_msgs__rosidl_typesupport_cpp.a */,
 				4FE3CDDA235742F9009A5706 /* librobobo_msgs__rosidl_typesupport_introspection_c.a */,
 				4FE3CDDB235742F9009A5706 /* librobobo_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CDCD235742F9009A5706 /* librobobo_msgs_aux__rosidl_generator_c.a */,
-				4FE3CDB1235742F2009A5706 /* librobobo_msgs_aux__rosidl_typesupport_c.a */,
-				4FE3CD72235742ED009A5706 /* librobobo_msgs_aux__rosidl_typesupport_cpp.a */,
-				4FE3CD6C235742EC009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_c.a */,
-				4FE3CDAC235742F1009A5706 /* librobobo_msgs_aux__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CD9C235742F0009A5706 /* libROS_actionlib_msgs__rosidl_typesupport_introspection_c.a */,
 				4FE3CD9B235742F0009A5706 /* libROS_builtin_interfaces__rosidl_typesupport_introspection_c.a */,
-				4FE3CDAE235742F2009A5706 /* libROS_diagnostic_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDCC235742F8009A5706 /* libROS_example_interfaces__rosidl_typesupport_introspection_c.a */,
 				4FE3CDB7235742F3009A5706 /* libROS_geometry_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDC1235742F3009A5706 /* libROS_lifecycle_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDA3235742F1009A5706 /* libROS_nav_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDA9235742F1009A5706 /* libROS_rcl_interfaces__rosidl_typesupport_introspection_c.a */,
 				4FE3CD8A235742EE009A5706 /* libROS_robobo_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CD7B235742ED009A5706 /* libROS_robobo_msgs_aux__rosidl_typesupport_introspection_c.a */,
-				4FE3CD84235742EE009A5706 /* libROS_rosgraph_msgs__rosidl_typesupport_introspection_c.a */,
 				4FE3CD6F235742EC009A5706 /* libROS_sensor_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDD2235742F9009A5706 /* libROS_shape_msgs__rosidl_typesupport_introspection_c.a */,
 				4FE3CDC7235742F8009A5706 /* libROS_std_msgs__rosidl_typesupport_introspection_c.a */,
 				4FE3CD9E235742F0009A5706 /* libROS_std_srvs__rosidl_typesupport_introspection_c.a */,
-				4FE3CD8D235742EE009A5706 /* libROS_stereo_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CD97235742F0009A5706 /* libROS_test_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDB8235742F3009A5706 /* libROS_trajectory_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDBB235742F3009A5706 /* libROS_visualization_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDD6235742F9009A5706 /* librosgraph_msgs__rosidl_generator_c.a */,
-				4FE3CD90235742EF009A5706 /* librosgraph_msgs__rosidl_typesupport_c.a */,
-				4FE3CDC3235742F3009A5706 /* librosgraph_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDA7235742F1009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDB0235742F2009A5706 /* librosgraph_msgs__rosidl_typesupport_introspection_cpp.a */,
 				4FE3CDD7235742F9009A5706 /* librosidl_generator_c.a */,
 				4FE3CDBF235742F3009A5706 /* librosidl_typesupport_c.a */,
 				4FE3CDC5235742F8009A5706 /* librosidl_typesupport_cpp.a */,
@@ -818,11 +527,6 @@
 				4FE3CD6B235742EC009A5706 /* libsensor_msgs__rosidl_typesupport_cpp.a */,
 				4FE3CDDF235742FA009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_c.a */,
 				4FE3CDBE235742F3009A5706 /* libsensor_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CDB6235742F2009A5706 /* libshape_msgs__rosidl_generator_c.a */,
-				4FE3CD74235742ED009A5706 /* libshape_msgs__rosidl_typesupport_c.a */,
-				4FE3CD83235742EE009A5706 /* libshape_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDE8235742FA009A5706 /* libshape_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CD7C235742ED009A5706 /* libshape_msgs__rosidl_typesupport_introspection_cpp.a */,
 				4FE3CDB2235742F2009A5706 /* libstd_msgs__rosidl_generator_c.a */,
 				4FE3CDCA235742F8009A5706 /* libstd_msgs__rosidl_typesupport_c.a */,
 				4FE3CDDD235742F9009A5706 /* libstd_msgs__rosidl_typesupport_cpp.a */,
@@ -833,26 +537,6 @@
 				4FE3CDE9235742FA009A5706 /* libstd_srvs__rosidl_typesupport_cpp.a */,
 				4FE3CDCF235742F9009A5706 /* libstd_srvs__rosidl_typesupport_introspection_c.a */,
 				4FE3CDB5235742F2009A5706 /* libstd_srvs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CDE5235742FA009A5706 /* libstereo_msgs__rosidl_generator_c.a */,
-				4FE3CD69235742EC009A5706 /* libstereo_msgs__rosidl_typesupport_c.a */,
-				4FE3CDE0235742FA009A5706 /* libstereo_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDA8235742F1009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDC0235742F3009A5706 /* libstereo_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CDA4235742F1009A5706 /* libtest_msgs__rosidl_generator_c.a */,
-				4FE3CD86235742EE009A5706 /* libtest_msgs__rosidl_typesupport_c.a */,
-				4FE3CD77235742ED009A5706 /* libtest_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDC8235742F8009A5706 /* libtest_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CD8C235742EE009A5706 /* libtest_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CD9D235742F0009A5706 /* libtrajectory_msgs__rosidl_generator_c.a */,
-				4FE3CDE7235742FA009A5706 /* libtrajectory_msgs__rosidl_typesupport_c.a */,
-				4FE3CDA2235742F1009A5706 /* libtrajectory_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CDB4235742F2009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CD81235742EE009A5706 /* libtrajectory_msgs__rosidl_typesupport_introspection_cpp.a */,
-				4FE3CDC6235742F8009A5706 /* libvisualization_msgs__rosidl_generator_c.a */,
-				4FE3CDA5235742F1009A5706 /* libvisualization_msgs__rosidl_typesupport_c.a */,
-				4FE3CDC9235742F8009A5706 /* libvisualization_msgs__rosidl_typesupport_cpp.a */,
-				4FE3CD7D235742ED009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_c.a */,
-				4FE3CDE2235742FA009A5706 /* libvisualization_msgs__rosidl_typesupport_introspection_cpp.a */,
 				50B89872AFA0991830AA319D /* Pods_Robobo.framework */,
 			);
 			name = Frameworks;
