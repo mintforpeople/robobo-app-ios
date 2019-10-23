@@ -92,8 +92,8 @@ public class StatusNode {
         self.tiltStatusTopic = Int16StatusTopic(node: self, nodeName: "TiltStatusTopic", topicName: StatusNode.TOPIC_TILT, statusName: StatusNode.STATUS_TILT, valueKey: "tiltPos")
         self.tiltStatusTopic!.start()
         
-        self.ambientLightStatusTopic = Int32StatusTopic(node: self, nodeName: "AmbientLightStatusTopic", topicName: StatusNode.TOPIC_ALIGHT, statusName: StatusNode.STATUS_ALIGHT, valueKey: "level")
-        self.ambientLightStatusTopic!.start()
+        /*self.ambientLightStatusTopic = Int32StatusTopic(node: self, nodeName: "AmbientLightStatusTopic", topicName: StatusNode.TOPIC_ALIGHT, statusName: StatusNode.STATUS_ALIGHT, valueKey: "level")
+        self.ambientLightStatusTopic!.start()*/
         /*
          self.emotionStatusTopic = StringStatusTopic(node: self, topicName: StatusNode.TOPIC_EMOTION, statusName: StatusNode.STATUS_EMOTION, valueKey: "emotion")
          self.emotionStatusTopic!.start()
@@ -148,9 +148,10 @@ public class StatusNode {
             case StatusNode.STATUS_TILT:
                 self.tiltStatusTopic!.publishStatus(status: status)
                 break
-            case StatusNode.STATUS_ALIGHT:
+            /*case StatusNode.STATUS_ALIGHT:
                 self.ambientLightStatusTopic!.publishStatus(status: status)
                 break
+                */
                 /*
                  case StatusNode.STATUS_EMOTION:
                  self.emotionStatusTopic!.publishStatus(status: status)

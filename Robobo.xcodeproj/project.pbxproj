@@ -1066,14 +1066,15 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HJ385R3P2;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = UMDK4H4H7C;
 				INFOPLIST_FILE = Robobo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "/Users/lbajo/ros2_mod_ws/install/**";
+				LIBRARY_SEARCH_PATHS = "/Users/luis/Documents/Robobo/ros2_mod_ws/install/**";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"system\"",
@@ -1102,13 +1103,13 @@
 					"\"robobo_speech_ios\"",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lorena.RoboboDeveloper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintforpeople.RoboboDeveloper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Robobo/Robobo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "/Users/lbajo/ros2_mod_ws/install/**";
+				USER_HEADER_SEARCH_PATHS = "/Users/luis/Documents/Robobo/ros2_mod_ws/install/**";
 			};
 			name = Debug;
 		};
@@ -1120,14 +1121,15 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HJ385R3P2;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = UMDK4H4H7C;
 				INFOPLIST_FILE = Robobo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "/Users/lbajo/ros2_mod_ws/install/**";
+				LIBRARY_SEARCH_PATHS = "/Users/luis/Documents/Robobo/ros2_mod_ws/install/**";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"system\"",
@@ -1156,12 +1158,12 @@
 					"\"robobo_speech_ios\"",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lorena.RoboboDeveloper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintforpeople.RoboboDeveloper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Robobo/Robobo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "/Users/lbajo/ros2_mod_ws/install/**";
+				USER_HEADER_SEARCH_PATHS = "/Users/luis/Documents/Robobo/ros2_mod_ws/install/**";
 			};
 			name = Release;
 		};

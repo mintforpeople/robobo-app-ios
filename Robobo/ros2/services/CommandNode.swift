@@ -65,12 +65,12 @@ public class CommandNode {
             self.movePanTiltService = MovePanTiltService(commandNode: self)
             self.movePanTiltService!.start()
         //}
-        
+        /*
      //   DispatchQueue.global(qos: .default).async {
             self.playSoundService = PlaySoundService(commandNode: self)
             self.playSoundService!.start()
        // }
-        
+        */
        // DispatchQueue.global(qos: .default).async {
             self.resetWheelsService = ResetWheelsService(commandNode: self)
             self.resetWheelsService!.start()
@@ -85,12 +85,12 @@ public class CommandNode {
             self.setEmotionService = SetEmotionService(commandNode: self)
             self.setEmotionService!.start()
         //}
-        
+        /*
         //DispatchQueue.global(qos: .default).async {
             self.setFrequencyService = SetFrequencyService(commandNode: self)
             self.setFrequencyService!.start()
         //}
-        
+        */
        // DispatchQueue.global(qos: .default).async {
             self.setLedService = SetLedService(commandNode: self)
             self.setLedService!.start()
@@ -122,10 +122,10 @@ public class CommandNode {
         
         self.setEmotionService!.stopped = true
         self.setEmotionService!.getWorkItem().cancel()
-        
+        /*
         self.setFrequencyService!.stopped = true
         self.setFrequencyService!.getWorkItem().cancel()
-        
+        */
         self.setLedService!.stopped = true
         self.setLedService!.getWorkItem().cancel()
         
