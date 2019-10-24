@@ -15,3 +15,8 @@
 "ABOUT" = "ACERCA DE";
 "Acceleration:" = "Aceleración:";
 "Orientation:" = "Orientación:";
+"Connection Error" = "Error de conexión";
+"No Robobo base is selected" = "Ninguna base Robobo está seleccionada";
+"No Wifi connection" = "Wifi desconectado";
+"Disconnection" = "Desconexión";
+"Lost connection to the Robobo Base" = "Perdida conexión con la base Robobo";

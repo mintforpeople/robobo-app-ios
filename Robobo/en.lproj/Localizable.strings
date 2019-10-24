@@ -15,3 +15,8 @@
 "ABOUT" = "ABOUT";
 "Acceleration:" = "Acceleration:";
 "Orientation:" = "Orientation:";
+"Connection Error" = "Connection Error";
+"No Robobo base is selected" = "No Robobo base is selected";
+"No Wifi connection" = "No Wifi connection";
+"Disconnection" = "Disconnection";
+"Lost connection to the Robobo Base" = "Lost connection to the Robobo Base";

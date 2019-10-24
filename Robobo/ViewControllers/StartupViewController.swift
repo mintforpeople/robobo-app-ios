@@ -31,6 +31,7 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             print(addr)
             ipLabel.text = addr
         } else {
+            ipLabel.text = NSLocalizedString("No Wifi connection", comment: "")
             print("No WiFi address")
         }
         
@@ -180,6 +181,17 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool{
         if ((pickerData.count==0)&&(identifier == "newMainView") ){
+            DispatchQueue.main.async {
+                let alertController = UIAlertController(title: NSLocalizedString("Connection Error", comment: ""), message: NSLocalizedString("No Robobo base is selected", comment: ""), preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+                    UIAlertAction in
+                    print("No robobo selected")
+                }
+                
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+                
+            }
             return false
         } else {
             return true
@@ -189,7 +201,7 @@ class StartupViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
    
     @IBAction func connectButton(_ sender: ImageButton) {
         print("CONNECT BUTTON")
-        sleep(1)
+        //sleep(1)
     }
     
     @IBAction func settingsButton(_ sender: UIButton) {

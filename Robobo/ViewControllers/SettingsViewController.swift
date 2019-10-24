@@ -29,9 +29,27 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let font: [AnyHashable : Any] = [NSAttributedString.Key.font : UIFont.init(name: "roboto", size: 17)]
+        let font: [AnyHashable : Any]
+        let fontSelected: [AnyHashable : Any]
+        if #available(iOS 11.0, *) {
+            font = [NSAttributedString.Key.font : UIFont.init(name: "roboto", size: 17), NSAttributedString.Key.foregroundColor: UIColor.init(named: "RoboLight")]
+            fontSelected = [NSAttributedString.Key.font : UIFont.init(name: "roboto", size: 17), NSAttributedString.Key.foregroundColor: UIColor.init(named: "RoboNormal")]
+            
+        } else {
+            font = [NSAttributedString.Key.font : UIFont.init(name: "roboto", size: 17), NSAttributedString.Key.foregroundColor: UIColor.white]
+            fontSelected = [NSAttributedString.Key.font : UIFont.init(name: "roboto", size: 17), NSAttributedString.Key.foregroundColor: UIColor.blue]
+        }
+        
+        if #available(iOS 13.0, *) {
+            langSwitch.selectedSegmentTintColor = UIColor.init(named: "RoboLight")
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        
         
         langSwitch.setTitleTextAttributes(font as! [NSAttributedString.Key : Any], for: .normal)
+        langSwitch.setTitleTextAttributes(fontSelected as! [NSAttributedString.Key : Any], for: .selected)
         // Do any additional setup after loading the view.
         
         let lang = UserDefaults.standard.string(forKey: "language") ?? ""

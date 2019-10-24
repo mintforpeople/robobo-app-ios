@@ -92,7 +92,7 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
         manager.log("DISCONNECTED", .WARNING)
         if !userExit{
             DispatchQueue.main.async {
-                let alertController = UIAlertController(title: "Disconnection", message: "Lost connection to the Robobo Base", preferredStyle: .alert)
+                let alertController = UIAlertController(title: NSLocalizedString("Disconnection", comment: ""), message: NSLocalizedString("Lost connection to the Robobo Base", comment: ""), preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
                     UIAlertAction in
                     self.performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
@@ -162,7 +162,7 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
             print(addr)
             ipLabel.text = addr
         } else {
-            print("No WiFi address")
+            ipLabel.text = "Not connected"
         }
         
         selectedRob = self.text
