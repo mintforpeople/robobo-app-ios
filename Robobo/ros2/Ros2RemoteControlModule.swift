@@ -51,12 +51,23 @@ public class Ros2RemoteControlModule: NSObject, IRos2RemoteControlModule, IRemot
     public func shutdown(){
         self.getCommandNode().stopThreads()
         // HAY QUE ESPERAR UN POCO PARA HACER EL CLEANUP
-        usleep(500000)
-        if (self.getCommandNode().isAllCancelled){
-            ROSRCLObjC.cleanup()
-            ROSRCLObjC.nativeShutdown()
-            print("SHUTDOWN")
-        }
+        
+        
+            DispatchQueue.main.async {
+                sleep(1)
+
+                if (self.getCommandNode().isAllCancelled){
+                    print("CLEANUP ROS2")
+                    
+                    ROSRCLObjC.cleanup()
+                    print("STARTING SHUTDOWN ROS2")
+
+                    ROSRCLObjC.nativeShutdown()
+                    print("SHUTDOWN ROS2")
+                }
+            
+            }
+        
     }
     
     public func getModuleInfo() -> String {

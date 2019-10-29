@@ -46,6 +46,8 @@ public class MovePanTiltService {
                 ROSRCLObjC.spinOnce(self.getNode())
             }
             self.workItem?.cancel()
+            
+            
         }
         
         if (!self.stopped){
@@ -72,6 +74,7 @@ func callbackMovePanTiltService(msg: NSObject?, request: NSObject?, response: NS
     tiltParams["pos"] = String(req.tiltpos.data)
     tiltParams["speed"] = String(req.tiltspeed.data)
     var tiltId: Int = Int(req.tiltunlockid.data)
+    tiltParams["blockid"] = String(tiltId)
     //Log.i("MOVE-PT", "MovePanMsg: " + (String)tiltParams.get("pos") + " - " + (String)tiltParams.get("speed"))
     var tiltCommand: RemoteCommand = RemoteCommand("MOVETILT-BLOCKING", tiltId, tiltParams)
     

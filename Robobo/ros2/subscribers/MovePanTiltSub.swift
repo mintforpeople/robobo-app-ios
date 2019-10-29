@@ -70,6 +70,8 @@ func callbackMovePanSub(message: NSObject?) -> Void {
     tiltParams["pos"] = String(msg.tiltpos.data)
     tiltParams["speed"] = String(msg.tiltspeed.data)
     var tiltId: Int = Int(msg.tiltunlockid.data)
+    tiltParams["blockid"] = String(tiltId)
+
     //Log.i("MOVE-PT", "MovePanMsg: " + String(tiltParams["pos"]) + " - " +String(tiltParams["speed"]))
     var tiltCommand: RemoteCommand = RemoteCommand("MOVETILT-BLOCKING", tiltId, tiltParams)
     

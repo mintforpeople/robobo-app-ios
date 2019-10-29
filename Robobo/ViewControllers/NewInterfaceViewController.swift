@@ -16,20 +16,7 @@ import robobo_remote_control_ws_ios
 import robobo_rob_interface_module_pod
 
 class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobDelegate, IAccelerationDelegate, IOrientationDelegate, FrameExtractorDelegate{
-    func captured(image: UIImage) {
-        DispatchQueue.main.async {
-            self.imageView.image = image
-           
-        }
-        guard let data = image.pngData() else { return }
-
-        if (ros2CameraModule.cameraTopicRos2?.isStarted())!{
-            ros2CameraModule.cameraTopicRos2?.publishCompressedImageMessage(compressedImage: data, format: "PNG", width: image.size.width, height: image.size.height) //era JPEG
-        }
-    }
     
-    
-  
     var manager : RoboboManager!
     
     var emotionModule:ImageViewEmotionModule!
@@ -48,9 +35,21 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
     var ros2Module: IRos2RemoteControlModule!
     
     var frameExtractor: FrameExtractor!
-
-
-
+    
+    
+    @IBOutlet var ipLabel: UILabel!
+    @IBOutlet var xAccelLabel: UILabel!
+    @IBOutlet var yAccelLabel: UILabel!
+    @IBOutlet var zAccelLabel: UILabel!
+    @IBOutlet var yawLabel: UILabel!
+    @IBOutlet var pitchLabel: UILabel!
+    @IBOutlet var rollLabel: UILabel!
+    @IBOutlet var mainView: UIView!
+    @IBOutlet var faceView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    //MARK: Orientation delegates
+    
     func onAccelerationChange() {
         
     }
@@ -71,6 +70,10 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
             self.rollLabel.text = String(roll)
         }
     }
+    
+    
+    
+    //MARK: Bluetooth connection delegates
     
     func onConnection() {
         manager.log("CONNECTED", .WARNING)
@@ -95,7 +98,11 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
                 let alertController = UIAlertController(title: NSLocalizedString("Disconnection", comment: ""), message: NSLocalizedString("Lost connection to the Robobo Base", comment: ""), preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
                     UIAlertAction in
-                    self.performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
+                    
+                        self.manager.shutdown()
+                        
+                        self.performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
+                    
                 }
                 
                 alertController.addAction(okAction)
@@ -109,6 +116,9 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
         manager.log("DISCOVERED "+deviceName, .INFO)
 
     }
+    
+    
+    //MARK: Robobo Manager delegates
     
     func loadingModule(_ moduleInfo: String, _ moduleVersion: String) {
         self.manager.log("Loading \(moduleInfo) \(moduleVersion)",LogLevel.VERBOSE)    }
@@ -125,34 +135,42 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
     }
     
 
-    @IBOutlet var ipLabel: UILabel!
-    @IBOutlet var xAccelLabel: UILabel!
-    @IBOutlet var yAccelLabel: UILabel!
-    @IBOutlet var zAccelLabel: UILabel!
-    @IBOutlet var yawLabel: UILabel!
-    @IBOutlet var pitchLabel: UILabel!
-    @IBOutlet var rollLabel: UILabel!
-    @IBOutlet var mainView: UIView!
-    @IBOutlet var faceView: UIImageView!
-    @IBOutlet weak var imageView: UIImageView!
-
     
-    @IBAction func backSwipe(_ sender: Any) {
+
+    //MARK: UI Actions
+    @IBAction func returnButton(_ sender: Any) {
+        
         userExit = true
         bluetoothRob.disconnect()
         manager.shutdown()
-        /*let transition = CATransition()
-         transition.duration = 0.3
-         transition.type = CATransitionType.push
-         transition.subtype = CATransitionSubtype.fromLeft
-         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
-         view.window!.layer.add(transition, forKey: kCATransition)
-         
-         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-         //let newViewController = storyBoard.instantiateViewController(withIdentifier: "startupView") as! StartupViewController
-         //self.present(newViewController, animated: false, completion: nil)*/
+        
+  
+        
+        
+        performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
+    }
+
+    @IBAction func backSwipe(_ sender: Any) {
+        
+        userExit = true
+
+        bluetoothRob.disconnect()
+        manager.shutdown()
+
+    
         performSegue(withIdentifier: "unwindSegueToStartup", sender: self)
 
+    }
+    
+    //MARK: View delegates
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let addr = getWiFiAddress() {
+            print(addr)
+            ipLabel.text = addr
+        } else {
+            ipLabel.text = "Not connected"
+        }
     }
     
     override func viewDidLoad() {
@@ -219,23 +237,26 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
         
         emotionModule.setImageView(faceView)
         
-        touchModule.setView(mainView)
+        //touchModule.setView(faceView)
         
-        if let addr = getWiFiAddress() {
-            print(addr)
-            ipLabel.text = addr
-        } else {
-            print("No WiFi address")
-        }
+       
         
         irob = bluetoothRob.getRobInterface()
         bluetoothRob.delegateManager.suscribe(self)
-        sleep(2)
         print("Trying to connect to: " + selectedRob)
-        
+         
         DispatchQueue.main.async {
-            
-            self.bluetoothRob.connectToDevice(self.selectedRob)
+            do{
+                while (!self.bluetoothRob.getBtDevices().contains(self.selectedRob)){
+                    
+                    usleep(100000)
+                }
+                try self.bluetoothRob.connectToDevice(self.selectedRob)
+            } catch {
+                print(error)
+                self.manager.log("ERROR CONNECTING TO DEVICE", .ERROR)
+                self.onDisconnection()
+            }
             
         }
         
@@ -250,20 +271,26 @@ class NewInterfaceViewController: UIViewController, RoboboManagerDelegate, IRobD
         // Do any additional setup after loading the view.
     }
     
+    //MARK: Frame capture delegate
 
+    func captured(image: UIImage) {
+        DispatchQueue.main.async {
+            self.imageView.image = image
+           
+        }
+        guard let data = image.pngData() else { return }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if (ros2CameraModule.cameraTopicRos2?.isStarted())!{
+            ros2CameraModule.cameraTopicRos2?.publishCompressedImageMessage(compressedImage: data, format: "PNG", width: image.size.width, height: image.size.height) //era JPEG
+        }
     }
-    */
 
 }
 
+
+
+
+//MARK: Get wifi address
 // Return IP address of WiFi interface (en0) as a String, or `nil`
 func getWiFiAddress() -> String? {
     var address : String?
