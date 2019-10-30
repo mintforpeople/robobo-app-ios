@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>The app uses a bluetooth connection to communicate with the robobo base, send commands to it and to receive information from its sensors.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -24,6 +22,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>The app uses a bluetooth connection to communicate with the robobo base, send commands to it and to receive information from its sensors.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>A bluetooth connection is used to control the Robobo base and receive information from its sensors.</string>
 	<key>NSCameraUsageDescription</key>
